@@ -1,0 +1,140 @@
+<mime-info>
+  <mime-type type="image/svg+xml">
+    <sub-class-of type="application/xml" />
+
+    <magic priority="50">
+      <match value="&lt;svg" type="string" offset="0:4096" />
+    </magic>
+  </mime-type>
+
+  <mime-type type="application/msword">
+    <sub-class-of type="application/x-tika-msoffice" />
+
+    <magic priority="50">
+      <match value="0xd0cf11e0a1b11ae1" type="string" offset="0:8">
+        <match value="jbjb" type="string" offset="546" />
+        <match value="bjbj" type="string" offset="546" />
+      </match>
+    </magic>
+  </mime-type>
+
+  <mime-type type="application/x-ole-storage">
+    <sub-class-of type="application/x-tika-msoffice" />
+
+    <magic priority="50">
+      <match value="0xd0cf11e0a1b11ae1" type="string" offset="0:8" />
+    </magic>
+  </mime-type>
+
+  <mime-type type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+    <sub-class-of type="application/x-tika-ooxml" />
+
+    <magic priority="50">
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="[Content_Types].xml" type="string" offset="30:65536">
+          <match value="word/" type="string" offset="0:4096" />
+        </match>
+
+        <match value="_rels/.rels" type="string" offset="30">
+          <match value="word/" type="string" offset="0:4096" />
+        </match>
+      </match>
+    </magic>
+  </mime-type>
+
+  <mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation">
+    <sub-class-of type="application/x-tika-ooxml" />
+
+    <magic priority="50">
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="[Content_Types].xml" type="string" offset="30:65536">
+          <match value="ppt/" type="string" offset="0:4096" />
+        </match>
+
+        <match value="_rels/.rels" type="string" offset="30">
+          <match value="ppt/" type="string" offset="0:4096" />
+        </match>
+      </match>
+    </magic>
+  </mime-type>
+
+  <mime-type type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
+    <sub-class-of type="application/x-tika-ooxml" />
+
+    <magic priority="50">
+      <match value="PK\003\004" type="string" offset="0">
+        <match value="[Content_Types].xml" type="string" offset="30:65536">
+          <match value="xl/" type="string" offset="0:4096" />
+        </match>
+
+        <match value="_rels/.rels" type="string" offset="30">
+          <match value="xl/" type="string" offset="0:4096" />
+        </match>
+      </match>
+    </magic>
+  </mime-type>
+
+  <mime-type type="video/webm">
+    <sub-class-of type="application/x-matroska" />
+
+    <magic priority="50">
+      <match value="0x1a45dfa3" type="string" offset="0">
+        <match value="\x42\x82" type="string" offset="4:4096">
+          <match value="webm" type="string" offset="4:4096">
+            <match value="V_VP8" type="string" offset="4:4096" />
+            <match value="V_VP9" type="string" offset="4:4096" />
+          </match>
+        </match>
+      </match>
+    </magic>
+  </mime-type>
+
+  <mime-type type="audio/webm">
+    <sub-class-of type="application/x-matroska" />
+
+    <magic priority="50">
+      <match value="0x1a45dfa3" type="string" offset="0">
+        <match value="\x42\x82" type="string" offset="4:4096">
+          <match value="webm" type="string" offset="4:4096">
+            <match value="A_VORBIS" type="string" offset="4:4096" />
+            <match value="A_OPUS" type="string" offset="4:4096" />
+          </match>
+        </match>
+      </match>
+    </magic>
+  </mime-type>
+
+  <mime-type type="font/woff">
+    <alias type="application/font-woff"/>
+
+    <magic priority="50">
+      <!-- Source: https://www.w3.org/TR/WOFF/#WOFFHeader -->
+      <match value="0x774F4646" type="string" offset="0" />
+    </magic>
+
+    <glob pattern="*.woff" />
+  </mime-type>
+
+  <mime-type type="font/woff2">
+    <alias type="application/font-woff2" />
+
+    <magic priority="50">
+      <!-- Source https://www.w3.org/TR/WOFF2/#woff20Header -->
+      <match value="0x774F4632" type="string" offset="0" />
+    </magic>
+
+    <glob pattern="*.woff2" />
+  </mime-type>
+
+  <mime-type type="text/x-scss">
+    <glob pattern="*.scss" />
+
+    <sub-class-of type="text/plain"/>
+  </mime-type>
+
+  <mime-type type="text/x-sass">
+    <glob pattern="*.sass" />
+
+    <sub-class-of type="text/plain"/>
+  </mime-type>
+</mime-info>
