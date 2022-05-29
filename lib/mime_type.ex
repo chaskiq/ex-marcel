@@ -1,14 +1,40 @@
 defmodule ExMarcel.MimeType do
   @binary "application/octet-stream"
 
+  alias ExMarcel.Magic
+
   def extend(type, options \\ []) do
     defaults = [extensions: [], parents: [], magic: nil]
-    options = Keyword.merge(defaults, options)
-    require IEx
-    IEx.pry()
+    options = Keyword.merge(defaults, options) |> Enum.into(%{})
+
+    extensions =
+      (array(options.extensions) ++
+         array(ExMarcel.TableWrapper.get("type_exts") |> Map.get(type)))
+      |> Enum.uniq()
+
+    parents =
+      (array(options.parents) ++
+         array(ExMarcel.TableWrapper.get("type_parents") |> Map.get(type)))
+      |> Enum.uniq()
+
+    Magic.add(type, extensions: extensions, magic: options.magic, parents: parents)
+
     # extensions = (Array(extensions) + Array(Marcel::TYPE_EXTS[type])).uniq
     # parents = (Array(parents) + Array(Marcel::TYPE_PARENTS[type])).uniq
     # Magic.add(type, extensions: extensions, magic: magic, parents: parents)
+  end
+
+  @spec array(nil | binary | maybe_improper_list) :: maybe_improper_list
+  def array(element) when is_list(element) do
+    element
+  end
+
+  def array(element) when is_nil(element) do
+    []
+  end
+
+  def array(element) when is_binary(element) do
+    [element]
   end
 
   # Returns the most appropriate content type for the given file.

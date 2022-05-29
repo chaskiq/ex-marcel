@@ -3,10 +3,6 @@
 # Code in this file adapted from the mimemagic gem, released under the MIT License.
 # Copyright (c) 2011 Daniel Mendler. Available at https://github.com/mimemagicrb/mimemagic.
 
-# require 'marcel/tables'
-
-# require 'stringio'
-
 defmodule ExMarcel.Magic do
   # Mime type detection
   # attr_reader :type, :mediatype, :subtype
@@ -37,12 +33,43 @@ defmodule ExMarcel.Magic do
   # * <i>:parents</i>: String list or single string of parent mime types
   # * <i>:magic</i>: Mime magic specification
   # * <i>:comment</i>: Comment string
-  def add(type, options) do
+  def add(type, options \\ []) do
+    defaults = [extensions: nil, magic: nil, parents: nil]
+    options = Keyword.merge(defaults, options) |> Enum.into(%{})
+
+    extensions = options.extensions
+
+    new_extensions = TableWrapper.type_exts() |> Map.put(type, extensions)
+
+    ExMarcel.TableWrapper.put("type_exts", new_extensions)
     # extensions = [options[:extensions]].flatten.compact
     # TYPE_EXTS[type] = extensions
+    case options.parents do
+      [] ->
+        nil
+
+      _ ->
+        new_parents = TableWrapper.type_parents() |> Map.put(type, options.parents)
+
+        TableWrapper.put("type_parents", new_parents)
+    end
+
     # parents = [options[:parents]].flatten.compact
     # TYPE_PARENTS[type] = parents unless parents.empty?
+
+    table_extensions = TableWrapper.extensions()
+
+    new_table_extensions =
+      Enum.reduce(extensions, table_extensions, fn ext, acc ->
+        Map.put(acc, ext, type)
+      end)
+
+    TableWrapper.put("extensions", new_table_extensions)
     # extensions.each {|ext| EXTENSIONS[ext] = type }
+    if options[:magic] do
+      TableWrapper.put("magic", [type, options.magic] ++ TableWrapper.magic())
+    end
+
     # MAGIC.unshift [type, options[:magic]] if options[:magic]
   end
 
@@ -50,6 +77,8 @@ defmodule ExMarcel.Magic do
   # you're seeing impossible conflicts (for instance, application/x-gmc-link).
   # * <i>type</i>: The mime type to remove.  All associated extensions and magic are removed too.
   def remove(struct, type) do
+    # TableWrapper.extensions() |> Map.delete(map, :b)
+
     # EXTENSIONS.delete_if {|ext, t| t == type }
     # MAGIC.delete_if {|t, m| t == type }
     # TYPE_EXTS.delete(type)
@@ -83,7 +112,7 @@ defmodule ExMarcel.Magic do
 
   # Get string list of file extensions
   def extensions(struct) do
-    Tables.type_exts() |> Map.get(struct.type) || []
+    TableWrapper.type_exts() |> Map.get(struct.type) || []
     # TYPE_EXTS[type] || []
   end
 

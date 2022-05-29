@@ -44,4 +44,5 @@ defmodule ExMarcel.TableWrapper do
   def extensions, do: get("extensions")
   def type_exts, do: get("type_exts")
   def type_parents, do: get("type_parents")
+  def magic, do: get("magic")
 end

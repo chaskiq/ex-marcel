@@ -203,10 +203,10 @@ end
 puts "  }"
 puts "  @type_exts %{"
 types.keys.sort.each do |key|
-  exts = types[key][0].join(' ')
+  exts = types[key][0].map{|o| "\"#{o}\""}.join(', ')
   comment = types[key][2]
   comment = " # #{comment.tr("\n", " ")}" if comment
-  puts "    \"#{key}\" => [\"#{exts}\"],#{comment}"
+  puts "    \"#{key}\" => [#{exts}],#{comment}"
 end
 puts "  }"
 puts "  @type_parents %{"
