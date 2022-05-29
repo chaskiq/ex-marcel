@@ -118,8 +118,12 @@ defmodule ExMarcel.MimeType do
   defp for_declared_type(declared_type) do
     type = parse_media_type(declared_type)
 
-    if type != @binary && !type |> is_nil do
-      type |> String.downcase()
+    cond do
+      type != @binary && !is_nil(type) ->
+        type |> String.downcase()
+
+      true ->
+        nil
     end
 
     # type = parse_media_type(declared_type)
@@ -143,10 +147,20 @@ defmodule ExMarcel.MimeType do
       result =
         content_type
         |> String.downcase()
-        |> String.split(~r/[;,\s]/, 2)
+        |> String.split(~r/[;,\s]/, parts: 2)
 
-      require IEx
-      IEx.pry()
+      result =
+        case result do
+          [t, _] -> t
+          [t] -> t
+          _ -> nil
+        end
+
+      cond do
+        String.contains?(result, "/") -> result
+        true -> nil
+      end
+
       # result if result && result.index("/")
     end
 

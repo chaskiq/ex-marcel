@@ -1,4 +1,4 @@
-defmodule ExtensionTest do
+defmodule MimeTypeTest do
   use ExUnit.Case
   doctest ExMarcel
 
