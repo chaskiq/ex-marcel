@@ -34,6 +34,28 @@ defmodule TestHelpers do
     fixture_path(name)
   end
 
+  def each_content_type_fixture_array(folder) do
+    FlatFiles.list_all(fixture_path(folder))
+    |> Enum.map(fn name ->
+      name = String.replace(name, "#{fixture_path(folder)}/", "")
+
+      regex = ~r"\A([^\/]+\/[^\/]*)\/?(.*)\.(\w+)\Z"
+
+      [_, content_type, extra, _extension] = Regex.run(regex, name)
+
+      size = content_type |> String.length()
+
+      _extra =
+        if content_type |> String.slice(-size..-1) == extra do
+          nil
+        else
+          extra
+        end
+
+      [files("#{folder}/#{name}"), name, content_type]
+    end)
+  end
+
   def each_content_type_fixture(folder, block \\ nil) do
     FlatFiles.list_all(fixture_path(folder))
     |> Enum.each(fn name ->

@@ -1,4 +1,4 @@
-# ExMarcel / WIP!
+# ExMarcel
 
 ## An Elixir port of Rails's Marcel Mimetype detector.
 
@@ -21,27 +21,27 @@ be found at [https://hexdocs.pm/ex_marcel](https://hexdocs.pm/ex_marcel).
 
 ----
 
-Marcel attempts to choose the most appropriate content type for a given file by looking at the binary data, the filename, and any declared type (perhaps passed as a request header). This is done via the `Marcel::MimeType.for` method, and is used like this:
+Marcel attempts to choose the most appropriate content type for a given file by looking at the binary data, the filename, and any declared type (perhaps passed as a request header). This is done via the `ExMarcel.MimeType.for` method, and is used like this:
 
 ```elixir
-Marcel.MimeType.for Pathname.new("example.gif")
+ExMarcel.MimeType.for "example.gif"
 #  => "image/gif"
 
-File.open "example.gif" do |file|
-  Marcel.MimeType.for file
-end
+file = File.open "example.gif"
+ExMarcel.MimeType.for file
+
 #  => "image/gif"
 
-Marcel.MimeType.for Pathname.new("unrecognisable-data"), name: "example.pdf"
+ExMarcel.MimeType.for "unrecognisable-data", name: "example.pdf"
 #  => "application/pdf"
 
-Marcel.MimeType.for extension: ".pdf"
+ExMarcel.MimeType.for nil, extension: ".pdf"
 #  => "application/pdf"
 
-Marcel.MimeType.for Pathname.new("unrecognisable-data"), name: "example", declared_type: "image/png"
+ExMarcel.MimeType.for "unrecognisable-data", name: "example", declared_type: "image/png"
 #  => "image/png"
 
-Marcel.MimeType.for StringIO.new(File.read "unrecognisable-data")
+ExMarcel.MimeType.for StringIO.new(File.read "unrecognisable-data")
 #  => "application/octet-stream"
 ```
 
@@ -50,21 +50,21 @@ By preference, the magic number data in any passed in file is used to determine 
 Some types aren't easily recognised solely by magic number data. For example Adobe Illustrator files have the same magic number as PDFs (and can usually even be viewed in PDF viewers!). For these types, Marcel uses both the magic number data and the file name to work out the type:
 
 ```elixir
-Marcel.MimeType.for Pathname.new("example.ai"), name: "example.ai"
+ExMarcel.MimeType.for "example.ai", name: "example.ai"
 #  => "application/illustrator"
 ```
 
 This only happens when the type from the filename is a more specific type of that from the magic number. If it isn't the magic number alone is used.
 
 ```elixir
-Marcel.MimeType.for Pathname.new("example.png"), name: "example.ai"
+ExMarcel.MimeType.for "example.png", name: "example.ai"
 #  => "image/png"
 # As "application/illustrator" is not a more specific type of "image/png", the filename is ignored
 ```
 
 ## Motivation
 
-ExMarcel is a Port from Rails's Marcel gem, we need a complete solution for mime detection on Elixir Land.
+ExMarcel is a Port from Rails's Marcel gem, we need a complete solution for mime detection on Elixir land and this is it.
 
 Marcel was extracted from Basecamp 3, in order to make our file detection logic both easily reusable but more importantly, easily testable. Test fixtures have been added for all of the most common file types uploaded to Basecamp, and other common file types too. We hope to expand this test coverage with other file types as and when problems are identified.
 
@@ -72,11 +72,10 @@ Marcel was extracted from Basecamp 3, in order to make our file detection logic 
 
 Marcel generates MIME lookup tables with `bundle exec rake tables_ex`. MIME types are seeded from data found in `data/*.xml`. Custom MIMEs may be added to `data/custom.xml`, while overrides to the standard MIME database may be added to `lib/mime_type/definitions.rb`.
 
-> The code used for generating this files is a modified version of the ruby rake task, so you will need ruby for this
+> The code used for generating this files is a slightly modified version of the ruby rake task, so you will need ruby for this, to run it do:
+
  > bundle install
  > bundle exec rake tables_ex
-
-Marcel follows the same contributing guidelines as [rails/rails](https://github.com/rails/rails#contributing).
 
 ## Testing
 
@@ -84,9 +83,9 @@ The main test fixture files are split into two folders, those that can be recogn
 
 ## License
 
-Marcel itself is released under the terms of the MIT License. See the MIT-LICENSE file for details.
+ExMarcel itself is released under the terms of the MIT License. See the MIT-LICENSE file for details.
 
-Portions of Marcel are adapted from the [mimemagic] gem, released under the terms of the MIT License.
+Portions of Marcel (Ruby) are adapted from the [mimemagic] gem, released under the terms of the MIT License.
 
 Marcel's magic signature data is adapted from [Apache Tika](https://tika.apache.org), released under the terms of the Apache License. See the APACHE-LICENSE file for details.
 

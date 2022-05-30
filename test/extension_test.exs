@@ -1,5 +1,5 @@
 defmodule ExtensionTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
   doctest ExMarcel
   alias ExMarcel.{MimeType}
 

@@ -1,20 +1,12 @@
-# frozen_string_literal: true
-
 # Code in this file adapted from the mimemagic gem, released under the MIT License.
 # Copyright (c) 2011 Daniel Mendler. Available at https://github.com/mimemagicrb/mimemagic.
 
 defmodule ExMarcel.Magic do
-  # Mime type detection
-  # attr_reader :type, :mediatype, :subtype
-
   defstruct [:type, :mediatype, :subtype]
   alias ExMarcel.TableWrapper
 
   # Mime type by type string
   def new(type) do
-    # @type = type
-    # @mediatype, @subtype = type.split('/', 2)
-
     [mediatype, subtype] = String.split(type, "/")
 
     %__MODULE__{
@@ -42,8 +34,7 @@ defmodule ExMarcel.Magic do
     new_extensions = TableWrapper.type_exts() |> Map.put(type, extensions)
 
     ExMarcel.TableWrapper.put("type_exts", new_extensions)
-    # extensions = [options[:extensions]].flatten.compact
-    # TYPE_EXTS[type] = extensions
+
     case options.parents do
       [] ->
         nil
@@ -54,9 +45,6 @@ defmodule ExMarcel.Magic do
         TableWrapper.put("type_parents", new_parents)
     end
 
-    # parents = [options[:parents]].flatten.compact
-    # TYPE_PARENTS[type] = parents unless parents.empty?
-
     table_extensions = TableWrapper.extensions()
 
     new_table_extensions =
@@ -65,12 +53,10 @@ defmodule ExMarcel.Magic do
       end)
 
     TableWrapper.put("extensions", new_table_extensions)
-    # extensions.each {|ext| EXTENSIONS[ext] = type }
+
     if options[:magic] do
       TableWrapper.put("magic", [[type, options.magic] | TableWrapper.magic()])
     end
-
-    # MAGIC.unshift [type, options[:magic]] if options[:magic]
   end
 
   # Removes a mime type from the dictionary.  You might want to do this if
@@ -87,7 +73,6 @@ defmodule ExMarcel.Magic do
 
   # Returns true if type is a text format
   def text?(struct) do
-    # mediatype == 'text' || child_of?('text/plain');
     struct.mediatype.text || child_of?(struct, "text/plain")
   end
 
@@ -106,14 +91,12 @@ defmodule ExMarcel.Magic do
 
   # Returns true if type is child of parent type
   def child_of?(struct, parent) do
-    # self.class.child?(type, parent)
     child?(struct.type, parent)
   end
 
   # Get string list of file extensions
   def extensions(struct) do
     TableWrapper.type_exts() |> Map.get(struct.type) || []
-    # TYPE_EXTS[type] || []
   end
 
   # Get mime comment
@@ -137,16 +120,11 @@ defmodule ExMarcel.Magic do
       end
 
     mime && __MODULE__.new(mime)
-
-    # ext = ext.to_s.downcase
-    # mime = ext[0..0] == '.' ? EXTENSIONS[ext[1..-1]] : EXTENSIONS[ext]
-    # mime && new(mime)
   end
 
   # Lookup mime type by filename
   def by_path(path) do
     by_extension(Path.extname(path))
-    # by_extension(File.extname(path))
   end
 
   # Lookup mime type by magic content analysis.
@@ -162,21 +140,17 @@ defmodule ExMarcel.Magic do
 
   # Lookup all mime types by magic content analysis.
   # This is a slower operation.
-  def all_by_magic(io) do
-    require IEx
-    IEx.pry()
+  def all_by_magic(_io) do
     # magic_match(io, :select).map { |mime| new(mime[0]) }
   end
 
   # Return type as string
   def to_s(struct) do
-    # type
     struct.type
   end
 
   # Allow comparison with string
   def eql?(struct, other) do
-    # type == other.to_s
     struct.type == to_s(other)
   end
 
@@ -194,14 +168,6 @@ defmodule ExMarcel.Magic do
   end
 
   def magic_match(io, method) do
-    # buffer = IO.binread(io, 24)
-    # :file.position(io, :bof)
-    # return magic_match(StringIO.new(io.to_s), method) unless io.respond_to?(:read)
-
-    # io.binmode if io.respond_to?(:binmode)
-    # io.set_encoding(Encoding::BINARY) if io.respond_to?(:set_encoding)
-    # buffer = "".encode(Encoding::BINARY)
-
     case method do
       :find ->
         TableWrapper.magic()
@@ -213,8 +179,6 @@ defmodule ExMarcel.Magic do
       _ ->
         raise "no valid method for search magic bytes!"
     end
-
-    # MAGIC.send(method) { |type, matches| magic_match_io(io, matches, buffer) }
   end
 
   def magic_match_io(io, matches, buffer, type) do
@@ -222,49 +186,43 @@ defmodule ExMarcel.Magic do
       if value do
         value =
           cond do
-            is_list(value) -> to_string(value)
-            is_nil(value) -> ""
-            true -> value
+            is_list(value) ->
+              # IO.inspect(value, binaries: :as_strings)
+              List.first(value)
+
+            is_nil(value) ->
+              ""
+
+            true ->
+              value
           end
 
         cond do
           offset |> is_integer() ->
             # read first to skip buffer
-
             IO.binread(io, offset)
             buffer = IO.binread(io, byte_size(value))
 
-            if(type == "image/tiff") do
-              # IO.puts(value)
-              # IO.puts(buffer)
-              # require IEx
-              # IEx.pry()
-            end
-
-            # buffer <> buffer2
-
             if buffer == value do
-              # IO.puts("SI CTM")
               [true, children]
             else
               [false, children]
             end
 
-          offset |> is_list() ->
-            # here we ask for a range,
+          # here we ask for a range
+          offset.__struct__ == Range ->
+            # IO.inspect(value)
+            # IO.binread(io, offset.first)
+            x = IO.binread(io, offset.last - offset.first + byte_size(value))
 
-            buffer = IO.binread(io, offset.first)
+            case x do
+              :eof ->
+                [false, children]
 
-            x = buffer <> IO.binread(io, offset.end - offset.begin + byte_size(value))
-
-            result = x && String.contains?(x, value)
-            # io.read(offset.begin, buffer)
-            #  x = io.read(offset.end - offset.begin + value.bytesize, buffer)
-            #  a = x && x.include?(value)
-            #  puts "#{a} include"
-            #  a
-
-            [result, children]
+              _ ->
+                result = String.contains?(x, value)
+                [result, children]
+            end
 
           true ->
             [false, children]
@@ -293,42 +251,5 @@ defmodule ExMarcel.Magic do
 
       match && (!children || magic_match_io(io, children, buffer, type))
     end)
-
-    # matches.any? do |offset, value, children|
-    #   match =
-    #     if value
-    #       if Range === offset
-    #         io.read(offset.begin, buffer)
-    #         x = io.read(offset.end - offset.begin + value.bytesize, buffer)
-    #         x && x.include?(value)
-    #       else
-    #         io.read(offset, buffer)
-    #         io.read(value.bytesize, buffer) == value
-    #       end
-    #     end
-
-    #   io.rewind
-    #   match && (!children || magic_match_io(io, children, buffer))
-    # end
   end
-
-  def raw_binary_to_string(raw) do
-    codepoints = String.codepoints(raw)
-
-    Enum.reduce(
-      codepoints,
-      fn w, result ->
-        cond do
-          String.valid?(w) ->
-            result <> w
-
-          true ->
-            <<parsed::8>> = w
-            result <> <<parsed::utf8>>
-        end
-      end
-    )
-  end
-
-  # private_class_method :magic_match, :magic_match_io
 end

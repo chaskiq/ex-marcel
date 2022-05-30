@@ -18,10 +18,6 @@ defmodule ExMarcel.MimeType do
       |> Enum.uniq()
 
     Magic.add(type, extensions: extensions, magic: options.magic, parents: parents)
-
-    # extensions = (Array(extensions) + Array(Marcel::TYPE_EXTS[type])).uniq
-    # parents = (Array(parents) + Array(Marcel::TYPE_PARENTS[type])).uniq
-    # Magic.add(type, extensions: extensions, magic: magic, parents: parents)
   end
 
   @spec array(nil | binary | maybe_improper_list) :: maybe_improper_list
@@ -91,14 +87,6 @@ defmodule ExMarcel.MimeType do
         end
       end)
     end
-
-    # if pathname_or_io
-    #   with_io(pathname_or_io) do |io|
-    #     if magic = Marcel::Magic.by_magic(io)
-    #       magic.type.downcase
-    #     end
-    #   end
-    # end
   end
 
   defp for_name(name) do
@@ -107,12 +95,6 @@ defmodule ExMarcel.MimeType do
         magic.type |> String.downcase()
       end
     end
-
-    # if name
-    #   if magic = Marcel::Magic.by_path(name)
-    #     magic.type.downcase
-    #   end
-    # end
   end
 
   defp for_extension(extension) do
@@ -139,12 +121,6 @@ defmodule ExMarcel.MimeType do
       true ->
         nil
     end
-
-    # type = parse_media_type(declared_type)
-
-    # if type != @binary && !type.nil?
-    #  type.downcase
-    # end
   end
 
   defp with_io(pathname_or_io, block) do
@@ -174,14 +150,7 @@ defmodule ExMarcel.MimeType do
         String.contains?(result, "/") -> result
         true -> nil
       end
-
-      # result if result && result.index("/")
     end
-
-    # if content_type
-    #   result = content_type.downcase.split(/[;,\s]/, 2).first
-    #   result if result && result.index("/")
-    # end
   end
 
   # For some document types (notably Microsoft Office) we recognise the main content
@@ -200,13 +169,6 @@ defmodule ExMarcel.MimeType do
     else
       from_magic_type
     end
-
-    # if(root_types(from_magic_type))
-    # if (root_types(from_magic_type) & root_types(fallback_type)).any?
-    #   fallback_type
-    # else
-    #   from_magic_type
-    # end
   end
 
   defp root_types(type) do
@@ -219,11 +181,5 @@ defmodule ExMarcel.MimeType do
       end)
       |> List.flatten()
     end
-
-    # if TYPE_EXTS[type].nil? || TYPE_PARENTS[type].nil?
-    #   [ type ]
-    # else
-    #   TYPE_PARENTS[type].map {|t| root_types t }.flatten
-    # end
   end
 end

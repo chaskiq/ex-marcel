@@ -7,15 +7,17 @@ require 'nokogiri'
 require 'pry'
 
 class String
-  alias inspect_old inspect
+  #alias inspect_old inspect
 
-  def inspect
-    str = b.inspect_old.gsub(/\\x([0-9a-f]{2})/i) do
-      '\\%03o' % $1.to_i(16)
-    end
-    str.gsub!('"', '\'') unless str.match?(/[\\']/)
-    str
-  end
+  #def inspect
+  #  str = inspect_old
+  #  str.gsub!('"', '\'') unless str.match?(/[\\']/)
+  #  str = b.inspect_old.gsub(/\\x([0-9a-f]{2})/i) do
+  #    '\\%03o' % $1.to_i(16)
+  #  end
+  #  str.gsub!('"', '\'') unless str.match?(/[\\']/)
+  #  str
+  #end
 end
 
 class BinaryString
@@ -24,8 +26,10 @@ class BinaryString
   end
 
   def inspect
+    b = Hash.new { |h, k| h[k] = k.b.freeze }
     # "b[#{@string.inspect}]"
-    "[#{@string.inspect}]"
+    "[#{b[@string.inspect]}]"
+    #@string
   end
 end
 

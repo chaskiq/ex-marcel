@@ -1,5 +1,5 @@
 defmodule MimeTypeTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: true
   doctest ExMarcel
   alias ExMarcel.{MimeType}
 
@@ -28,10 +28,20 @@ defmodule MimeTypeTest do
     # assert_equal "image/gif", content_type
   end
 
+  test "gets content type from x-log" do
+    {:ok, file} = File.open(TestHelpers.files("name/text/x-log/x-log.log"))
+    content_type = MimeType.for(file, declared_type: "text/x-log")
+    assert "text/x-log" == content_type
+    # content_type = File.open @path do |file|
+    #  Marcel::MimeType.for file
+    # end
+    # assert_equal "image/gif", content_type
+  end
+
   test "gets content type from tif" do
     {:ok, file} = File.open(TestHelpers.files("magic/image/tiff/tiff.tif"))
     content_type = MimeType.for(file)
-    assert "video/webm" == content_type
+    assert "image/tiff" == content_type
     # content_type = File.open @path do |file|
     #  Marcel::MimeType.for file
     # end
