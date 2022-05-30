@@ -17,6 +17,24 @@ def deps do
 end
 ```
 
+## Configuration
+
+ExMarcel will store a dictionary of mime types so you will need to start the process for this, you can add it to your application or start it directly:
+
+```elixir
+  # application.ex
+  def start(_type, _args) do
+    children = [
+      ExMarcel.TableWrapper
+    ]
+```
+
+```elixir
+# or everywhere in your code
+ExMarcel.TableWrapper.start_link([])
+```
+
+
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/ex_marcel](https://hexdocs.pm/ex_marcel).
