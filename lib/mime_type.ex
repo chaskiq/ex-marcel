@@ -1,7 +1,7 @@
 defmodule ExMarcel.MimeType do
   @binary "application/octet-stream"
 
-  alias ExMarcel.Magic
+  alias ExMarcel.{Magic, TableWrapper}
 
   def extend(type, options \\ []) do
     defaults = [extensions: [], parents: [], magic: nil]
@@ -9,12 +9,12 @@ defmodule ExMarcel.MimeType do
 
     extensions =
       (array(options.extensions) ++
-         array(ExMarcel.TableWrapper.get("type_exts") |> Map.get(type)))
+         array(TableWrapper.get("type_exts") |> Map.get(type)))
       |> Enum.uniq()
 
     parents =
       (array(options.parents) ++
-         array(ExMarcel.TableWrapper.get("type_parents") |> Map.get(type)))
+         array(TableWrapper.get("type_parents") |> Map.get(type)))
       |> Enum.uniq()
 
     Magic.add(type, extensions: extensions, magic: options.magic, parents: parents)
@@ -55,6 +55,20 @@ defmodule ExMarcel.MimeType do
   def for(pathname_or_io \\ nil, options \\ []) do
     defaults = [name: nil, extension: nil, declared_type: nil]
     options = Keyword.merge(defaults, options) |> Enum.into(%{})
+
+    # if is a path or io handle file open on path
+    pathname_or_io =
+      cond do
+        is_binary(pathname_or_io) ->
+          {:ok, file} = File.open(pathname_or_io)
+          file
+
+        is_pid(pathname_or_io) ->
+          pathname_or_io
+
+        true ->
+          nil
+      end
 
     type_from_data = for_data(pathname_or_io)
 
@@ -174,8 +188,20 @@ defmodule ExMarcel.MimeType do
   # type with magic, but not the specific subclass. In this situation, if we can get a more
   # specific class using either the name or declared_type, we should use that in preference
   defp most_specific_type(from_magic_type, fallback_type) do
-    require IEx
-    IEx.pry()
+    intersection =
+      MapSet.intersection(
+        Enum.into(root_types(from_magic_type), MapSet.new()),
+        Enum.into(root_types(fallback_type), MapSet.new())
+      )
+      |> MapSet.to_list()
+
+    if intersection |> Enum.any?() do
+      fallback_type
+    else
+      from_magic_type
+    end
+
+    # if(root_types(from_magic_type))
     # if (root_types(from_magic_type) & root_types(fallback_type)).any?
     #   fallback_type
     # else
@@ -184,8 +210,16 @@ defmodule ExMarcel.MimeType do
   end
 
   defp root_types(type) do
-    require IEx
-    IEx.pry()
+    if is_nil(TableWrapper.type_exts()[type]) || is_nil(TableWrapper.type_parents()[type]) do
+      [type]
+    else
+      TableWrapper.type_parents()[type]
+      |> Enum.map(fn t ->
+        root_types(t)
+      end)
+      |> List.flatten()
+    end
+
     # if TYPE_EXTS[type].nil? || TYPE_PARENTS[type].nil?
     #   [ type ]
     # else

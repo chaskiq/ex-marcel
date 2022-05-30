@@ -41,11 +41,11 @@ defmodule TestHelpers do
 
       regex = ~r"\A([^\/]+\/[^\/]*)\/?(.*)\.(\w+)\Z"
 
-      [_, content_type, extra, extension] = Regex.run(regex, name)
+      [_, content_type, extra, _extension] = Regex.run(regex, name)
 
       size = content_type |> String.length()
 
-      extra =
+      _extra =
         if content_type |> String.slice(-size..-1) == extra do
           nil
         else

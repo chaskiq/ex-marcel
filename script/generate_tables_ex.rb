@@ -4,6 +4,7 @@
 # Copyright (c) 2011 Daniel Mendler. Available at https://github.com/mimemagicrb/mimemagic.
 
 require 'nokogiri'
+require 'pry'
 
 class String
   alias inspect_old inspect
@@ -63,11 +64,12 @@ def get_matches(parent)
     end
 
     offset = offset.size == 2 ? offset[0]..offset[1] : offset[0]
+
     case type
     when 'string', 'stringignorecase'
       value.gsub!(/\A0x([0-9a-f]+)\z/i) { [$1].pack('H*') }
       value.gsub!(/\\(x[\dA-Fa-f]{1,2}|0\d{1,3}|\d{1,3}|.)/) { eval("\"\\#{$1}\"") }
-
+      #value.gsub!(/\\(x[\dA-Fa-f]{1,2}|0\d{1,3}|\d{1,3}|.)/) { eval("\\#{$1}") }
       if mask
         segments = []
         mask.scan(/(?:FF)+/) do
@@ -110,6 +112,7 @@ def get_matches(parent)
       value = str2int(value)
       value = value.chr
     end
+
     children.empty? ? [offset, value] : [offset, value, children]
   }.compact
 end
