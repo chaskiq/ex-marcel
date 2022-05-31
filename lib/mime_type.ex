@@ -54,17 +54,37 @@ defmodule ExMarcel.MimeType do
 
     # if is a path or io handle file open on path
     pathname_or_io =
-      cond do
-        is_binary(pathname_or_io) ->
-          {:ok, file} = File.open(pathname_or_io)
+      case pathname_or_io do
+        {:io, pid} ->
+          if is_pid(pid) do
+            pid
+          else
+            raise "file is not pid, use File.open"
+          end
+
+        {:path, path} ->
+          {:ok, file} = File.open(path)
           file
 
-        is_pid(pathname_or_io) ->
-          pathname_or_io
+        {:string, string} ->
+          {:ok, pid} = :file.open(string, [:ram, :binary])
+          pid
 
-        true ->
+        nil ->
           nil
       end
+
+    # cond do
+    #  is_binary(pathname_or_io) ->
+    #    {:ok, file} = File.open(pathname_or_io)
+    #    file
+
+    #  is_pid(pathname_or_io) ->
+    #    pathname_or_io
+
+    #  true ->
+    #    nil
+    # end
 
     type_from_data = for_data(pathname_or_io)
 

@@ -19,7 +19,7 @@ defmodule MagicTest do
       #  assert
       # end
 
-      assert content_type == MimeType.for(file)
+      assert content_type == MimeType.for({:path, file})
 
       # test "gets type for #{content_type} by using only magic bytes #{name}" do
       #  IO.inspect(" NOT MATCHES FOR #{unquote(name)}")

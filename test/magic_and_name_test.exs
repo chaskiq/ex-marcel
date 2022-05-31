@@ -9,7 +9,7 @@ defmodule MagicAndNameTest do
     # generic type, while the name will choose a more specific subclass
     TestHelpers.each_content_type_fixture("name", fn [file, name, content_type] ->
       # IO.inspect("#{file}, #{name}")
-      assert content_type == MimeType.for(file, name: name)
+      assert content_type == MimeType.for({:path, file}, name: name)
     end)
   end
 end

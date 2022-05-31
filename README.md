@@ -30,7 +30,7 @@ ExMarcel will store a dictionary of mime types so you will need to start the pro
 ```
 
 ```elixir
-# or everywhere in your code
+# or anywhere in your code
 ExMarcel.TableWrapper.start_link([])
 ```
 
@@ -44,24 +44,25 @@ be found at [https://hexdocs.pm/ex_marcel](https://hexdocs.pm/ex_marcel).
 Marcel attempts to choose the most appropriate content type for a given file by looking at the binary data, the filename, and any declared type (perhaps passed as a request header). This is done via the `ExMarcel.MimeType.for` method, and is used like this:
 
 ```elixir
-ExMarcel.MimeType.for "example.gif"
+ExMarcel.MimeType.for {:path, "example.gif"}
 #  => "image/gif"
 
 file = File.open "example.gif"
-ExMarcel.MimeType.for file
+ExMarcel.MimeType.for {io: file}
 
 #  => "image/gif"
 
-ExMarcel.MimeType.for "unrecognisable-data", name: "example.pdf"
+ExMarcel.MimeType.for {:string, "unrecognisable-data"}, name: "example.pdf"
 #  => "application/pdf"
 
 ExMarcel.MimeType.for nil, extension: ".pdf"
 #  => "application/pdf"
 
-ExMarcel.MimeType.for "unrecognisable-data", name: "example", declared_type: "image/png"
+ExMarcel.MimeType.for {:string, "unrecognisable-data"}, name: "example", declared_type: "image/png"
 #  => "image/png"
 
-ExMarcel.MimeType.for StringIO.new(File.read "unrecognisable-data")
+
+ExMarcel.MimeType.for {:string, "unrecognisable-data"}
 #  => "application/octet-stream"
 ```
 
@@ -70,14 +71,14 @@ By preference, the magic number data in any passed in file is used to determine 
 Some types aren't easily recognised solely by magic number data. For example Adobe Illustrator files have the same magic number as PDFs (and can usually even be viewed in PDF viewers!). For these types, Marcel uses both the magic number data and the file name to work out the type:
 
 ```elixir
-ExMarcel.MimeType.for "example.ai", name: "example.ai"
+ExMarcel.MimeType.for {:path, "example.ai"}, name: "example.ai"
 #  => "application/illustrator"
 ```
 
 This only happens when the type from the filename is a more specific type of that from the magic number. If it isn't the magic number alone is used.
 
 ```elixir
-ExMarcel.MimeType.for "example.png", name: "example.ai"
+ExMarcel.MimeType.for {:path, "example.png"}, name: "example.ai"
 #  => "image/png"
 # As "application/illustrator" is not a more specific type of "image/png", the filename is ignored
 ```
