@@ -20,10 +20,10 @@ defmodule ExMarcel.MixProject do
   defp package() do
     [
       # This option is only needed when you don't want to use the OTP application name
-      name: "ex-marcel",
+      name: "ex_marcel",
       # These are the default files included in the package
-      files: ~w(lib .formatter.exs mix.exs README* *LICENSE CHANGELOG*),
-      licenses: ["MIT", "APACHE2"],
+      files: ~w(lib .formatter.exs mix.exs README* *LICENSE),
+      licenses: ["MIT", "Apache-2.0"],
       links: %{"GitHub" => "https://github.com/chaskiq/ex-marcel"}
     ]
   end
