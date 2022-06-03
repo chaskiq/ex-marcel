@@ -7,7 +7,24 @@ defmodule ExMarcel.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: description(),
+      package: package()
+    ]
+  end
+
+  defp description() do
+    "Find the mime type of files, examining file, filename and declared type"
+  end
+
+  defp package() do
+    [
+      # This option is only needed when you don't want to use the OTP application name
+      name: "ex-marcel",
+      # These are the default files included in the package
+      files: ~w(lib .formatter.exs mix.exs README* *LICENSE CHANGELOG*),
+      licenses: ["MIT", "APACHE2"],
+      links: %{"GitHub" => "https://github.com/chaskiq/ex-marcel"}
     ]
   end
 
