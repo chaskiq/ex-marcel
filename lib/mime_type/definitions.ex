@@ -11,7 +11,9 @@ defmodule ExMarcel.Definitions do
 
     ExMarcel.MimeType.extend("application/vnd.ms-excel", parents: "application/x-ole-storage")
 
-    ExMarcel.MimeType.extend("application/vnd.ms-powerpoint", parents: "application/x-ole-storage")
+    ExMarcel.MimeType.extend("application/vnd.ms-powerpoint",
+      parents: "application/x-ole-storage"
+    )
 
     ExMarcel.MimeType.extend(
       "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
