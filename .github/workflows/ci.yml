@@ -2,12 +2,19 @@ on: push
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ "ubuntu-20.04" ]
+        elixir: [ "1.16" ]
+        otp: [ "26" ]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: erlef/setup-beam@v1
         with:
-          otp-version: '24'
-          elixir-version: '1.12'
+          otp-version: ${{ matrix.otp }}
+          elixir-version: ${{ matrix.elixir }}
       - run: mix deps.get
+      - run: mix deps.compile
+      - run: mix format --check-formatted
       - run: mix test
