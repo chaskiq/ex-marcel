@@ -112,7 +112,7 @@ defmodule ExMarcel.Magic do
     mime =
       case ext |> String.slice(0..0) do
         "." ->
-          ext = ext |> String.slice(1..-1)
+          ext = ext |> String.slice(1..-1//-1)
           TableWrapper.extensions() |> Map.get(ext)
 
         _ ->
