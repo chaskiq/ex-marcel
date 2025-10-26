@@ -103,7 +103,19 @@ defmodule ExMarcel.MimeType do
     if pathname_or_io do
       with_io(pathname_or_io, fn io ->
         if magic = ExMarcel.Magic.by_magic(io) do
-          magic.type |> String.downcase()
+          detected_type = magic.type |> String.downcase()
+
+          # If we detected a ZIP file, check if it's actually an Office Open XML document
+          case detected_type do
+            "application/zip" ->
+              case ExMarcel.OfficeXmlDetector.detect(io) do
+                {:ok, office_type} -> office_type
+                :not_office -> detected_type
+              end
+
+            _ ->
+              detected_type
+          end
         end
       end)
     end
