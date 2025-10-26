@@ -1,20 +1,20 @@
 defmodule ExMarcel.MimeType do
-  @binary "application/octet-stream"
-
   alias ExMarcel.{Magic, TableWrapper}
+
+  @binary "application/octet-stream"
 
   def extend(type, options \\ []) do
     defaults = [extensions: [], parents: [], magic: nil]
-    options = Keyword.merge(defaults, options) |> Enum.into(%{})
+    options = Keyword.merge(defaults, options) |> Map.new()
 
     extensions =
       (array(options.extensions) ++
-         array(TableWrapper.get("type_exts") |> Map.get(type)))
+         (TableWrapper.get("type_exts") |> Map.get(type) |> array()))
       |> Enum.uniq()
 
     parents =
       (array(options.parents) ++
-         array(TableWrapper.get("type_parents") |> Map.get(type)))
+         (TableWrapper.get("type_parents") |> Map.get(type) |> array()))
       |> Enum.uniq()
 
     Magic.add(type, extensions: extensions, magic: options.magic, parents: parents)
@@ -50,7 +50,7 @@ defmodule ExMarcel.MimeType do
   # If no type can be determined, then +application/octet-stream+ is returned.
   def for(pathname_or_io \\ nil, options \\ []) do
     defaults = [name: nil, extension: nil, declared_type: nil]
-    options = Keyword.merge(defaults, options) |> Enum.into(%{})
+    options = Keyword.merge(defaults, options) |> Map.new()
 
     # if is a path or io handle file open on path
     pathname_or_io =
@@ -134,12 +134,8 @@ defmodule ExMarcel.MimeType do
   defp for_declared_type(declared_type) do
     type = parse_media_type(declared_type)
 
-    cond do
-      type != @binary && !is_nil(type) ->
-        type |> String.downcase()
-
-      true ->
-        nil
+    if type != @binary && !is_nil(type) do
+      type |> String.downcase()
     end
   end
 
@@ -166,9 +162,8 @@ defmodule ExMarcel.MimeType do
           _ -> nil
         end
 
-      cond do
-        String.contains?(result, "/") -> result
-        true -> nil
+      if String.contains?(result, "/") do
+        result
       end
     end
   end
@@ -179,8 +174,8 @@ defmodule ExMarcel.MimeType do
   defp most_specific_type(from_magic_type, fallback_type) do
     intersection =
       MapSet.intersection(
-        Enum.into(root_types(from_magic_type), MapSet.new()),
-        Enum.into(root_types(fallback_type), MapSet.new())
+        MapSet.new(root_types(from_magic_type)),
+        MapSet.new(root_types(fallback_type))
       )
       |> MapSet.to_list()
 

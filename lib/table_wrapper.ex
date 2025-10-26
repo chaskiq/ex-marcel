@@ -19,7 +19,7 @@ defmodule ExMarcel.TableWrapper do
     GenServer.start_link(__MODULE__, arg, name: __MODULE__)
   end
 
-  def setup() do
+  def setup do
     ExMarcel.TableWrapper.put("extensions", ExMarcel.Tables.extensions())
     ExMarcel.TableWrapper.put("type_exts", ExMarcel.Tables.type_exts())
     ExMarcel.TableWrapper.put("type_parents", ExMarcel.Tables.type_parents())

@@ -1,7 +1,9 @@
 defmodule ExtensionTest do
   use ExUnit.Case, async: true
+
+  alias ExMarcel.MimeType
+
   doctest ExMarcel
-  alias ExMarcel.{MimeType}
 
   test "ignores case and any preceding dot" do
     assert "application/pdf" = ExMarcel.MimeType.for(nil, extension: "PDF")
@@ -12,7 +14,7 @@ defmodule ExtensionTest do
 
   test "gets type for content_type given file extension extension" do
     # extensions = []
-    TestHelpers.each_content_type_fixture('name', fn [file, _name, content_type] ->
+    TestHelpers.each_content_type_fixture(~c"name", fn [file, _name, content_type] ->
       extension = Path.extname(file)
       assert content_type == MimeType.for(nil, extension: extension)
     end)

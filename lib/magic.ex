@@ -2,17 +2,18 @@
 # Copyright (c) 2011 Daniel Mendler. Available at https://github.com/mimemagicrb/mimemagic.
 
 defmodule ExMarcel.Magic do
-  defstruct [:type, :mediatype, :subtype]
   alias ExMarcel.TableWrapper
+
+  defstruct [:mediatype, :subtype, :type]
 
   # Mime type by type string
   def new(type) do
     [mediatype, subtype] = String.split(type, "/")
 
     %__MODULE__{
-      type: type,
       mediatype: mediatype,
-      subtype: subtype
+      subtype: subtype,
+      type: type
     }
   end
 
@@ -27,7 +28,7 @@ defmodule ExMarcel.Magic do
   # * <i>:comment</i>: Comment string
   def add(type, options \\ []) do
     defaults = [extensions: nil, magic: nil, parents: nil]
-    options = Keyword.merge(defaults, options) |> Enum.into(%{})
+    options = Keyword.merge(defaults, options) |> Map.new()
 
     extensions = options.extensions
 
@@ -112,7 +113,7 @@ defmodule ExMarcel.Magic do
     mime =
       case ext |> String.slice(0..0) do
         "." ->
-          ext = ext |> String.slice(1..-1)
+          ext = ext |> String.slice(1..-1//1)
           TableWrapper.extensions() |> Map.get(ext)
 
         _ ->
@@ -161,8 +162,6 @@ defmodule ExMarcel.Magic do
   # alias == eql?
 
   def child?(child, parent) do
-    require IEx
-    IEx.pry()
     child == parent || TableWrapper.type_parents()
     # child == parent || TYPE_PARENTS[child]&.any? {|p| child?(p, parent) }
   end
@@ -211,8 +210,9 @@ defmodule ExMarcel.Magic do
 
           # here we ask for a range
           offset.__struct__ == Range ->
-            # IO.inspect(value)
-            # IO.binread(io, offset.first)
+            # Skip to the start of the range
+            IO.binread(io, offset.first)
+            # Read from offset.first to offset.last plus value size
             x = IO.binread(io, offset.last - offset.first + byte_size(value))
 
             case x do

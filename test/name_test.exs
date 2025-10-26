@@ -1,5 +1,6 @@
 defmodule NameTest do
   use ExUnit.Case, async: true
+
   doctest ExMarcel
 
   test "gets type for content_type by filename from name" do

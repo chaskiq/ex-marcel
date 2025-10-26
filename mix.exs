@@ -1,45 +1,77 @@
 defmodule ExMarcel.MixProject do
   use Mix.Project
 
+  @version "0.2.0"
+  @source_url "https://github.com/neilberkman/ex-marcel"
+
   def project do
     [
       app: :ex_marcel,
-      version: "0.1.0",
-      elixir: "~> 1.12",
-      start_permanent: Mix.env() == :prod,
-      deps: deps(),
+      name: "ExMarcel",
+      version: @version,
+      elixir: "~> 1.14",
+      source_url: @source_url,
+      homepage_url: @source_url,
       description: description(),
-      package: package()
+      package: package(),
+      deps: deps(),
+      docs: docs(),
+      test_coverage: [tool: ExCoveralls],
+      start_permanent: Mix.env() == :prod
     ]
   end
 
-  defp description() do
-    "Find the mime type of files, examining file, filename and declared type"
-  end
-
-  defp package() do
+  def cli do
     [
-      # This option is only needed when you don't want to use the OTP application name
-      name: "ex_marcel",
-      # These are the default files included in the package
-      files: ~w(lib .formatter.exs mix.exs README* *LICENSE),
-      licenses: ["MIT", "Apache-2.0"],
-      links: %{"GitHub" => "https://github.com/chaskiq/ex-marcel"}
+      preferred_envs: [coveralls: :test]
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
-    [
-      extra_applications: [:logger]
-    ]
+    [extra_applications: [:logger]]
   end
 
-  # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
+      # Dev/Test dependencies
+      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:excoveralls, "~> 0.18", only: :test},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:dialyxir, "~> 1.4", only: [:dev, :test], runtime: false},
+      {:quokka, "~> 2.11", only: :dev}
+    ]
+  end
+
+  defp description do
+    """
+    MIME type detection library for Elixir - Modernized community fork of ex-marcel
+    """
+  end
+
+  defp package do
+    [
+      files: ["lib", "data", "mix.exs", "README*", "LICENSE", "CHANGELOG.md"],
+      maintainers: ["Neil Berkman"],
+      licenses: ["MIT"],
+      links: %{
+        "Changelog" => "https://hexdocs.pm/ex_marcel/changelog.html",
+        "GitHub" => @source_url
+      }
+    ]
+  end
+
+  defp docs do
+    [
+      extras: [
+        "README.md",
+        "CHANGELOG.md"
+      ],
+      main: "readme",
+      source_ref: "v#{@version}",
+      source_url: @source_url,
+      groups_for_extras: [
+        Changelog: ~r/CHANGELOG\.md/
+      ]
     ]
   end
 end
