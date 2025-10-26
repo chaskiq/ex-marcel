@@ -45,6 +45,17 @@ defmodule ExMarcel.OfficeXmlDetector do
     end
   end
 
+  def detect({:file_descriptor, :ram_file, port}) do
+    # File descriptor tuple - extract the port and read from it
+    case :file.read(port, 1_000_000_000) do
+      {:ok, binary} ->
+        detect_from_binary(binary)
+
+      _error ->
+        :not_office
+    end
+  end
+
   defp detect_from_binary(binary) do
     case :zip.zip_open(binary, [:memory]) do
       {:ok, handle} ->
