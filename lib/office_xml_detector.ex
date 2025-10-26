@@ -48,18 +48,19 @@ defmodule ExMarcel.OfficeXmlDetector do
   defp detect_from_binary(binary) do
     case :zip.zip_open(binary, [:memory]) do
       {:ok, handle} ->
-        result = case :zip.zip_list_dir(handle) do
-          {:ok, file_list} ->
-            filenames = extract_filenames(file_list)
+        result =
+          case :zip.zip_list_dir(handle) do
+            {:ok, file_list} ->
+              filenames = extract_filenames(file_list)
 
-            case office_document_type(filenames) do
-              mime_type when is_binary(mime_type) -> {:ok, mime_type}
-              false -> :not_office
-            end
+              case office_document_type(filenames) do
+                mime_type when is_binary(mime_type) -> {:ok, mime_type}
+                false -> :not_office
+              end
 
-          _error ->
-            :not_office
-        end
+            _error ->
+              :not_office
+          end
 
         :zip.zip_close(handle)
         result
