@@ -2,7 +2,7 @@ defmodule ExMarcel.MixProject do
   use Mix.Project
 
   @version "0.2.0"
-  @source_url "https://github.com/neilberkman/ex-marcel"
+  @source_url "https://github.com/chaskiq/ex-marcel"
 
   def project do
     [
