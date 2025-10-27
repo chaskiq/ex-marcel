@@ -44,15 +44,15 @@ defmodule ExMarcel.MixProject do
 
   defp description do
     """
-    MIME type detection library for Elixir - Modernized community fork of ex-marcel
+    MIME type detection library for Elixir
     """
   end
 
   defp package do
     [
-      files: ["lib", "data", "mix.exs", "README*", "LICENSE", "CHANGELOG.md"],
+      files: ["lib", "data", "mix.exs", "README*", "*LICENSE", "CHANGELOG.md"],
       maintainers: ["Neil Berkman"],
-      licenses: ["MIT"],
+      licenses: ["MIT", "Apache-2.0"],
       links: %{
         "Changelog" => "https://hexdocs.pm/ex_marcel/changelog.html",
         "GitHub" => @source_url

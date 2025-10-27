@@ -2,7 +2,7 @@
 
 ## An Elixir port of Rails's Marcel Mimetype detector.
 
-[![.github/workflows/ci.yml](https://github.com/chaskiq/ex-marcel/actions/workflows/ci.yml/badge.svg)](https://github.com/chaskiq/ex-marcel/actions/workflows/ci.yml)
+[![.github/workflows/ci.yml](https://github.com/chaskiq/ex-marcel/actions/workflows/elixir.yml/badge.svg)](https://github.com/chaskiq/ex-marcel/actions/workflows/elixir.yml)
 
 ## Installation
 
