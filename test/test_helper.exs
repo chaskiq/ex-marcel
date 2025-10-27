@@ -9,9 +9,10 @@ defmodule FlatFiles do
   end
 
   defp _list_all(filepath) do
-    cond do
-      String.contains?(filepath, ".git") -> []
-      true -> expand(File.ls(filepath), filepath)
+    if String.contains?(filepath, ".git") do
+      []
+    else
+      expand(File.ls(filepath), filepath)
     end
   end
 
@@ -46,9 +47,7 @@ defmodule TestHelpers do
       size = content_type |> String.length()
 
       _extra =
-        if content_type |> String.slice(-size..-1) == extra do
-          nil
-        else
+        if content_type |> String.slice(-size..-1) != extra do
           extra
         end
 
@@ -68,9 +67,7 @@ defmodule TestHelpers do
       size = content_type |> String.length()
 
       _extra =
-        if content_type |> String.slice(-size..-1) == extra do
-          nil
-        else
+        if content_type |> String.slice(-size..-1) != extra do
           extra
         end
 

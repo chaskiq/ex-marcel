@@ -1,4 +1,3 @@
-
 # This file is auto-generated. Instead of editing this file, please
 # add MIMEs to data/custom.xml or lib/marcel/mime_type/definitions.rb.
 
@@ -6,9 +5,11 @@ defmodule ExMarcel.Tables do
   @extensions %{
     "123" => "application/vnd.lotus-1-2-3",
     "3dml" => "text/vnd.in3d.3dml",
+    "3ds" => "image/x-3ds",
     "3fr" => "image/x-raw-hasselblad",
     "3g2" => "video/3gpp2",
     "3gp" => "video/3gpp",
+    "3mf" => "application/vnd.ms-package.3dmanufacturing-3dmodel+xml",
     "4th" => "text/x-forth",
     "7z" => "application/x-7z-compressed",
     "a" => "application/x-archive",
@@ -21,6 +22,7 @@ defmodule ExMarcel.Tables do
     "ac" => "text/plain",
     "ac3" => "audio/ac3",
     "acc" => "application/vnd.americandynamics.acc",
+    "accdb" => "application/x-msaccess",
     "ace" => "application/x-ace-compressed",
     "acfm" => "application/x-font-adobe-metric",
     "acu" => "application/vnd.acucobol",
@@ -29,6 +31,7 @@ defmodule ExMarcel.Tables do
     "ad.txt" => "text/x-asciidoc",
     "ada" => "text/x-ada",
     "adb" => "text/x-ada",
+    "adf" => "application/x-amiga-disk-format",
     "adoc" => "text/x-asciidoc",
     "adoc.txt" => "text/x-asciidoc",
     "adp" => "audio/adpcm",
@@ -45,6 +48,7 @@ defmodule ExMarcel.Tables do
     "aj" => "text/x-aspectj",
     "al" => "text/x-perl",
     "am" => "text/plain",
+    "amf" => "application/x-amf",
     "amfm" => "application/x-font-adobe-metric",
     "ami" => "application/vnd.amiga.ami",
     "amr" => "audio/amr",
@@ -108,6 +112,7 @@ defmodule ExMarcel.Tables do
     "brotli" => "application/x-brotli",
     "bsh" => "text/plain",
     "btif" => "image/prs.btif",
+    "bup" => "application/x-dvd-ifo",
     "bz" => "application/x-bzip",
     "bz2" => "application/x-bzip2",
     "c" => "text/x-c++src",
@@ -127,6 +132,7 @@ defmodule ExMarcel.Tables do
     "cc" => "text/x-c++src",
     "cct" => "application/x-director",
     "ccxml" => "application/ccxml+xml",
+    "cda" => "application/x-cdf",
     "cdbcmsg" => "application/vnd.contact.cmsg",
     "cdf" => "application/x-netcdf",
     "cdkey" => "application/vnd.mediastation.cdkey",
@@ -134,6 +140,7 @@ defmodule ExMarcel.Tables do
     "cdx" => "chemical/x-cdx",
     "cdxml" => "application/vnd.chemdraw+xml",
     "cdy" => "application/vnd.cinderella",
+    "cel" => "image/vnd.dgn",
     "cer" => "application/pkix-cert",
     "cfc" => "text/x-coldfusion",
     "cfg" => "text/x-config",
@@ -175,7 +182,8 @@ defmodule ExMarcel.Tables do
     "cpio" => "application/x-cpio",
     "cpp" => "text/x-c++src",
     "cpt" => "application/mac-compactpro",
-    "cr2" => "image/x-raw-canon",
+    "cr2" => "image/x-canon-cr2",
+    "cr3" => "image/x-canon-cr3",
     "crd" => "application/x-mscardfile",
     "crl" => "application/pkix-crl",
     "crt" => "application/x-x509-cert",
@@ -216,6 +224,8 @@ defmodule ExMarcel.Tables do
     "der" => "application/x-x509-cert;format=der",
     "dex" => "application/x-dex",
     "dfac" => "application/vnd.dreamfactory",
+    "dgn" => "image/vnd.dgn",
+    "dgnlib" => "image/vnd.dgn",
     "dib" => "image/bmp",
     "dif" => "application/dif+xml",
     "diff" => "text/x-diff",
@@ -265,6 +275,7 @@ defmodule ExMarcel.Tables do
     "dxp" => "application/vnd.spotfire.dxp",
     "dxr" => "application/x-director",
     "e" => "text/x-eiffel",
+    "e57" => "model/e57",
     "ear" => "application/x-tika-java-enterprise-archive",
     "ecelp4800" => "audio/vnd.nuera.ecelp4800",
     "ecelp7470" => "audio/vnd.nuera.ecelp7470",
@@ -283,6 +294,7 @@ defmodule ExMarcel.Tables do
     "emma" => "application/emma+xml",
     "emz" => "image/x-emf-compressed",
     "enr" => "application/x-endnote-refer",
+    "ens" => "application/x-endnote-style",
     "ent" => "text/plain",
     "enw" => "application/x-endnote-refer",
     "eol" => "audio/vnd.digital-winds",
@@ -310,6 +322,7 @@ defmodule ExMarcel.Tables do
     "f90" => "text/x-fortran",
     "fb2" => "application/x-fictionbook+xml",
     "fbs" => "image/vnd.fastbidsheet",
+    "fcs" => "application/vnd.isac.fcs",
     "fdf" => "application/vnd.fdf",
     "fe_launch" => "application/vnd.denovo.fcselayout-link",
     "fff" => "image/x-raw-imacon",
@@ -380,7 +393,10 @@ defmodule ExMarcel.Tables do
     "gnucash" => "application/x-gnucash",
     "gnumeric" => "application/x-gnumeric",
     "go" => "text/x-go",
+    "gp4" => "application/x-guitar-pro",
+    "gpg" => "application/pgp-encrypted",
     "gph" => "application/vnd.flographit",
+    "gpkg" => "application/x-geopackage",
     "gqf" => "application/vnd.grafeq",
     "gqs" => "application/vnd.grafeq",
     "gram" => "application/srgs",
@@ -393,6 +409,7 @@ defmodule ExMarcel.Tables do
     "grv" => "application/vnd.groove-injector",
     "grxml" => "application/srgs+xml",
     "gsf" => "application/x-font-ghostscript",
+    "gslib" => "audio/x-psf",
     "gtar" => "application/x-gtar",
     "gtm" => "application/vnd.groove-tool-message",
     "gtw" => "model/vnd.gtw",
@@ -431,6 +448,7 @@ defmodule ExMarcel.Tables do
     "hvd" => "application/vnd.yamaha.hv-dic",
     "hvp" => "application/vnd.yamaha.hv-voice",
     "hvs" => "application/vnd.yamaha.hv-script",
+    "hwpx" => "application/hwp+zip",
     "hx" => "text/x-haxe",
     "hxx" => "text/x-c++hdr",
     "i3" => "text/x-modula",
@@ -443,9 +461,11 @@ defmodule ExMarcel.Tables do
     "ico" => "image/vnd.microsoft.icon",
     "ics" => "text/calendar",
     "idl" => "text/x-idl",
+    "idml" => "application/vnd.adobe.indesign-idml-package",
     "ief" => "image/ief",
     "ifb" => "text/calendar",
     "ifm" => "application/vnd.shana.informed.formdata",
+    "ifo" => "application/x-dvd-ifo",
     "ig" => "text/x-modula",
     "iges" => "model/iges",
     "igl" => "application/vnd.igloader",
@@ -477,10 +497,12 @@ defmodule ExMarcel.Tables do
     "java" => "text/x-java-source",
     "jb2" => "image/x-jbig2",
     "jbig2" => "image/x-jbig2",
+    "jdf" => "application/x-jeol-jdf",
     "jfi" => "image/jpeg",
     "jfif" => "image/jpeg",
     "jif" => "image/jpeg",
     "jisp" => "application/vnd.jisp",
+    "jks" => "application/x-java-keystore",
     "jl" => "text/x-common-lisp",
     "jlt" => "application/vnd.hp-jlyt",
     "jmx" => "text/plain",
@@ -496,11 +518,12 @@ defmodule ExMarcel.Tables do
     "jpgm" => "image/jpm",
     "jpgv" => "video/jpeg",
     "jpm" => "image/jpm",
-    "js" => "application/javascript",
+    "js" => "text/javascript",
     "json" => "application/json",
     "jsp" => "text/x-jsp",
     "junit" => "text/plain",
     "jx" => "text/plain",
+    "jxl" => "image/jxl",
     "k25" => "image/x-raw-kodak",
     "kar" => "audio/midi",
     "karbon" => "application/vnd.kde.karbon",
@@ -522,7 +545,9 @@ defmodule ExMarcel.Tables do
     "kwd" => "application/vnd.kde.kword",
     "kwt" => "application/vnd.kde.kword",
     "l" => "text/x-lex",
+    "las" => "application/x-asprs",
     "latex" => "application/x-latex",
+    "laz" => "application/x-asprs",
     "lbd" => "application/vnd.llamagraphics.life-balance.desktop",
     "lbe" => "application/vnd.llamagraphics.life-balance.exchange+xml",
     "les" => "application/vnd.hhe.lesson-player",
@@ -543,6 +568,7 @@ defmodule ExMarcel.Tables do
     "lua" => "text/x-lua",
     "lvp" => "audio/vnd.lucent.voice",
     "lwp" => "application/vnd.lotus-wordpro",
+    "lyr" => "application/x-esri-layer",
     "lz" => "application/x-lzip",
     "lz4" => "application/x-lz4",
     "lzh" => "application/octet-stream",
@@ -597,8 +623,12 @@ defmodule ExMarcel.Tables do
     "midi" => "audio/midi",
     "mif" => "application/vnd.mif",
     "mime" => "message/rfc822",
+    "minigsf" => "audio/x-psf",
+    "minipsf" => "audio/x-psf",
+    "minipsf1" => "audio/x-psf",
     "mj2" => "video/mj2",
     "mjp2" => "video/mj2",
+    "mjs" => "text/javascript",
     "mka" => "audio/x-matroska",
     "mkd" => "text/x-web-markdown",
     "mkv" => "video/x-matroska",
@@ -646,6 +676,7 @@ defmodule ExMarcel.Tables do
     "mrc" => "application/marc",
     "mrw" => "image/x-raw-minolta",
     "ms" => "text/troff",
+    "msa" => "application/vnd.msa-disk-image",
     "mscml" => "application/mediaservercontrol+xml",
     "mseed" => "application/vnd.fdsn.mseed",
     "mseq" => "application/vnd.mseq",
@@ -676,6 +707,7 @@ defmodule ExMarcel.Tables do
     "nc" => "application/x-netcdf",
     "ncx" => "application/x-dtbncx+xml",
     "nef" => "image/x-raw-nikon",
+    "nes" => "application/x-nesrom",
     "ngdat" => "application/vnd.nokia.n-gage.data",
     "nitf" => "image/nitf",
     "nlu" => "application/vnd.neurolanguage.nlu",
@@ -744,12 +776,14 @@ defmodule ExMarcel.Tables do
     "p7s" => "application/pkcs7-signature",
     "pack" => "application/x-java-pack200",
     "pages" => "application/vnd.apple.pages",
+    "pam" => "image/x-portable-arbitrarymap",
     "parquet" => "application/x-parquet",
     "pas" => "text/x-pascal",
     "patch" => "text/x-diff",
     "pbd" => "application/vnd.powerbuilder6",
     "pbm" => "image/x-portable-bitmap",
     "pcap" => "application/vnd.tcpdump.pcap",
+    "pcapng" => "application/vnd.tcpdump.pcapng",
     "pcf" => "application/x-font-pcf",
     "pcl" => "application/vnd.hp-pcl",
     "pclxl" => "application/vnd.hp-pclxl",
@@ -818,6 +852,8 @@ defmodule ExMarcel.Tables do
     "psb" => "application/vnd.3gpp.pic-bw-small",
     "psd" => "image/vnd.adobe.photoshop",
     "psf" => "application/x-font-linux-psf",
+    "psf1" => "audio/x-psf",
+    "psflib" => "audio/x-psf",
     "pst" => "application/vnd.ms-outlook-pst",
     "ptid" => "application/vnd.pvi.ptid1",
     "ptx" => "image/x-raw-pentax",
@@ -887,6 +923,7 @@ defmodule ExMarcel.Tables do
     "s7m" => "application/x-sas-dmdb",
     "sa7" => "application/x-sas-access",
     "saf" => "application/vnd.yamaha.smaf-audio",
+    "sap" => "audio/x-sap",
     "sas" => "application/x-sas",
     "sas7bacs" => "application/x-sas-access",
     "sas7baud" => "application/x-sas-audit",
@@ -903,9 +940,11 @@ defmodule ExMarcel.Tables do
     "sas7butl" => "application/x-sas-utility",
     "sas7bvew" => "application/x-sas-view",
     "sass" => "text/x-sass",
+    "sav" => "application/x-spss-sav",
     "sbml" => "application/sbml+xml",
     "sc" => "application/vnd.ibm.secure-container",
     "sc7" => "application/x-sas-catalog",
+    "scad" => "application/x-openscad",
     "scala" => "text/x-scala",
     "scd" => "application/x-msschedule",
     "schemas" => "text/plain",
@@ -945,6 +984,7 @@ defmodule ExMarcel.Tables do
     "shp" => "application/x-shapefile",
     "shw" => "application/x-corelpresentations",
     "si7" => "application/x-sas-data-index",
+    "sib" => "application/x-sibelius",
     "sig" => "application/pgp-signature",
     "silo" => "model/mesh",
     "sis" => "application/vnd.symbian.install",
@@ -983,6 +1023,7 @@ defmodule ExMarcel.Tables do
     "src" => "application/x-wais-source",
     "srf" => "image/x-raw-sony",
     "srl" => "application/sereal",
+    "srt" => "application/x-subrip",
     "srx" => "application/sparql-results+xml",
     "ss7" => "application/x-sas-program-data",
     "sse" => "application/vnd.kodak-descriptor",
@@ -995,7 +1036,7 @@ defmodule ExMarcel.Tables do
     "stf" => "application/vnd.wt.stf",
     "sti" => "application/vnd.sun.xml.impress.template",
     "stk" => "application/hyperstudio",
-    "stl" => "application/vnd.ms-pki.stl",
+    "stl" => "model/x.stl-binary",
     "str" => "application/vnd.pg.format",
     "stw" => "application/vnd.sun.xml.writer.template",
     "stx" => "application/x-sas-transport",
@@ -1040,6 +1081,7 @@ defmodule ExMarcel.Tables do
     "tk" => "text/x-tcl",
     "tld" => "text/plain",
     "tmo" => "application/vnd.tmobile-livetv",
+    "tmx" => "application/x-tmx",
     "toast" => "application/x-roxio-toast",
     "torrent" => "application/x-bittorrent",
     "tpl" => "application/vnd.groove-tool-template",
@@ -1051,12 +1093,14 @@ defmodule ExMarcel.Tables do
     "tsv" => "text/tab-separated-values",
     "ttc" => "application/x-font-ttf",
     "ttf" => "application/x-font-ttf",
+    "ttml" => "application/ttml+xml",
     "twd" => "application/vnd.simtech-mindmapper",
     "twds" => "application/vnd.simtech-mindmapper",
     "txd" => "application/vnd.genomatix.tuxedo",
     "txf" => "application/vnd.mobius.txf",
     "txt" => "text/plain",
     "types" => "text/plain",
+    "tzx" => "application/x-spectrum-tzx",
     "u32" => "application/x-authorware-bin",
     "uc2" => "application/x-uc2-compressed",
     "udeb" => "application/x-debian-package",
@@ -1080,6 +1124,7 @@ defmodule ExMarcel.Tables do
     "vcs" => "text/x-vcalendar",
     "vcx" => "application/vnd.vcx",
     "vda" => "image/x-tga",
+    "vf" => "application/x-tex-virtual-font",
     "vhd" => "text/x-vhdl",
     "vhdl" => "text/x-vhdl",
     "vis" => "application/vnd.visionary",
@@ -1109,6 +1154,7 @@ defmodule ExMarcel.Tables do
     "wad" => "application/x-doom",
     "war" => "application/x-tika-java-web-archive",
     "warc" => "application/warc",
+    "warc.gz" => "application/warc+gz",
     "wasm" => "application/wasm",
     "wav" => "audio/vnd.wave",
     "wax" => "audio/x-ms-wax",
@@ -1122,6 +1168,7 @@ defmodule ExMarcel.Tables do
     "wdb" => "application/vnd.ms-works",
     "webarchive" => "application/x-webarchive",
     "webm" => "video/webm",
+    "webmanifest" => "application/manifest+json",
     "webp" => "image/webp",
     "wk1" => "application/vnd.lotus-1-2-3",
     "wk2" => "application/vnd.lotus-1-2-3",
@@ -1243,14 +1290,16 @@ defmodule ExMarcel.Tables do
     "xz" => "application/x-xz",
     "y" => "text/x-yacc",
     "yaml" => "text/x-yaml",
+    "yml" => "text/x-yaml",
     "z" => "application/x-compress",
     "zaz" => "application/vnd.zzazz.deck+xml",
     "zip" => "application/zip",
+    "zipx" => "application/zip",
     "zir" => "application/vnd.zul",
     "zirz" => "application/vnd.zul",
     "zmm" => "application/vnd.handheld-entertainment+xml",
     "zoo" => "application/x-zoo",
-    "zstd" => "application/zstd",
+    "zst" => "application/zstd"
   }
   @type_exts %{
     "application/andrew-inset" => ["ez"],
@@ -1258,53 +1307,88 @@ defmodule ExMarcel.Tables do
     "application/atom+xml" => ["atom"],
     "application/atomcat+xml" => ["atomcat"],
     "application/atomsvc+xml" => ["atomsvc"],
-    "application/bizagi-modeler" => ["bpm"], # BizAgi Process Modeler
-    "application/cbor" => ["cbor"], # Concise Binary Object Representation container
+    # BizAgi Process Modeler
+    "application/bizagi-modeler" => ["bpm"],
+    # Concise Binary Object Representation container
+    "application/cbor" => ["cbor"],
     "application/ccxml+xml" => ["ccxml"],
-    "application/coreldraw" => ["cdr"], # des: CorelDraw X4 and newer
+    # des: CorelDraw X4 and newer
+    "application/coreldraw" => ["cdr"],
     "application/cu-seeme" => ["cu"],
     "application/dash+xml" => ["mpd"],
     "application/davmount+xml" => ["davmount"],
     "application/dif+xml" => ["dif"],
-    "application/dita+xml;format=map" => ["ditamap"], # DITA Map
-    "application/dita+xml;format=topic" => ["dita"], # DITA Topic
-    "application/dita+xml;format=val" => ["ditaval"], # DITA Conditional Processing Profile
+    # DITA Map
+    "application/dita+xml;format=map" => ["ditamap"],
+    # DITA Topic
+    "application/dita+xml;format=topic" => ["dita"],
+    # DITA Conditional Processing Profile
+    "application/dita+xml;format=val" => ["ditaval"],
     "application/ecmascript" => ["ecma"],
     "application/emma+xml" => ["emma"],
     "application/envi.hdr" => ["hdr"],
-    "application/epub+zip" => ["epub"], # Electronic Publication
-    "application/fits" => ["fits", "fit", "fts"], # Flexible Image Transport System
+    # Electronic Publication
+    "application/epub+zip" => ["epub"],
+    # Flexible Image Transport System
+    "application/fits" => ["fits", "fit", "fts"],
     "application/font-tdpfr" => ["pfr"],
-    "application/gzip" => ["gz", "tgz"], # Gzip Compressed Archive
+    # Gzip Compressed Archive
+    "application/gzip" => ["gz", "tgz"],
+    # Hangul Word Processor File, zip based
+    "application/hwp+zip" => ["hwpx"],
     "application/hyperstudio" => ["stk"],
-    "application/illustrator" => ["ai"], # Adobe Illustrator Artwork
-    "application/java-archive" => ["jar"], # Java Archive
+    # Adobe Illustrator Artwork
+    "application/illustrator" => ["ai"],
+    # Java Archive
+    "application/java-archive" => ["jar"],
     "application/java-serialized-object" => ["ser"],
-    "application/java-vm" => ["class"], # Java Class File
-    "application/javascript" => ["js"], # JavaScript Source Code
+    # Java Class File
+    "application/java-vm" => ["class"],
     "application/json" => ["json"],
     "application/lost+xml" => ["lostxml"],
     "application/mac-binhex40" => ["hqx"],
     "application/mac-compactpro" => ["cpt"],
+    # Web Application Manifest file
+    "application/manifest+json" => ["webmanifest"],
     "application/marc" => ["mrc"],
-    "application/mathematica" => ["ma", "nb", "mb"], # Wolfram Mathematica
+    # Wolfram Mathematica
+    "application/mathematica" => ["ma", "nb", "mb"],
     "application/mathml+xml" => ["mathml"],
     "application/mbox" => ["mbox"],
     "application/mediaservercontrol+xml" => ["mscml"],
-    "application/mp4" => ["mp4s"], # MP4 container format
-    "application/msword" => ["doc", "dot"], # Microsoft Word Document
+    # MP4 container format
+    "application/mp4" => ["mp4s"],
+    # Microsoft Word Document
+    "application/msword" => ["doc", "dot"],
     "application/mxf" => ["mxf"],
-    "application/octet-stream" => ["bin", "dms", "lha", "lrf", "lzh", "so", "dist", "distz", "pkg", "bpk", "dump", "elc", "deploy"],
+    "application/octet-stream" => [
+      "bin",
+      "dms",
+      "lha",
+      "lrf",
+      "lzh",
+      "so",
+      "dist",
+      "distz",
+      "pkg",
+      "bpk",
+      "dump",
+      "elc",
+      "deploy"
+    ],
     "application/oda" => ["oda"],
     "application/oebps-package+xml" => ["opf"],
     "application/ogg" => ["ogx"],
     "application/onenote" => ["onetmp"],
-    "application/onenote; format=package" => ["onepkg"], # OneNote Package
+    # OneNote Package
+    "application/onenote; format=package" => ["onepkg"],
     "application/onenote;format=one" => ["one"],
-    "application/onenote;format=onetoc2" => ["onetoc", "onetoc2"], # OneNote Table of Contents
+    # OneNote Table of Contents
+    "application/onenote;format=onetoc2" => ["onetoc", "onetoc2"],
     "application/patch-ops-error+xml" => ["xer"],
-    "application/pdf" => ["pdf"], # Portable Document Format
-    "application/pgp-encrypted" => ["pgp"],
+    # Portable Document Format
+    "application/pdf" => ["pdf"],
+    "application/pgp-encrypted" => ["pgp", "gpg"],
     "application/pgp-signature" => ["asc", "sig"],
     "application/pics-rules" => ["prf"],
     "application/pkcs10" => ["p10"],
@@ -1315,9 +1399,11 @@ defmodule ExMarcel.Tables do
     "application/pkix-pkipath" => ["pkipath"],
     "application/pkixcmp" => ["pki"],
     "application/pls+xml" => ["pls"],
-    "application/postscript" => ["ps", "eps", "epsf", "epsi"], # PostScript
+    # PostScript
+    "application/postscript" => ["ps", "eps", "epsf", "epsi"],
     "application/prs.cww" => ["cww"],
-    "application/rdf+xml" => ["rdf", "owl", "xmp"], # XML syntax for RDF graphs
+    # XML syntax for RDF graphs
+    "application/rdf+xml" => ["rdf", "owl", "xmp"],
     "application/reginfo+xml" => ["rif"],
     "application/relax-ng-compact-syntax" => ["rnc"],
     "application/resource-lists+xml" => ["rl"],
@@ -1325,25 +1411,30 @@ defmodule ExMarcel.Tables do
     "application/rls-services+xml" => ["rs"],
     "application/rsd+xml" => ["rsd"],
     "application/rss+xml" => ["rss"],
-    "application/rtf" => ["rtf"], # Rich Text Format File
+    # Rich Text Format File
+    "application/rtf" => ["rtf"],
     "application/sbml+xml" => ["sbml"],
     "application/scvp-cv-request" => ["scq"],
     "application/scvp-cv-response" => ["scs"],
     "application/scvp-vp-request" => ["spq"],
     "application/scvp-vp-response" => ["spp"],
     "application/sdp" => ["sdp"],
-    "application/sereal" => ["srl"], # Sereal binary serialization format
+    # Sereal binary serialization format
+    "application/sereal" => ["srl"],
     "application/set-payment-initiation" => ["setpay"],
     "application/set-registration-initiation" => ["setreg"],
     "application/shf+xml" => ["shf"],
-    "application/sldworks" => ["sldprt", "sldasm", "slddrw"], # SolidWorks CAD program
-    "application/smil+xml" => ["smi", "smil", "sml"], # SMIL Multimedia
+    # SolidWorks CAD program
+    "application/sldworks" => ["sldprt", "sldasm", "slddrw"],
+    # SMIL Multimedia
+    "application/smil+xml" => ["smi", "smil", "sml"],
     "application/sparql-query" => ["rq"],
     "application/sparql-results+xml" => ["srx"],
     "application/srgs" => ["gram"],
     "application/srgs+xml" => ["grxml"],
     "application/ssml+xml" => ["ssml"],
     "application/timestamped-data" => ["tsd"],
+    "application/ttml+xml" => ["ttml"],
     "application/vnd.3gpp.pic-bw-large" => ["plb"],
     "application/vnd.3gpp.pic-bw-small" => ["psb"],
     "application/vnd.3gpp.pic-bw-var" => ["pvb"],
@@ -1356,6 +1447,8 @@ defmodule ExMarcel.Tables do
     "application/vnd.adobe.aftereffects.project" => ["aep"],
     "application/vnd.adobe.aftereffects.template" => ["aet"],
     "application/vnd.adobe.air-application-installer-package+zip" => ["air"],
+    # IDML
+    "application/vnd.adobe.indesign-idml-package" => ["idml"],
     "application/vnd.adobe.xdp+xml" => ["xdp"],
     "application/vnd.adobe.xfdf" => ["xfdf"],
     "application/vnd.airzip.filesecure.azf" => ["azf"],
@@ -1409,11 +1502,14 @@ defmodule ExMarcel.Tables do
     "application/vnd.epson.salt" => ["slt"],
     "application/vnd.epson.ssf" => ["ssf"],
     "application/vnd.eszigno3+xml" => ["es3", "et3"],
-    "application/vnd.etsi.asic-e+zip" => ["asice"], # Extended Associated Signature Container
-    "application/vnd.etsi.asic-s+zip" => ["asics"], # Simple Associated Signature Container
+    # Extended Associated Signature Container
+    "application/vnd.etsi.asic-e+zip" => ["asice"],
+    # Simple Associated Signature Container
+    "application/vnd.etsi.asic-s+zip" => ["asics"],
     "application/vnd.ezpix-album" => ["ez2"],
     "application/vnd.ezpix-package" => ["ez3"],
-    "application/vnd.fdf" => ["fdf"], # Forms Data Format
+    # Forms Data Format
+    "application/vnd.fdf" => ["fdf"],
     "application/vnd.fdsn.mseed" => ["mseed"],
     "application/vnd.fdsn.seed" => ["seed", "dataless"],
     "application/vnd.flographit" => ["gph"],
@@ -1436,7 +1532,8 @@ defmodule ExMarcel.Tables do
     "application/vnd.geogebra.tool" => ["ggt"],
     "application/vnd.geometry-explorer" => ["gex", "gre"],
     "application/vnd.gmx" => ["gmx"],
-    "application/vnd.google-earth.kml+xml" => ["kml"], # Keyhole Markup Language
+    # Keyhole Markup Language
+    "application/vnd.google-earth.kml+xml" => ["kml"],
     "application/vnd.google-earth.kmz" => ["kmz"],
     "application/vnd.grafeq" => ["gqf", "gqs"],
     "application/vnd.groove-account" => ["gac"],
@@ -1468,37 +1565,52 @@ defmodule ExMarcel.Tables do
     "application/vnd.intercon.formnet" => ["xpw", "xpx"],
     "application/vnd.intu.qbo" => ["qbo"],
     "application/vnd.intu.qfx" => ["qfx"],
-    "application/vnd.iptc.g2.newsmessage+xml" => ["nar"], # XML syntax for IPTC NewsMessages
+    # XML syntax for IPTC NewsMessages
+    "application/vnd.iptc.g2.newsmessage+xml" => ["nar"],
     "application/vnd.ipunplugged.rcprofile" => ["rcprofile"],
     "application/vnd.irepository.package+xml" => ["irp"],
     "application/vnd.is-xpr" => ["xpr"],
+    # Flow Cytometry Standard File
+    "application/vnd.isac.fcs" => ["fcs"],
     "application/vnd.jam" => ["jam"],
-    "application/vnd.java.hprof " => ["hprof"], # Java hprof text file
-    "application/vnd.java.hprof.text" => ["hprof.txt"], # Java hprof text file
+    # Java hprof text file
+    "application/vnd.java.hprof " => ["hprof"],
+    # Java hprof text file
+    "application/vnd.java.hprof.text" => ["hprof.txt"],
     "application/vnd.jcp.javame.midlet-rms" => ["rms"],
     "application/vnd.jisp" => ["jisp"],
     "application/vnd.joost.joda-archive" => ["joda"],
     "application/vnd.kahootz" => ["ktz", "ktr"],
     "application/vnd.kde.karbon" => ["karbon"],
-    "application/vnd.kde.kchart" => ["chrt"], # KChart File
+    # KChart File
+    "application/vnd.kde.kchart" => ["chrt"],
     "application/vnd.kde.kformula" => ["kfo"],
     "application/vnd.kde.kivio" => ["flw"],
     "application/vnd.kde.kontour" => ["kon"],
-    "application/vnd.kde.kpresenter" => ["kpr", "kpt"], # KPresenter File
-    "application/vnd.kde.kspread" => ["ksp"], # KSpread File
-    "application/vnd.kde.kword" => ["kwd", "kwt"], # KWord File
+    # KPresenter File
+    "application/vnd.kde.kpresenter" => ["kpr", "kpt"],
+    # KSpread File
+    "application/vnd.kde.kspread" => ["ksp"],
+    # KWord File
+    "application/vnd.kde.kword" => ["kwd", "kwt"],
     "application/vnd.kenameaapp" => ["htke"],
     "application/vnd.kidspiration" => ["kia"],
     "application/vnd.kinar" => ["kne", "knp"],
-    "application/vnd.koan" => ["skp", "skd", "skt", "skm"], # SSEYO Koan File
+    # SSEYO Koan File
+    "application/vnd.koan" => ["skp", "skd", "skt", "skm"],
     "application/vnd.kodak-descriptor" => ["sse"],
     "application/vnd.llamagraphics.life-balance.desktop" => ["lbd"],
     "application/vnd.llamagraphics.life-balance.exchange+xml" => ["lbe"],
-    "application/vnd.lotus-1-2-3" => ["wk1", "wk2", "wk3", "wk4", "123"], # Lotus 1-2-3
-    "application/vnd.lotus-1-2-3;version=2" => ["wk1", "wk2"], # Lotus 1-2-3, version 2
-    "application/vnd.lotus-1-2-3;version=3" => ["wk3"], # Lotus 1-2-3, version 3
-    "application/vnd.lotus-1-2-3;version=4" => ["wk4"], # Lotus 1-2-3, version 4-5
-    "application/vnd.lotus-1-2-3;version=97+9.x" => ["123"], # Lotus 1-2-3, version 97/9.x
+    # Lotus 1-2-3
+    "application/vnd.lotus-1-2-3" => ["wk1", "wk2", "wk3", "wk4", "123"],
+    # Lotus 1-2-3, version 2
+    "application/vnd.lotus-1-2-3;version=2" => ["wk1", "wk2"],
+    # Lotus 1-2-3, version 3
+    "application/vnd.lotus-1-2-3;version=3" => ["wk3"],
+    # Lotus 1-2-3, version 4-5
+    "application/vnd.lotus-1-2-3;version=4" => ["wk4"],
+    # Lotus 1-2-3, version 97/9.x
+    "application/vnd.lotus-1-2-3;version=97+9.x" => ["123"],
     "application/vnd.lotus-approach" => ["apr"],
     "application/vnd.lotus-freelance" => ["pre"],
     "application/vnd.lotus-notes" => ["nsf"],
@@ -1512,8 +1624,10 @@ defmodule ExMarcel.Tables do
     "application/vnd.mfmp" => ["mfm"],
     "application/vnd.micrografx.flo" => ["flo"],
     "application/vnd.micrografx.igx" => ["igx"],
-    "application/vnd.mif" => ["mif"], # FrameMaker Interchange Format
-    "application/vnd.mindjet.mindmanager" => ["mmp", "mmap", "mmpt", "mmat", "mmmp", "mmas"], # MindManager
+    # FrameMaker Interchange Format
+    "application/vnd.mif" => ["mif"],
+    # MindManager
+    "application/vnd.mindjet.mindmanager" => ["mmp", "mmap", "mmpt", "mmat", "mmmp", "mmas"],
     "application/vnd.mobius.daf" => ["daf"],
     "application/vnd.mobius.dis" => ["dis"],
     "application/vnd.mobius.mbk" => ["mbk"],
@@ -1526,37 +1640,60 @@ defmodule ExMarcel.Tables do
     "application/vnd.mozilla.xul+xml" => ["xul"],
     "application/vnd.ms-artgalry" => ["cil"],
     "application/vnd.ms-cab-compressed" => ["cab"],
-    "application/vnd.ms-excel" => ["xls", "xlm", "xla", "xlc", "xlt", "xlw", "xll", "xld"], # Microsoft Excel Spreadsheet
-    "application/vnd.ms-excel.addin.macroenabled.12" => ["xlam"], # Office Open XML Workbook Add-in (macro-enabled)
-    "application/vnd.ms-excel.sheet.binary.macroenabled.12" => ["xlsb"], # Microsoft Excel 2007 Binary Spreadsheet
-    "application/vnd.ms-excel.sheet.macroenabled.12" => ["xlsm"], # Office Open XML Workbook (macro-enabled)
-    "application/vnd.ms-excel.template.macroenabled.12" => ["xltm"], # Office Open XML Workbook Template (macro-enabled)
+    # Microsoft Excel Spreadsheet
+    "application/vnd.ms-excel" => ["xls", "xlm", "xla", "xlc", "xlt", "xlw", "xll", "xld"],
+    # Office Open XML Workbook Add-in (macro-enabled)
+    "application/vnd.ms-excel.addin.macroenabled.12" => ["xlam"],
+    # Microsoft Excel 2007 Binary Spreadsheet
+    "application/vnd.ms-excel.sheet.binary.macroenabled.12" => ["xlsb"],
+    # Office Open XML Workbook (macro-enabled)
+    "application/vnd.ms-excel.sheet.macroenabled.12" => ["xlsm"],
+    # Office Open XML Workbook Template (macro-enabled)
+    "application/vnd.ms-excel.template.macroenabled.12" => ["xltm"],
     "application/vnd.ms-fontobject" => ["eot"],
     "application/vnd.ms-htmlhelp" => ["chm"],
     "application/vnd.ms-ims" => ["ims"],
     "application/vnd.ms-lrm" => ["lrm"],
-    "application/vnd.ms-outlook" => ["msg"], # Microsoft Outlook Message
-    "application/vnd.ms-outlook-pst" => ["pst", "ost"], # Outlook Personal Folders File Format
+    # Microsoft Outlook Message
+    "application/vnd.ms-outlook" => ["msg"],
+    # Outlook Personal Folders File Format
+    "application/vnd.ms-outlook-pst" => ["pst", "ost"],
+    # 3D manufacturing format
+    "application/vnd.ms-package.3dmanufacturing-3dmodel+xml" => ["3mf"],
     "application/vnd.ms-pki.seccat" => ["cat"],
-    "application/vnd.ms-pki.stl" => ["stl"],
-    "application/vnd.ms-powerpoint" => ["ppt", "ppz", "pps", "pot", "ppa"], # Microsoft Powerpoint Presentation
-    "application/vnd.ms-powerpoint.addin.macroenabled.12" => ["ppam"], # Office Open XML Presentation Add-in (macro-enabled)
-    "application/vnd.ms-powerpoint.presentation.macroenabled.12" => ["pptm"], # Office Open XML Presentation (macro-enabled)
+    # Microsoft Powerpoint Presentation
+    "application/vnd.ms-powerpoint" => ["ppt", "ppz", "pps", "pot", "ppa"],
+    # Office Open XML Presentation Add-in (macro-enabled)
+    "application/vnd.ms-powerpoint.addin.macroenabled.12" => ["ppam"],
+    # Office Open XML Presentation (macro-enabled)
+    "application/vnd.ms-powerpoint.presentation.macroenabled.12" => ["pptm"],
     "application/vnd.ms-powerpoint.slide.macroenabled.12" => ["sldm"],
-    "application/vnd.ms-powerpoint.slideshow.macroenabled.12" => ["ppsm"], # Office Open XML Presentation Slideshow (macro-enabled)
+    # Office Open XML Presentation Slideshow (macro-enabled)
+    "application/vnd.ms-powerpoint.slideshow.macroenabled.12" => ["ppsm"],
     "application/vnd.ms-powerpoint.template.macroenabled.12" => ["potm"],
     "application/vnd.ms-project" => ["mpp", "mpt"],
-    "application/vnd.ms-visio.drawing" => ["vsdx"], # Office Open XML Visio Drawing (macro-free)
-    "application/vnd.ms-visio.drawing.macroEnabled.12" => ["vsdm"], # Office Open XML Visio Drawing (macro-enabled)
-    "application/vnd.ms-visio.stencil" => ["vssx"], # Office Open XML Visio Stencil (macro-free)
-    "application/vnd.ms-visio.stencil.macroEnabled.12" => ["vssm"], # Office Open XML Visio Stencil (macro-enabled)
-    "application/vnd.ms-visio.template" => ["vstx"], # Office Open XML Visio Template (macro-free)
-    "application/vnd.ms-visio.template.macroEnabled.12" => ["vstm"], # Office Open XML Visio Template (macro-enabled)
-    "application/vnd.ms-word.document.macroenabled.12" => ["docm"], # Office Open XML Document (macro-enabled)
-    "application/vnd.ms-word.template.macroenabled.12" => ["dotm"], # Office Open XML Document Template (macro-enabled)
+    # Office Open XML Visio Drawing (macro-free)
+    "application/vnd.ms-visio.drawing" => ["vsdx"],
+    # Office Open XML Visio Drawing (macro-enabled)
+    "application/vnd.ms-visio.drawing.macroEnabled.12" => ["vsdm"],
+    # Office Open XML Visio Stencil (macro-free)
+    "application/vnd.ms-visio.stencil" => ["vssx"],
+    # Office Open XML Visio Stencil (macro-enabled)
+    "application/vnd.ms-visio.stencil.macroEnabled.12" => ["vssm"],
+    # Office Open XML Visio Template (macro-free)
+    "application/vnd.ms-visio.template" => ["vstx"],
+    # Office Open XML Visio Template (macro-enabled)
+    "application/vnd.ms-visio.template.macroEnabled.12" => ["vstm"],
+    # Office Open XML Document (macro-enabled)
+    "application/vnd.ms-word.document.macroenabled.12" => ["docm"],
+    # Office Open XML Document Template (macro-enabled)
+    "application/vnd.ms-word.template.macroenabled.12" => ["dotm"],
     "application/vnd.ms-works" => ["wps", "wks", "wcm", "wdb"],
     "application/vnd.ms-wpl" => ["wpl"],
-    "application/vnd.ms-xpsdocument" => ["xps", "oxps"], # Open XML Paper Specification
+    # Open XML Paper Specification
+    "application/vnd.ms-xpsdocument" => ["xps", "oxps"],
+    # Magic Shadow Archiver
+    "application/vnd.msa-disk-image" => ["msa"],
     "application/vnd.mseq" => ["mseq"],
     "application/vnd.musician" => ["mus"],
     "application/vnd.muvee.style" => ["msty"],
@@ -1572,37 +1709,66 @@ defmodule ExMarcel.Tables do
     "application/vnd.novadigm.edx" => ["edx"],
     "application/vnd.novadigm.ext" => ["ext"],
     "application/vnd.oasis.opendocument.base" => ["odb"],
-    "application/vnd.oasis.opendocument.chart" => ["odc"], # OpenDocument v1.0: Chart document
-    "application/vnd.oasis.opendocument.chart-template" => ["otc"], # OpenDocument v1.0: Chart document used as template
-    "application/vnd.oasis.opendocument.flat.presentation" => ["fodp"], # OpenDocument v1.0: Flat Presentation document
-    "application/vnd.oasis.opendocument.flat.spreadsheet" => ["fods"], # OpenDocument v1.0: Flat Spreadsheet document
-    "application/vnd.oasis.opendocument.flat.text" => ["fodt"], # OpenDocument v1.0: Flat Text document
-    "application/vnd.oasis.opendocument.formula" => ["odf"], # OpenDocument v1.0: Formula document
-    "application/vnd.oasis.opendocument.formula-template" => ["odft"], # OpenDocument v1.0: Formula document used as template
-    "application/vnd.oasis.opendocument.graphics" => ["odg"], # OpenDocument v1.0: Graphics document (Drawing)
-    "application/vnd.oasis.opendocument.graphics-template" => ["otg"], # OpenDocument v1.0: Graphics document used as template
-    "application/vnd.oasis.opendocument.image" => ["odi"], # OpenDocument v1.0: Image document
-    "application/vnd.oasis.opendocument.image-template" => ["oti"], # OpenDocument v1.0: Image document used as template
-    "application/vnd.oasis.opendocument.presentation" => ["odp"], # OpenDocument v1.0: Presentation document
-    "application/vnd.oasis.opendocument.presentation-template" => ["otp"], # OpenDocument v1.0: Presentation document used as template
-    "application/vnd.oasis.opendocument.spreadsheet" => ["ods"], # OpenDocument v1.0: Spreadsheet document
-    "application/vnd.oasis.opendocument.spreadsheet-template" => ["ots"], # OpenDocument v1.0: Spreadsheet document used as template
-    "application/vnd.oasis.opendocument.text" => ["odt"], # OpenDocument v1.0: Text document
-    "application/vnd.oasis.opendocument.text-master" => ["otm"], # OpenDocument v1.0: Global Text document
-    "application/vnd.oasis.opendocument.text-template" => ["ott"], # OpenDocument v1.0: Text document used as template
-    "application/vnd.oasis.opendocument.text-web" => ["oth"], # OpenDocument v1.0: Text document used as template for HTML documents
+    # OpenDocument v1.0: Chart document
+    "application/vnd.oasis.opendocument.chart" => ["odc"],
+    # OpenDocument v1.0: Chart document used as template
+    "application/vnd.oasis.opendocument.chart-template" => ["otc"],
+    # OpenDocument v1.0: Flat Presentation document
+    "application/vnd.oasis.opendocument.flat.presentation" => ["fodp"],
+    # OpenDocument v1.0: Flat Spreadsheet document
+    "application/vnd.oasis.opendocument.flat.spreadsheet" => ["fods"],
+    # OpenDocument v1.0: Flat Text document
+    "application/vnd.oasis.opendocument.flat.text" => ["fodt"],
+    # OpenDocument v1.0: Formula document
+    "application/vnd.oasis.opendocument.formula" => ["odf"],
+    # OpenDocument v1.0: Formula document used as template
+    "application/vnd.oasis.opendocument.formula-template" => ["odft"],
+    # OpenDocument v1.0: Graphics document (Drawing)
+    "application/vnd.oasis.opendocument.graphics" => ["odg"],
+    # OpenDocument v1.0: Graphics document used as template
+    "application/vnd.oasis.opendocument.graphics-template" => ["otg"],
+    # OpenDocument v1.0: Image document
+    "application/vnd.oasis.opendocument.image" => ["odi"],
+    # OpenDocument v1.0: Image document used as template
+    "application/vnd.oasis.opendocument.image-template" => ["oti"],
+    # OpenDocument v1.0: Presentation document
+    "application/vnd.oasis.opendocument.presentation" => ["odp"],
+    # OpenDocument v1.0: Presentation document used as template
+    "application/vnd.oasis.opendocument.presentation-template" => ["otp"],
+    # OpenDocument v1.0: Spreadsheet document
+    "application/vnd.oasis.opendocument.spreadsheet" => ["ods"],
+    # OpenDocument v1.0: Spreadsheet document used as template
+    "application/vnd.oasis.opendocument.spreadsheet-template" => ["ots"],
+    # OpenDocument v1.0: Text document
+    "application/vnd.oasis.opendocument.text" => ["odt"],
+    # OpenDocument v1.0: Global Text document
+    "application/vnd.oasis.opendocument.text-master" => ["otm"],
+    # OpenDocument v1.0: Text document used as template
+    "application/vnd.oasis.opendocument.text-template" => ["ott"],
+    # OpenDocument v1.0: Text document used as template for HTML documents
+    "application/vnd.oasis.opendocument.text-web" => ["oth"],
     "application/vnd.olpc-sugar" => ["xo"],
     "application/vnd.oma.dd2+xml" => ["dd2"],
     "application/vnd.openofficeorg.autotext" => ["bau"],
     "application/vnd.openofficeorg.extension" => ["oxt"],
-    "application/vnd.openxmlformats-officedocument.presentationml.presentation" => ["pptx", "thmx"], # Office Open XML Presentation
+    # Office Open XML Presentation
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation" => [
+      "pptx",
+      "thmx"
+    ],
     "application/vnd.openxmlformats-officedocument.presentationml.slide" => ["sldx"],
-    "application/vnd.openxmlformats-officedocument.presentationml.slideshow" => ["ppsx"], # Office Open XML Presentation Slideshow
-    "application/vnd.openxmlformats-officedocument.presentationml.template" => ["potx"], # Office Open XML Presentation Template
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" => ["xlsx"], # Office Open XML Workbook
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.template" => ["xltx"], # Office Open XML Workbook Template
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document" => ["docx"], # Office Open XML Document
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.template" => ["dotx"], # Office Open XML Document Template
+    # Office Open XML Presentation Slideshow
+    "application/vnd.openxmlformats-officedocument.presentationml.slideshow" => ["ppsx"],
+    # Office Open XML Presentation Template
+    "application/vnd.openxmlformats-officedocument.presentationml.template" => ["potx"],
+    # Office Open XML Workbook
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" => ["xlsx"],
+    # Office Open XML Workbook Template
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.template" => ["xltx"],
+    # Office Open XML Document
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document" => ["docx"],
+    # Office Open XML Document Template
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.template" => ["dotx"],
     "application/vnd.osgi.dp" => ["dp"],
     "application/vnd.palm" => ["pqa", "oprc"],
     "application/vnd.pg.format" => ["str"],
@@ -1647,7 +1813,8 @@ defmodule ExMarcel.Tables do
     "application/vnd.sun.xml.impress" => ["sxi"],
     "application/vnd.sun.xml.impress.template" => ["sti"],
     "application/vnd.sun.xml.math" => ["sxm"],
-    "application/vnd.sun.xml.writer" => ["sxw"], # OpenOffice v1.0: Writer Document
+    # OpenOffice v1.0: Writer Document
+    "application/vnd.sun.xml.writer" => ["sxw"],
     "application/vnd.sun.xml.writer.global" => ["sxg"],
     "application/vnd.sun.xml.writer.template" => ["stw"],
     "application/vnd.sus-calendar" => ["sus", "susp"],
@@ -1657,7 +1824,10 @@ defmodule ExMarcel.Tables do
     "application/vnd.syncml.dm+wbxml" => ["bdm"],
     "application/vnd.syncml.dm+xml" => ["xdm"],
     "application/vnd.tao.intent-module-archive" => ["tao"],
-    "application/vnd.tcpdump.pcap" => ["pcap", "cap", "dmp"], # TCPDump pcap packet capture
+    # TCPDump pcap packet capture
+    "application/vnd.tcpdump.pcap" => ["pcap", "cap", "dmp"],
+    # TCPDump next gen pcap packet capture
+    "application/vnd.tcpdump.pcapng" => ["pcapng"],
     "application/vnd.tmobile-livetv" => ["tmo"],
     "application/vnd.trid.tpt" => ["tpt"],
     "application/vnd.triscape.mxs" => ["mxs"],
@@ -1668,15 +1838,20 @@ defmodule ExMarcel.Tables do
     "application/vnd.unity" => ["unityweb"],
     "application/vnd.uoml+xml" => ["uoml"],
     "application/vnd.vcx" => ["vcx"],
-    "application/vnd.visio" => ["vsd", "vst", "vss", "vsw"], # Microsoft Visio Diagram
+    # Microsoft Visio Diagram
+    "application/vnd.visio" => ["vsd", "vst", "vss", "vsw"],
     "application/vnd.visionary" => ["vis"],
     "application/vnd.vsf" => ["vsf"],
     "application/vnd.wap.wbxml" => ["wbxml"],
-    "application/vnd.wap.wmlc" => ["wmlc"], # Compiled WML Document
-    "application/vnd.wap.wmlscriptc" => ["wmlsc"], # Compiled WML Script
+    # Compiled WML Document
+    "application/vnd.wap.wmlc" => ["wmlc"],
+    # Compiled WML Script
+    "application/vnd.wap.wmlscriptc" => ["wmlsc"],
     "application/vnd.webturbo" => ["wtb"],
-    "application/vnd.wolfram.wl" => ["wl"], # Wolfram Language
-    "application/vnd.wordperfect" => ["wpd", "wp", "wp5", "wp6", "w60", "wp61", "wpt"], # WordPerfect - Corel Word Processing
+    # Wolfram Language
+    "application/vnd.wolfram.wl" => ["wl"],
+    # WordPerfect - Corel Word Processing
+    "application/vnd.wordperfect" => ["wpd", "wp", "wp5", "wp6", "w60", "wp61", "wpt"],
     "application/vnd.wqd" => ["wqd"],
     "application/vnd.wt.stf" => ["stf"],
     "application/vnd.xara" => ["xar"],
@@ -1692,92 +1867,154 @@ defmodule ExMarcel.Tables do
     "application/vnd.zul" => ["zir", "zirz"],
     "application/vnd.zzazz.deck+xml" => ["zaz"],
     "application/voicexml+xml" => ["vxml"],
-    "application/warc" => ["warc"], # WARC
-    "application/wasm" => ["wasm"], # Web Assembly
+    # WARC
+    "application/warc" => ["warc"],
+    # WARC
+    "application/warc+gz" => ["warc.gz"],
+    # Web Assembly
+    "application/wasm" => ["wasm"],
     "application/winhlp" => ["hlp"],
     "application/wsdl+xml" => ["wsdl"],
     "application/wspolicy+xml" => ["wspolicy"],
-    "application/x-7z-compressed" => ["7z"], # 7-zip archive
+    # 7-zip archive
+    "application/x-7z-compressed" => ["7z"],
     "application/x-abiword" => ["abw"],
     "application/x-ace-compressed" => ["ace"],
-    "application/x-adobe-indesign" => ["indd"], # Adobe InDesign document
-    "application/x-adobe-indesign-interchange" => ["inx"], # Adobe InDesign Interchange format
+    # Adobe InDesign document
+    "application/x-adobe-indesign" => ["indd"],
+    # Adobe InDesign Interchange format
+    "application/x-adobe-indesign-interchange" => ["inx"],
+    "application/x-amf" => ["amf"],
+    # Amiga Disk File
+    "application/x-amiga-disk-format" => ["adf"],
     "application/x-apple-diskimage" => ["dmg"],
     "application/x-appleworks" => ["cwk"],
     "application/x-archive" => ["ar", "a"],
     "application/x-arj" => ["arj"],
+    # ASPRS Lidar Data Exchange Format
+    "application/x-asprs" => ["las", "laz"],
     "application/x-authorware-bin" => ["aab", "x32", "u32", "vox"],
     "application/x-authorware-map" => ["aam"],
     "application/x-authorware-seg" => ["aas"],
-    "application/x-axcrypt" => ["axx"], # AxCrypt
-    "application/x-bat" => ["bat", "cmd"], # Windows Batch / Command File
+    # AxCrypt
+    "application/x-axcrypt" => ["axx"],
+    # Windows Batch / Command File
+    "application/x-bat" => ["bat", "cmd"],
     "application/x-bcpio" => ["bcpio"],
     "application/x-bibtex-text-file" => ["bib", "bibtex"],
     "application/x-bittorrent" => ["torrent"],
     "application/x-brotli" => ["br", "brotli"],
     "application/x-bzip" => ["bz", "tbz"],
-    "application/x-bzip2" => ["bz2", "tbz2", "boz"], # Bzip 2 UNIX Compressed File
-    "application/x-cdlink" => ["vcd"], # Virtual CD-ROM CD Image File
+    # Bzip 2 UNIX Compressed File
+    "application/x-bzip2" => ["bz2", "tbz2", "boz"],
+    # CD Audio
+    "application/x-cdf" => ["cda"],
+    # Virtual CD-ROM CD Image File
+    "application/x-cdlink" => ["vcd"],
     "application/x-chat" => ["chat"],
     "application/x-chess-pgn" => ["pgn"],
-    "application/x-chrome-package" => ["crx"], # Chrome Extension Package
+    # Chrome Extension Package
+    "application/x-chrome-package" => ["crx"],
     "application/x-compress" => ["z"],
     "application/x-corelpresentations" => ["shw"],
-    "application/x-cpio" => ["cpio"], # UNIX CPIO Archive
+    # UNIX CPIO Archive
+    "application/x-cpio" => ["cpio"],
     "application/x-csh" => ["csh", "tcsh"],
     "application/x-dbf" => ["dbf", "dbase", "dbase3"],
     "application/x-debian-package" => ["deb", "udeb"],
-    "application/x-dex" => ["dex"], # Dalvik Executable Format
-    "application/x-director" => ["dir", "dcr", "dxr", "cst", "cct", "cxt", "w3d", "fgd", "swa"], # Shockwave Movie
+    # Dalvik Executable Format
+    "application/x-dex" => ["dex"],
+    # Shockwave Movie
+    "application/x-director" => ["dir", "dcr", "dxr", "cst", "cct", "cxt", "w3d", "fgd", "swa"],
     "application/x-doom" => ["wad"],
-    "application/x-dosexec" => ["exe"], # DOS/Windows executable (EXE)
+    # DOS/Windows executable (EXE)
+    "application/x-dosexec" => ["exe"],
     "application/x-dtbncx+xml" => ["ncx"],
     "application/x-dtbook+xml" => ["dtb"],
     "application/x-dtbresource+xml" => ["res"],
-    "application/x-dvi" => ["dvi"], # TeX Device Independent Document
-    "application/x-elc" => ["elc"], # Emacs Lisp bytecode
+    # DVD information file
+    "application/x-dvd-ifo" => ["ifo", "bup"],
+    # TeX Device Independent Document
+    "application/x-dvi" => ["dvi"],
+    # Emacs Lisp bytecode
+    "application/x-elc" => ["elc"],
     "application/x-endnote-refer" => ["enw", "enr"],
+    "application/x-endnote-style" => ["ens"],
     "application/x-erdas-hfa" => ["hfa"],
-    "application/x-fictionbook+xml" => ["fb2"], # FictionBook document
-    "application/x-filemaker" => ["fp7"], # FileMaker Pro 7
-    "application/x-font-adobe-metric" => ["afm", "acfm", "amfm"], # Adobe Font Metric
+    # ESRI Layer file
+    "application/x-esri-layer" => ["lyr"],
+    # FictionBook document
+    "application/x-fictionbook+xml" => ["fb2"],
+    # FileMaker Pro 7
+    "application/x-filemaker" => ["fp7"],
+    # Adobe Font Metric
+    "application/x-font-adobe-metric" => ["afm", "acfm", "amfm"],
     "application/x-font-bdf" => ["bdf"],
     "application/x-font-ghostscript" => ["gsf"],
     "application/x-font-linux-psf" => ["psf"],
-    "application/x-font-otf" => ["otf"], # OpenType Font
+    # OpenType Font
+    "application/x-font-otf" => ["otf"],
     "application/x-font-pcf" => ["pcf"],
-    "application/x-font-printer-metric" => ["pfm"], # Printer Font Metric
+    # Printer Font Metric
+    "application/x-font-printer-metric" => ["pfm"],
     "application/x-font-snf" => ["snf"],
-    "application/x-font-ttf" => ["ttf", "ttc"], # TrueType Font
+    # TrueType Font
+    "application/x-font-ttf" => ["ttf", "ttc"],
     "application/x-font-type1" => ["pfa", "pfb"],
-    "application/x-futuresplash" => ["spl"], # Macromedia FutureSplash File
+    # Macromedia FutureSplash File
+    "application/x-futuresplash" => ["spl"],
+    "application/x-geopackage" => ["gpkg"],
+    "application/x-geopackage; version=1.1Or1.0" => ["gpkg"],
     "application/x-gnucash" => ["gnucash"],
     "application/x-gnumeric" => ["gnumeric"],
-    "application/x-grib" => ["grb", "grb1", "grb2"], # General Regularly-distributed Information in Binary form
-    "application/x-gtar" => ["gtar"], # GNU tar Compressed File Archive (GNU Tape Archive)
-    "application/x-hdf" => ["hdf", "he5", "h5"], # Hierarchical Data Format File
-    "application/x-ibooks+zip" => ["ibooks"], # Apple iBooks Author publication format
-    "application/x-internet-archive" => ["arc"], # ARC
-    "application/x-iso9660-image" => ["iso"], # ISO 9660 CD-ROM filesystem data
-    "application/x-itunes-ipa" => ["ipa"], # Apple iOS IPA AppStore file
-    "application/x-java-jnilib" => ["jnilib"], # Java Native Library for OSX
+    # General Regularly-distributed Information in Binary form
+    "application/x-grib" => ["grb", "grb1", "grb2"],
+    # GNU tar Compressed File Archive (GNU Tape Archive)
+    "application/x-gtar" => ["gtar"],
+    # Guitar Pro
+    "application/x-guitar-pro" => ["gp4"],
+    # Hierarchical Data Format File
+    "application/x-hdf" => ["hdf", "he5", "h5"],
+    # Apple iBooks Author publication format
+    "application/x-ibooks+zip" => ["ibooks"],
+    # ARC
+    "application/x-internet-archive" => ["arc"],
+    # ISO 9660 CD-ROM filesystem data
+    "application/x-iso9660-image" => ["iso"],
+    # Apple iOS IPA AppStore file
+    "application/x-itunes-ipa" => ["ipa"],
+    # Java Native Library for OSX
+    "application/x-java-jnilib" => ["jnilib"],
     "application/x-java-jnlp-file" => ["jnlp"],
+    # Java Keystore
+    "application/x-java-keystore" => ["jks"],
     "application/x-java-pack200" => ["pack"],
-    "application/x-killustrator" => ["kil"], # KIllustrator File
-    "application/x-latex" => ["latex"], # LaTeX Source Document
-    "application/x-lz4" => ["lz4"], # Second match Legacy Frame
-    "application/x-lzip" => ["lz"], # Lzip (LZMA) compressed archive
-    "application/x-lzma" => ["lzma"], # LZMA compressed archive
+    # JDF NMR Spectroscopy
+    "application/x-jeol-jdf" => ["jdf"],
+    # KIllustrator File
+    "application/x-killustrator" => ["kil"],
+    # LaTeX Source Document
+    "application/x-latex" => ["latex"],
+    # Second match Legacy Frame
+    "application/x-lz4" => ["lz4"],
+    # Lzip (LZMA) compressed archive
+    "application/x-lzip" => ["lz"],
+    # LZMA compressed archive
+    "application/x-lzma" => ["lzma"],
     "application/x-matlab-data" => ["mat"],
-    "application/x-memgraph" => ["memgraph"], # Apple Xcode Memgraph
-    "application/x-mobipocket-ebook" => ["prc", "mobi"], # Mobipocket Ebook
+    # Apple Xcode Memgraph
+    "application/x-memgraph" => ["memgraph"],
+    # Mobipocket Ebook
+    "application/x-mobipocket-ebook" => ["prc", "mobi"],
     "application/x-ms-application" => ["application"],
-    "application/x-ms-asx" => ["asx"], # Windows Media Metafile
-    "application/x-ms-installer" => ["msi", "msp", "mst"], # Microsoft Windows Installer
+    # Windows Media Metafile
+    "application/x-ms-asx" => ["asx"],
+    # Microsoft Windows Installer
+    "application/x-ms-installer" => ["msi", "msp", "mst"],
     "application/x-ms-wmd" => ["wmd"],
     "application/x-ms-wmz" => ["wmz"],
     "application/x-ms-xbap" => ["xbap"],
-    "application/x-msaccess" => ["mdb"],
+    "application/x-msaccess" => ["accdb", "mdb"],
     "application/x-msbinder" => ["obd"],
     "application/x-mscardfile" => ["crd"],
     "application/x-msclip" => ["clp"],
@@ -1788,99 +2025,168 @@ defmodule ExMarcel.Tables do
     "application/x-msschedule" => ["scd"],
     "application/x-msterminal" => ["trm"],
     "application/x-mswrite" => ["wri"],
-    "application/x-mysql-misam-compressed-index" => ["myi"], # MySQL MISAM Compressed Index
-    "application/x-mysql-misam-data" => ["myd"], # MySQL MISAM Data
+    # MySQL MISAM Compressed Index
+    "application/x-mysql-misam-compressed-index" => ["myi"],
+    # MySQL MISAM Data
+    "application/x-mysql-misam-data" => ["myd"],
+    # Nintendo Entertainment System ROM
+    "application/x-nesrom" => ["nes"],
     "application/x-netcdf" => ["nc", "cdf"],
+    "application/x-openscad" => ["scad"],
     "application/x-parquet" => ["parquet"],
     "application/x-pkcs12" => ["p12", "pfx"],
     "application/x-pkcs7-certificates" => ["p7b", "spc"],
     "application/x-pkcs7-certreqresp" => ["p7r"],
     "application/x-project" => ["mpx"],
     "application/x-prt" => ["prt"],
-    "application/x-quattro-pro" => ["wq1", "wq2", "wkq", "qpw", "wb1", "wb2", "wb3"], #        Quattro Pro - Corel Spreadsheet (part of WordPerfect Office suite)     
-    "application/x-quattro-pro;version=1+5" => ["wb1"], # Quattro Pro for Windows, version 1, 5
-    "application/x-quattro-pro;version=1-4" => ["wq1", "wkq"], # Quattro Pro for DOS, version 1-4
-    "application/x-quattro-pro;version=5" => ["wq2", "wkq"], # Quattro Pro for DOS, version 5
-    "application/x-quattro-pro;version=6" => ["wb2"], # Quattro Pro for Windows, version 6
-    "application/x-rar-compressed" => ["rar"], # RAR archive
+    #        Quattro Pro - Corel Spreadsheet (part of WordPerfect Office suite)     
+    "application/x-quattro-pro" => ["wq1", "wq2", "wkq", "qpw", "wb1", "wb2", "wb3"],
+    # Quattro Pro for Windows, version 1, 5
+    "application/x-quattro-pro;version=1+5" => ["wb1"],
+    # Quattro Pro for DOS, version 1-4
+    "application/x-quattro-pro;version=1-4" => ["wq1", "wkq"],
+    # Quattro Pro for DOS, version 5
+    "application/x-quattro-pro;version=5" => ["wq2", "wkq"],
+    # Quattro Pro for Windows, version 6
+    "application/x-quattro-pro;version=6" => ["wb2"],
+    # RAR archive
+    "application/x-rar-compressed" => ["rar"],
     "application/x-roxio-toast" => ["toast"],
-    "application/x-rpm" => ["rpm"], # RedHat Package Manager
-    "application/x-sas" => ["sas"], # SAS Program
-    "application/x-sas-access" => ["sa7", "sas7bacs"], # SAS Access Descriptor
-    "application/x-sas-audit" => ["st7", "sas7baud"], # SAS Audit
-    "application/x-sas-backup" => ["sas7bbak"], # SAS Backup
-    "application/x-sas-catalog" => ["sc7", "sas7bcat"], # SAS Catalog
-    "application/x-sas-data" => ["sd7", "sas7bdat"], # SAS Data Set
-    "application/x-sas-data-index" => ["si7", "sas7bndx"], # SAS Data Set Index
-    "application/x-sas-data-v6" => ["sd2"], # SAS v6 Data Set
-    "application/x-sas-dmdb" => ["s7m", "sas7bdmd"], # SAS DMDB Data Mining Database File
-    "application/x-sas-fdb" => ["sf7", "sas7bfdb"], # SAS FDB Consolidation Database File
-    "application/x-sas-itemstor" => ["sr7", "sas7bitm"], # SAS Item Store (ItemStor) File
-    "application/x-sas-mddb" => ["sm7", "sas7bmdb"], # SAS MDDB Multi-Dimensional Database File
-    "application/x-sas-program-data" => ["ss7", "sas7bpgm"], # SAS Stored Program (DATA Step)
-    "application/x-sas-putility" => ["sp7", "sas7bput"], # SAS Permanent Utility
-    "application/x-sas-transport" => ["stx"], # SAS Transport File
-    "application/x-sas-utility" => ["su7", "sas7butl"], # SAS Utility
-    "application/x-sas-view" => ["sv7", "sas7bvew"], # SAS Data Set View
-    "application/x-sas-xport" => ["xpt", "xport"], # SAS XPORT Transfer File
-    "application/x-sfdu" => ["sfdu"], # Standard Formatted Data Units (SFDUs) data
-    "application/x-sh" => ["sh", "bash"], # UNIX/LINUX Shell Script
-    "application/x-shapefile" => ["shp"], # ESRI Shapefiles
+    # RedHat Package Manager
+    "application/x-rpm" => ["rpm"],
+    # SAS Program
+    "application/x-sas" => ["sas"],
+    # SAS Access Descriptor
+    "application/x-sas-access" => ["sa7", "sas7bacs"],
+    # SAS Audit
+    "application/x-sas-audit" => ["st7", "sas7baud"],
+    # SAS Backup
+    "application/x-sas-backup" => ["sas7bbak"],
+    # SAS Catalog
+    "application/x-sas-catalog" => ["sc7", "sas7bcat"],
+    # SAS Data Set
+    "application/x-sas-data" => ["sd7", "sas7bdat"],
+    # SAS Data Set Index
+    "application/x-sas-data-index" => ["si7", "sas7bndx"],
+    # SAS v6 Data Set
+    "application/x-sas-data-v6" => ["sd2"],
+    # SAS DMDB Data Mining Database File
+    "application/x-sas-dmdb" => ["s7m", "sas7bdmd"],
+    # SAS FDB Consolidation Database File
+    "application/x-sas-fdb" => ["sf7", "sas7bfdb"],
+    # SAS Item Store (ItemStor) File
+    "application/x-sas-itemstor" => ["sr7", "sas7bitm"],
+    # SAS MDDB Multi-Dimensional Database File
+    "application/x-sas-mddb" => ["sm7", "sas7bmdb"],
+    # SAS Stored Program (DATA Step)
+    "application/x-sas-program-data" => ["ss7", "sas7bpgm"],
+    # SAS Permanent Utility
+    "application/x-sas-putility" => ["sp7", "sas7bput"],
+    # SAS Transport File
+    "application/x-sas-transport" => ["stx"],
+    # SAS Utility
+    "application/x-sas-utility" => ["su7", "sas7butl"],
+    # SAS Data Set View
+    "application/x-sas-view" => ["sv7", "sas7bvew"],
+    # SAS XPORT Transfer File
+    "application/x-sas-xport" => ["xpt", "xport"],
+    # Standard Formatted Data Units (SFDUs) data
+    "application/x-sfdu" => ["sfdu"],
+    # UNIX/LINUX Shell Script
+    "application/x-sh" => ["sh", "bash"],
+    # ESRI Shapefiles
+    "application/x-shapefile" => ["shp"],
     "application/x-shar" => ["shar"],
-    "application/x-shockwave-flash" => ["swf"], # Adobe Flash
+    # Adobe Flash
+    "application/x-shockwave-flash" => ["swf"],
+    # Sibelius
+    "application/x-sibelius" => ["sib"],
     "application/x-silverlight-app" => ["xap"],
-    "application/x-snappy-framed" => ["sz"], # Snappy Framed
+    # Snappy Framed
+    "application/x-snappy-framed" => ["sz"],
+    # TAP (ZX Spectrum)
+    "application/x-spectrum-tzx" => ["tzx"],
+    # SPSS Data File
+    "application/x-spss-sav" => ["sav"],
     "application/x-staroffice-template" => ["vor"],
-    "application/x-stata-do" => ["do"], # Stata DTA Script
-    "application/x-stata-dta" => ["dta"], # Stata DTA Dataset
+    # Stata DTA Script
+    "application/x-stata-do" => ["do"],
+    # Stata DTA Dataset
+    "application/x-stata-dta" => ["dta"],
     "application/x-stuffit" => ["sit"],
     "application/x-stuffitx" => ["sitx"],
+    # SubRip (srt) subtitles
+    "application/x-subrip" => ["srt"],
     "application/x-sv4cpio" => ["sv4cpio"],
     "application/x-sv4crc" => ["sv4crc"],
     "application/x-tar" => ["tar"],
-    "application/x-tex" => ["tex"], # TeX Source
+    # TeX Source
+    "application/x-tex" => ["tex"],
     "application/x-tex-tfm" => ["tfm"],
+    # TeX Virtual Font format
+    "application/x-tex-virtual-font" => ["vf"],
     "application/x-texinfo" => ["texinfo", "texi"],
     "application/x-tika-java-enterprise-archive" => ["ear"],
     "application/x-tika-java-web-archive" => ["war"],
     "application/x-tika-msworks-spreadsheet" => ["xlr"],
+    # TMX Translation Memory
+    "application/x-tmx" => ["tmx"],
     "application/x-uc2-compressed" => ["uc2"],
     "application/x-ustar" => ["ustar"],
-    "application/x-vmdk" => ["vmdk"], # Virtual Disk Format
+    # Virtual Disk Format
+    "application/x-vmdk" => ["vmdk"],
     "application/x-wais-source" => ["src"],
     "application/x-webarchive" => ["webarchive"],
     "application/x-x509-cert" => ["crt"],
     "application/x-x509-cert;format=der" => ["der"],
     "application/x-x509-cert;format=pem" => ["pem"],
     "application/x-xfig" => ["fig"],
-    "application/x-xliff+xml" => ["xlf", "xliff"], # XLIFF 1.2 document
-    "application/x-xliff+zip" => ["xlz"], # XLZ Archive
-    "application/x-xmind" => ["xmind"], # XMind Pro
+    # XLIFF 1.2 document
+    "application/x-xliff+xml" => ["xlf", "xliff"],
+    # XLZ Archive
+    "application/x-xliff+zip" => ["xlz"],
+    # XMind Pro
+    "application/x-xmind" => ["xmind"],
     "application/x-xpinstall" => ["xpi"],
     "application/x-xz" => ["xz"],
     "application/x-zoo" => ["zoo"],
     "application/xenc+xml" => ["xenc"],
     "application/xhtml+xml" => ["xhtml", "xhtml2", "xht"],
-    "application/xml" => ["xml", "xsl", "xsd"], # Extensible Markup Language
-    "application/xml-dtd" => ["dtd"], # XML Document Type Definition
+    # Extensible Markup Language
+    "application/xml" => ["xml", "xsl", "xsd"],
+    # XML Document Type Definition
+    "application/xml-dtd" => ["dtd"],
     "application/xop+xml" => ["xop"],
-    "application/xquery" => ["xq", "xquery"], # XQuery source code
-    "application/xslfo+xml" => ["xslfo", "fo"], # XSL Format
-    "application/xslt+xml" => ["xslt"], # XSL Transformations
-    "application/xspf+xml" => ["xspf"], # XML Shareable Playlist Format
+    # XQuery source code
+    "application/xquery" => ["xq", "xquery"],
+    # XSL Format
+    "application/xslfo+xml" => ["xslfo", "fo"],
+    # XSL Transformations
+    "application/xslt+xml" => ["xslt"],
+    # XML Shareable Playlist Format
+    "application/xspf+xml" => ["xspf"],
     "application/xv+xml" => ["mxml", "xhvml", "xvml", "xvm"],
-    "application/zip" => ["zip"], # Compressed Archive File
-    "application/zstd" => ["zstd"], # https://tools.ietf.org/id/draft-kucherawy-dispatch-zstd-01.html
-    "audio/ac3" => ["ac3"], # Dolby Digital Audio Compression File
+    # Compressed Archive File
+    "application/zip" => ["zip", "zipx"],
+    # https://tools.ietf.org/id/draft-kucherawy-dispatch-zstd-01.html
+    "application/zstd" => ["zst"],
+    # Dolby Digital Audio Compression File
+    "audio/ac3" => ["ac3"],
     "audio/adpcm" => ["adp"],
     "audio/amr" => ["amr"],
-    "audio/basic" => ["au", "snd"], # uLaw/AU Audio File
-    "audio/midi" => ["mid", "midi", "kar", "rmi"], # Musical Instrument Digital Interface
+    # uLaw/AU Audio File
+    "audio/basic" => ["au", "snd"],
+    # Musical Instrument Digital Interface
+    "audio/midi" => ["mid", "midi", "kar", "rmi"],
     "audio/mp4" => ["mp4a", "m4a", "m4b"],
-    "audio/mpeg" => ["mpga", "mp2", "mp2a", "mp3", "m2a", "m3a"], # MPEG-1 Audio Layer 3
-    "audio/ogg" => ["oga"], # Ogg Vorbis Audio
-    "audio/opus" => ["opus"], # Ogg Opus Codec Compressed WAV File
-    "audio/speex" => ["spx"], # Ogg Speex Codec Compressed WAV File
+    # MPEG-1 Audio Layer 3
+    "audio/mpeg" => ["mpga", "mp2", "mp2a", "mp3", "m2a", "m3a"],
+    # Ogg Vorbis Audio
+    "audio/ogg" => ["oga"],
+    # Ogg Opus Codec Compressed WAV File
+    "audio/opus" => ["opus"],
+    # Ogg Speex Codec Compressed WAV File
+    "audio/speex" => ["spx"],
     "audio/vnd.adobe.soundbooth" => ["asnd"],
     "audio/vnd.digital-winds" => ["eol"],
     "audio/vnd.dts" => ["dts"],
@@ -1891,132 +2197,312 @@ defmodule ExMarcel.Tables do
     "audio/vnd.nuera.ecelp7470" => ["ecelp7470"],
     "audio/vnd.nuera.ecelp9600" => ["ecelp9600"],
     "audio/vnd.wave" => ["wav"],
-    "audio/vorbis" => ["ogg"], # Ogg Vorbis Codec Compressed WAV File
+    # Ogg Vorbis Codec Compressed WAV File
+    "audio/vorbis" => ["ogg"],
     "audio/x-aac" => ["aac"],
-    "audio/x-aiff" => ["aif", "aiff", "aifc"], # Audio Interchange File Format
-    "audio/x-caf" => ["caf"], # com.apple.coreaudio-format
-    "audio/x-flac" => ["flac"], # Free Lossless Audio Codec
+    # Audio Interchange File Format
+    "audio/x-aiff" => ["aif", "aiff", "aifc"],
+    # com.apple.coreaudio-format
+    "audio/x-caf" => ["caf"],
+    # Free Lossless Audio Codec
+    "audio/x-flac" => ["flac"],
     "audio/x-matroska" => ["mka"],
     "audio/x-mod" => ["mod"],
-    "audio/x-mpegurl" => ["m3u"], # MP3 Playlist File
+    # MP3 Playlist File
+    "audio/x-mpegurl" => ["m3u"],
     "audio/x-ms-wax" => ["wax"],
     "audio/x-ms-wma" => ["wma"],
-    "audio/x-pn-realaudio" => ["ram", "ra"], # Real Audio
-    "audio/x-pn-realaudio-plugin" => ["rmp"], # RealMedia Player Plug-in
+    # Real Audio
+    "audio/x-pn-realaudio" => ["ram", "ra"],
+    # RealMedia Player Plug-in
+    "audio/x-pn-realaudio-plugin" => ["rmp"],
+    # Portable Sound Format
+    "audio/x-psf" => ["psf1", "psflib", "minipsf", "minipsf1", "gslib", "minigsf"],
+    # Slight Atari Player
+    "audio/x-sap" => ["sap"],
     "chemical/x-cdx" => ["cdx"],
     "chemical/x-cif" => ["cif"],
     "chemical/x-cmdf" => ["cmdf"],
     "chemical/x-cml" => ["cml"],
     "chemical/x-csml" => ["csml"],
-    "chemical/x-pdb" => ["pdb"], # Brookhaven Protein Databank File
+    # Brookhaven Protein Databank File
+    "chemical/x-pdb" => ["pdb"],
     "chemical/x-xyz" => ["xyz"],
     "font/woff" => ["woff"],
     "font/woff2" => ["woff2"],
-    "image/aces" => ["exr"], # ACES Image Container File
-    "image/avif" => ["avif"], # AV1 Image File
-    "image/bmp" => ["bmp", "dib"], # Windows bitmap
-    "image/cgm" => ["cgm"], # Computer Graphics Metafile
-    "image/emf" => ["emf"], # Enhanced Metafile
+    # ACES Image Container File
+    "image/aces" => ["exr"],
+    # AV1 Image File
+    "image/avif" => ["avif"],
+    # Windows bitmap
+    "image/bmp" => ["bmp", "dib"],
+    # Computer Graphics Metafile
+    "image/cgm" => ["cgm"],
+    # Enhanced Metafile
+    "image/emf" => ["emf"],
     "image/g3fax" => ["g3"],
-    "image/gif" => ["gif"], # Graphics Interchange Format
+    # Graphics Interchange Format
+    "image/gif" => ["gif"],
     "image/heic" => ["heic"],
     "image/heif" => ["heif"],
-    "image/icns" => ["icns"], # Apple Icon Image Format
+    # Apple Icon Image Format
+    "image/icns" => ["icns"],
     "image/ief" => ["ief"],
-    "image/jp2" => ["jp2"], # JPEG 2000 Part 1 (JP2)
-    "image/jpeg" => ["jpg", "jpeg", "jpe", "jif", "jfif", "jfi"], # Joint Photographic Experts Group
-    "image/jpm" => ["jpm", "jpgm"], # JPEG 2000 Part 6 (JPM)
-    "image/jpx" => ["jpf"], # JPEG 2000 Part 2 (JPX)
+    # JPEG 2000 Part 1 (JP2)
+    "image/jp2" => ["jp2"],
+    # Joint Photographic Experts Group
+    "image/jpeg" => ["jpg", "jpeg", "jpe", "jif", "jfif", "jfi"],
+    # JPEG 2000 Part 6 (JPM)
+    "image/jpm" => ["jpm", "jpgm"],
+    # JPEG 2000 Part 2 (JPX)
+    "image/jpx" => ["jpf"],
+    # JPEG XL
+    "image/jxl" => ["jxl"],
     "image/nitf" => ["ntf", "nitf"],
-    "image/png" => ["png"], # Portable Network Graphics
+    # Portable Network Graphics
+    "image/png" => ["png"],
     "image/prs.btif" => ["btif"],
-    "image/svg+xml" => ["svg", "svgz"], # Scalable Vector Graphics
-    "image/tiff" => ["tiff", "tif"], # Tagged Image File Format
-    "image/vnd.adobe.photoshop" => ["psd"], # Photoshop Image
+    # Scalable Vector Graphics
+    "image/svg+xml" => ["svg", "svgz"],
+    # Tagged Image File Format
+    "image/tiff" => ["tiff", "tif"],
+    # Photoshop Image
+    "image/vnd.adobe.photoshop" => ["psd"],
     "image/vnd.adobe.premiere" => ["ppj"],
+    "image/vnd.dgn" => ["dgn", "dgnlib", "cel"],
     "image/vnd.djvu" => ["djvu", "djv"],
-    "image/vnd.dwg" => ["dwg"], # AutoCad Drawing
-    "image/vnd.dxb" => ["dxb"], # AutoCAD DXF simplified Binary
-    "image/vnd.dxf" => ["dxf"], # AutoCAD DXF
+    # AutoCad Drawing
+    "image/vnd.dwg" => ["dwg"],
+    # AutoCAD DXF simplified Binary
+    "image/vnd.dxb" => ["dxb"],
+    # AutoCAD DXF
+    "image/vnd.dxf" => ["dxf"],
     "image/vnd.fastbidsheet" => ["fbs"],
     "image/vnd.fpx" => ["fpx"],
     "image/vnd.fst" => ["fst"],
     "image/vnd.fujixerox.edmics-mmr" => ["mmr"],
     "image/vnd.fujixerox.edmics-rlc" => ["rlc"],
     "image/vnd.microsoft.icon" => ["ico"],
-    "image/vnd.ms-modi" => ["mdi"], # Microsoft Document Imaging
+    # Microsoft Document Imaging
+    "image/vnd.ms-modi" => ["mdi"],
     "image/vnd.net-fpx" => ["npx"],
-    "image/vnd.wap.wbmp" => ["wbmp"], # Wireless Bitmap File Format
+    # Wireless Bitmap File Format
+    "image/vnd.wap.wbmp" => ["wbmp"],
     "image/vnd.xiff" => ["xif"],
-    "image/vnd.zbrush.dcx" => ["dcx"], # ZSoft Multi-Page Paintbrush
-    "image/vnd.zbrush.pcx" => ["pcx"], # ZSoft Paintbrush PiCture eXchange
+    # ZSoft Multi-Page Paintbrush
+    "image/vnd.zbrush.dcx" => ["dcx"],
+    # ZSoft Paintbrush PiCture eXchange
+    "image/vnd.zbrush.pcx" => ["pcx"],
     "image/webp" => ["webp"],
-    "image/wmf" => ["wmf"], # Windows Metafile
-    "image/x-bpg" => ["bpg"], # Better Portable Graphics
+    # Windows Metafile
+    "image/wmf" => ["wmf"],
+    # 3D Studio (V1)
+    "image/x-3ds" => ["3ds"],
+    # Better Portable Graphics
+    "image/x-bpg" => ["bpg"],
+    # Canon raw image, version 2, TIFF-based
+    "image/x-canon-cr2" => ["cr2"],
+    # Canon raw image, version 3, Quicktime-based
+    "image/x-canon-cr3" => ["cr3"],
     "image/x-cmu-raster" => ["ras"],
     "image/x-cmx" => ["cmx"],
-    "image/x-dpx" => ["dpx"], # Digital Picture Exchange from SMPTE
-    "image/x-emf-compressed" => ["emz"], # Compressed Enhanced Metafile
-    "image/x-freehand" => ["fh", "fhc", "fh4", "fh40", "fh5", "fh50", "fh7", "fh8", "fh9", "fh10", "fh11", "fh12", "ft7", "ft8", "ft9", "ft10", "ft11", "ft12"], # FreeHand image
-    "image/x-jbig2" => ["jb2", "jbig2"], #        A lossless image compression standard from the       Joint Bi-level Image Experts Group.     
-    "image/x-jp2-codestream" => ["j2c"], # JPEG 2000 Codestream
-    "image/x-pict" => ["pic", "pct", "pict"], # Apple Macintosh QuickDraw/PICT Format
-    "image/x-portable-anymap" => ["pnm"], # Portable Any Map
-    "image/x-portable-bitmap" => ["pbm"], # Portable Bit Map
-    "image/x-portable-graymap" => ["pgm"], # Portable Graymap Graphic
-    "image/x-portable-pixmap" => ["ppm"], # UNIX Portable Bitmap Graphic
-    "image/x-raw-adobe" => ["dng"], # Adobe Digital Negative
-    "image/x-raw-canon" => ["crw", "cr2"], # Canon raw image
-    "image/x-raw-casio" => ["bay"], # Casio raw image
-    "image/x-raw-epson" => ["erf"], # Epson raw image
-    "image/x-raw-fuji" => ["raf"], # Fuji raw image
-    "image/x-raw-hasselblad" => ["3fr"], # Hasselblad raw image
-    "image/x-raw-imacon" => ["fff"], # Imacon raw image
-    "image/x-raw-kodak" => ["k25", "kdc", "dcs", "drf"], # Kodak raw image
-    "image/x-raw-leaf" => ["mos"], # Leaf raw image
-    "image/x-raw-logitech" => ["pxn"], # Logitech raw image
-    "image/x-raw-mamiya" => ["mef"], # Mamiya raw image
-    "image/x-raw-minolta" => ["mrw"], # Minolta raw image
-    "image/x-raw-nikon" => ["nef", "nrw"], # Nikon raw image
-    "image/x-raw-olympus" => ["orf"], # Olympus raw image
-    "image/x-raw-panasonic" => ["raw", "rw2"], # Panasonic raw image
-    "image/x-raw-pentax" => ["ptx", "pef"], # Pentax raw image
-    "image/x-raw-phaseone" => ["iiq"], # Phase One raw image
-    "image/x-raw-rawzor" => ["rwz"], # Rawzor raw image
-    "image/x-raw-red" => ["r3d"], # Red raw image
-    "image/x-raw-sigma" => ["x3f"], # Sigma raw image
-    "image/x-raw-sony" => ["arw", "srf", "sr2"], # Sony raw image
-    "image/x-rgb" => ["rgb"], # Silicon Graphics RGB Bitmap
-    "image/x-tga" => ["tga", "icb", "vda"], # Targa image data
+    # Digital Picture Exchange from SMPTE
+    "image/x-dpx" => ["dpx"],
+    # Compressed Enhanced Metafile
+    "image/x-emf-compressed" => ["emz"],
+    # FreeHand image
+    "image/x-freehand" => [
+      "fh",
+      "fhc",
+      "fh4",
+      "fh40",
+      "fh5",
+      "fh50",
+      "fh7",
+      "fh8",
+      "fh9",
+      "fh10",
+      "fh11",
+      "fh12",
+      "ft7",
+      "ft8",
+      "ft9",
+      "ft10",
+      "ft11",
+      "ft12"
+    ],
+    #        A lossless image compression standard from the       Joint Bi-level Image Experts Group.     
+    "image/x-jbig2" => ["jb2", "jbig2"],
+    # JPEG 2000 Codestream
+    "image/x-jp2-codestream" => ["j2c"],
+    # Apple Macintosh QuickDraw/PICT Format
+    "image/x-pict" => ["pic", "pct", "pict"],
+    # Portable Any Map
+    "image/x-portable-anymap" => ["pnm"],
+    # UNIX Portable Bitmap Graphic Arbitrary Map
+    "image/x-portable-arbitrarymap" => ["pam"],
+    # Portable Bit Map
+    "image/x-portable-bitmap" => ["pbm"],
+    # Portable Graymap Graphic
+    "image/x-portable-graymap" => ["pgm"],
+    # UNIX Portable Bitmap Graphic
+    "image/x-portable-pixmap" => ["ppm"],
+    # Adobe Digital Negative
+    "image/x-raw-adobe" => ["dng"],
+    # Canon raw image
+    "image/x-raw-canon" => ["crw"],
+    # Casio raw image
+    "image/x-raw-casio" => ["bay"],
+    # Epson raw image
+    "image/x-raw-epson" => ["erf"],
+    # Fuji raw image
+    "image/x-raw-fuji" => ["raf"],
+    # Hasselblad raw image
+    "image/x-raw-hasselblad" => ["3fr"],
+    # Imacon raw image
+    "image/x-raw-imacon" => ["fff"],
+    # Kodak raw image
+    "image/x-raw-kodak" => ["k25", "kdc", "dcs", "drf"],
+    # Leaf raw image
+    "image/x-raw-leaf" => ["mos"],
+    # Logitech raw image
+    "image/x-raw-logitech" => ["pxn"],
+    # Mamiya raw image
+    "image/x-raw-mamiya" => ["mef"],
+    # Minolta raw image
+    "image/x-raw-minolta" => ["mrw"],
+    # Nikon raw image
+    "image/x-raw-nikon" => ["nef", "nrw"],
+    # Olympus raw image
+    "image/x-raw-olympus" => ["orf"],
+    # Panasonic raw image
+    "image/x-raw-panasonic" => ["raw", "rw2"],
+    # Pentax raw image
+    "image/x-raw-pentax" => ["ptx", "pef"],
+    # Phase One raw image
+    "image/x-raw-phaseone" => ["iiq"],
+    # Rawzor raw image
+    "image/x-raw-rawzor" => ["rwz"],
+    # Red raw image
+    "image/x-raw-red" => ["r3d"],
+    # Sigma raw image
+    "image/x-raw-sigma" => ["x3f"],
+    # Sony raw image
+    "image/x-raw-sony" => ["arw", "srf", "sr2"],
+    # Silicon Graphics RGB Bitmap
+    "image/x-rgb" => ["rgb"],
+    # Targa image data
+    "image/x-tga" => ["tga", "icb", "vda"],
     "image/x-xbitmap" => ["xbm"],
-    "image/x-xcf" => ["xcf"], # GIMP Image File
+    # GIMP Image File
+    "image/x-xcf" => ["xcf"],
     "image/x-xpixmap" => ["xpm"],
-    "image/x-xwindowdump" => ["xwd"], # X Windows Dump
+    # X Windows Dump
+    "image/x-xwindowdump" => ["xwd"],
     "message/rfc822" => ["eml", "mime"],
     "message/x-emlx" => ["emlx"],
-    "model/iges" => ["igs", "iges"], # Initial Graphics Exchange Specification Format
+    # 3d imaging data exchange
+    "model/e57" => ["e57"],
+    # Initial Graphics Exchange Specification Format
+    "model/iges" => ["igs", "iges"],
     "model/mesh" => ["msh", "mesh", "silo"],
-    "model/vnd.dwf" => ["dwf"], # AutoCAD Design Web Format
-    "model/vnd.dwfx+xps" => ["dwfx"], # AutoCAD Design Web Format
+    # AutoCAD Design Web Format
+    "model/vnd.dwf" => ["dwf"],
+    # AutoCAD Design Web Format
+    "model/vnd.dwfx+xps" => ["dwfx"],
     "model/vnd.gdl" => ["gdl"],
     "model/vnd.gtw" => ["gtw"],
     "model/vnd.mts" => ["mts"],
     "model/vnd.vtu" => ["vtu"],
     "model/vrml" => ["wrl", "vrml"],
-    "multipart/related" => ["mht", "mhtml"], # MIME Encapsulation of Aggregate HTML Documents
-    "text/asp" => ["asp"], # Active Server Page
-    "text/aspdotnet" => ["aspx"], # ASP .NET
+    # no magic available
+    "model/x.stl-binary" => ["stl"],
+    # MIME Encapsulation of Aggregate HTML Documents
+    "multipart/related" => ["mht", "mhtml"],
+    # Active Server Page
+    "text/asp" => ["asp"],
+    # ASP .NET
+    "text/aspdotnet" => ["aspx"],
     "text/calendar" => ["ics", "ifb"],
-    "text/css" => ["css"], # Cascading Style Sheet
+    # Cascading Style Sheet
+    "text/css" => ["css"],
     "text/csv" => ["csv"],
-    "text/html" => ["html", "htm"], # HyperText Markup Language
+    # HyperText Markup Language
+    "text/html" => ["html", "htm"],
     "text/iso19139+xml" => ["iso19139"],
-    "text/plain" => ["txt", "text", "def", "list", "in", "aart", "ac", "am", "apt", "bsh", "classpath", "cnd", "cwiki", "data", "dcl", "dsp", "dsw", "egrm", "ent", "ft", "fn", "fv", "grm", "g", "handlers", "htc", "ihtml", "jmx", "junit", "jx", "manifest", "m4", "mf", "mf", "meta", "mdo", "n3", "pen", "pod", "pom", "project", "rng", "rnx", "roles", "schemas", "tld", "types", "vm", "vsl", "wsdd", "xargs", "xcat", "xegrm", "xgrm", "xlex", "xlog", "xmap", "xroles", "xsamples", "xsp", "xtest", "xweb", "xwelcome"],
+    # JavaScript Source Code
+    "text/javascript" => ["js", "mjs"],
+    "text/plain" => [
+      "txt",
+      "text",
+      "def",
+      "list",
+      "in",
+      "aart",
+      "ac",
+      "am",
+      "apt",
+      "bsh",
+      "classpath",
+      "cnd",
+      "cwiki",
+      "data",
+      "dcl",
+      "dsp",
+      "dsw",
+      "egrm",
+      "ent",
+      "ft",
+      "fn",
+      "fv",
+      "grm",
+      "g",
+      "handlers",
+      "htc",
+      "ihtml",
+      "jmx",
+      "junit",
+      "jx",
+      "manifest",
+      "m4",
+      "mf",
+      "mf",
+      "meta",
+      "mdo",
+      "n3",
+      "pen",
+      "pod",
+      "pom",
+      "project",
+      "rng",
+      "rnx",
+      "roles",
+      "schemas",
+      "tld",
+      "types",
+      "vm",
+      "vsl",
+      "wsdd",
+      "xargs",
+      "xcat",
+      "xegrm",
+      "xgrm",
+      "xlex",
+      "xlog",
+      "xmap",
+      "xroles",
+      "xsamples",
+      "xsp",
+      "xtest",
+      "xweb",
+      "xwelcome"
+    ],
     "text/prs.lines.tag" => ["dsc"],
     "text/richtext" => ["rtx"],
     "text/sgml" => ["sgml", "sgm"],
     "text/tab-separated-values" => ["tsv"],
-    "text/troff" => ["t", "tr", "roff", "nroff", "man", "me", "ms"], # Roff/nroff/troff/groff Unformatted Manual Page (UNIX)
+    # Roff/nroff/troff/groff Unformatted Manual Page (UNIX)
+    "text/troff" => ["t", "tr", "roff", "nroff", "man", "me", "ms"],
     "text/uri-list" => ["uri", "uris", "urls"],
     "text/vnd.curl" => ["curl"],
     "text/vnd.curl.dcurl" => ["dcurl"],
@@ -2024,89 +2510,160 @@ defmodule ExMarcel.Tables do
     "text/vnd.curl.scurl" => ["scurl"],
     "text/vnd.fly" => ["fly"],
     "text/vnd.fmi.flexstor" => ["flx"],
-    "text/vnd.graphviz" => ["gv"], # Graphviz Graph Visualization Software
+    # Graphviz Graph Visualization Software
+    "text/vnd.graphviz" => ["gv"],
     "text/vnd.in3d.3dml" => ["3dml"],
     "text/vnd.in3d.spot" => ["spot"],
-    "text/vnd.iptc.anpa" => ["anpa"], # American Newspaper Publishers Association Wire Feeds
+    # American Newspaper Publishers Association Wire Feeds
+    "text/vnd.iptc.anpa" => ["anpa"],
     "text/vnd.sun.j2me.app-descriptor" => ["jad"],
     "text/vnd.wap.wml" => ["wml"],
-    "text/vnd.wap.wmlscript" => ["wmls"], # WML Script
-    "text/vtt" => ["vtt"], # Web Video Text Tracks Format
-    "text/x-actionscript" => ["as"], # ActionScript source code
-    "text/x-ada" => ["ada", "adb", "ads"], # Ada source code
-    "text/x-applescript" => ["applescript"], # AppleScript source code
-    "text/x-asciidoc" => ["asciidoc", "adoc", "ad", "ad.txt", "adoc.txt"], # Asciidoc source code
-    "text/x-aspectj" => ["aj"], # AspectJ source code
-    "text/x-assembly" => ["s", "s", "asm"], # Assembler source code
-    "text/x-awk" => ["awk"], # AWK script
-    "text/x-basic" => ["bas", "bas", "bas"], # Basic source code
-    "text/x-c++hdr" => ["hpp", "hxx", "hh", "h", "h++", "hp", "hpp"], # C++ source code header
-    "text/x-c++src" => ["cpp", "cxx", "cc", "c", "c++", "cpp"], # C++ source code
-    "text/x-cgi" => ["cgi"], # CGI script
-    "text/x-chdr" => ["h"], # C source code header
-    "text/x-clojure" => ["clj"], # Clojure source code
-    "text/x-cobol" => ["cbl", "cbl", "cbl", "cob", "cob", "cob"], # COBOL source code
-    "text/x-coffeescript" => ["coffee"], # CoffeeScript source code
-    "text/x-coldfusion" => ["cfm", "cfml", "cfc"], # ColdFusion source code
-    "text/x-common-lisp" => ["cl", "jl", "lisp", "lsp"], # Common Lisp source code
+    # WML Script
+    "text/vnd.wap.wmlscript" => ["wmls"],
+    # Web Video Text Tracks Format
+    "text/vtt" => ["vtt"],
+    # ActionScript source code
+    "text/x-actionscript" => ["as"],
+    # Ada source code
+    "text/x-ada" => ["ada", "adb", "ads"],
+    # AppleScript source code
+    "text/x-applescript" => ["applescript"],
+    # Asciidoc source code
+    "text/x-asciidoc" => ["asciidoc", "adoc", "ad", "ad.txt", "adoc.txt"],
+    # AspectJ source code
+    "text/x-aspectj" => ["aj"],
+    # Assembler source code
+    "text/x-assembly" => ["s", "s", "asm"],
+    # AWK script
+    "text/x-awk" => ["awk"],
+    # Basic source code
+    "text/x-basic" => ["bas", "bas", "bas"],
+    # C++ source code header
+    "text/x-c++hdr" => ["hpp", "hxx", "hh", "h", "h++", "hp", "hpp"],
+    # C++ source code
+    "text/x-c++src" => ["cpp", "cxx", "cc", "c", "c++", "cpp"],
+    # CGI script
+    "text/x-cgi" => ["cgi"],
+    # C source code header
+    "text/x-chdr" => ["h"],
+    # Clojure source code
+    "text/x-clojure" => ["clj"],
+    # COBOL source code
+    "text/x-cobol" => ["cbl", "cbl", "cbl", "cob", "cob", "cob"],
+    # CoffeeScript source code
+    "text/x-coffeescript" => ["coffee"],
+    # ColdFusion source code
+    "text/x-coldfusion" => ["cfm", "cfml", "cfc"],
+    # Common Lisp source code
+    "text/x-common-lisp" => ["cl", "jl", "lisp", "lsp"],
     "text/x-config" => ["config", "conf", "cfg", "xconf"],
-    "text/x-csharp" => ["cs"], # C# source code
-    "text/x-csrc" => ["c"], # C source code
-    "text/x-d" => ["d"], # D source code
+    # C# source code
+    "text/x-csharp" => ["cs"],
+    # C source code
+    "text/x-csrc" => ["c"],
+    # D source code
+    "text/x-d" => ["d"],
     "text/x-diff" => ["diff", "patch"],
-    "text/x-eiffel" => ["e"], # Eiffel source code
-    "text/x-emacs-lisp" => ["el"], # Emacs Lisp source code
-    "text/x-erlang" => ["erl"], # Erlang source code
-    "text/x-expect" => ["exp"], # Expect Script
-    "text/x-forth" => ["4th"], # Forth source code
-    "text/x-fortran" => ["f", "f", "for", "f77", "f90"], # Fortran source code
-    "text/x-go" => ["go"], # Go source code
-    "text/x-groovy" => ["groovy"], # Groovy source code
-    "text/x-haml" => ["haml"], # HAML source code
-    "text/x-haskell" => ["hs", "lhs"], # Haskell source code
-    "text/x-haxe" => ["hx"], # Haxe source code
-    "text/x-idl" => ["idl"], # Inteface Definition Language
-    "text/x-ini" => ["ini"], # Configuration file
-    "text/x-java-properties" => ["properties"], # Java Properties
-    "text/x-java-source" => ["java"], # Java source code
-    "text/x-jsp" => ["jsp"], # Java Server Page
-    "text/x-less" => ["less"], # LESS source code
-    "text/x-lex" => ["l"], # Lex/Flex source code
-    "text/x-log" => ["log"], # application log
-    "text/x-lua" => ["lua"], # Lua source code
-    "text/x-ml" => ["ml"], # ML source code
-    "text/x-modula" => ["m3", "i3", "mg", "ig"], # Modula source code
-    "text/x-objcsrc" => ["m"], # Objective-C source code
-    "text/x-ocaml" => ["ocaml", "mli"], # Ocaml source code
-    "text/x-pascal" => ["p", "pp", "pas", "pas", "dpr"], # Pascal source code
-    "text/x-perl" => ["pl", "pm", "al", "perl"], # Perl script
-    "text/x-php" => ["php", "php3", "php4"], # PHP script
-    "text/x-prolog" => ["pro"], # Prolog source code
-    "text/x-python" => ["py"], # Python script
-    "text/x-rexx" => ["rexx"], # Rexx source code
-    "text/x-rsrc" => ["r"], # R source code
-    "text/x-rst" => ["rest", "rst", "restx"], # reStructuredText source code
-    "text/x-ruby" => ["rb"], # Ruby source code
+    # Eiffel source code
+    "text/x-eiffel" => ["e"],
+    # Emacs Lisp source code
+    "text/x-emacs-lisp" => ["el"],
+    # Erlang source code
+    "text/x-erlang" => ["erl"],
+    # Expect Script
+    "text/x-expect" => ["exp"],
+    # Forth source code
+    "text/x-forth" => ["4th"],
+    # Fortran source code
+    "text/x-fortran" => ["f", "f", "for", "f77", "f90"],
+    # Go source code
+    "text/x-go" => ["go"],
+    # Groovy source code
+    "text/x-groovy" => ["groovy"],
+    # HAML source code
+    "text/x-haml" => ["haml"],
+    # Haskell source code
+    "text/x-haskell" => ["hs", "lhs"],
+    # Haxe source code
+    "text/x-haxe" => ["hx"],
+    # Interface Definition Language
+    "text/x-idl" => ["idl"],
+    # Configuration file
+    "text/x-ini" => ["ini"],
+    # Java Properties
+    "text/x-java-properties" => ["properties"],
+    # Java source code
+    "text/x-java-source" => ["java"],
+    # Java Server Page
+    "text/x-jsp" => ["jsp"],
+    # LESS source code
+    "text/x-less" => ["less"],
+    # Lex/Flex source code
+    "text/x-lex" => ["l"],
+    # application log
+    "text/x-log" => ["log"],
+    # Lua source code
+    "text/x-lua" => ["lua"],
+    # ML source code
+    "text/x-ml" => ["ml"],
+    # Modula source code
+    "text/x-modula" => ["m3", "i3", "mg", "ig"],
+    # Objective-C source code
+    "text/x-objcsrc" => ["m"],
+    # Ocaml source code
+    "text/x-ocaml" => ["ocaml", "mli"],
+    # Pascal source code
+    "text/x-pascal" => ["p", "pp", "pas", "pas", "dpr"],
+    # Perl script
+    "text/x-perl" => ["pl", "pm", "al", "perl"],
+    # PHP script
+    "text/x-php" => ["php", "php3", "php4"],
+    # Prolog source code
+    "text/x-prolog" => ["pro"],
+    # Python script
+    "text/x-python" => ["py"],
+    # Rexx source code
+    "text/x-rexx" => ["rexx"],
+    # R source code
+    "text/x-rsrc" => ["r"],
+    # reStructuredText source code
+    "text/x-rst" => ["rest", "rst", "restx"],
+    # Ruby source code
+    "text/x-ruby" => ["rb"],
     "text/x-sass" => ["sass"],
-    "text/x-scala" => ["scala"], # Scala source code
-    "text/x-scheme" => ["scm"], # Scheme source code
+    # Scala source code
+    "text/x-scala" => ["scala"],
+    # Scheme source code
+    "text/x-scheme" => ["scm"],
     "text/x-scss" => ["scss"],
-    "text/x-sed" => ["sed"], # Sed code
+    # Sed code
+    "text/x-sed" => ["sed"],
     "text/x-setext" => ["etx"],
-    "text/x-sql" => ["sql"], # SQL code
-    "text/x-stsrc" => ["st"], # Smalltalk source code
-    "text/x-tcl" => ["itk", "tcl", "tk"], # Tcl script
+    # SQL code
+    "text/x-sql" => ["sql"],
+    # Smalltalk source code
+    "text/x-stsrc" => ["st"],
+    # Tcl script
+    "text/x-tcl" => ["itk", "tcl", "tk"],
     "text/x-uuencode" => ["uu"],
-    "text/x-vbasic" => ["cls", "cls", "cls", "frm", "frm", "frm"], # Visual basic source code
-    "text/x-vbdotnet" => ["vb"], # VB.NET source code
-    "text/x-vbscript" => ["vbs"], # VBScript source code
+    # Visual basic source code
+    "text/x-vbasic" => ["cls", "cls", "cls", "frm", "frm", "frm"],
+    # VB.NET source code
+    "text/x-vbdotnet" => ["vb"],
+    # VBScript source code
+    "text/x-vbscript" => ["vbs"],
     "text/x-vcalendar" => ["vcs"],
     "text/x-vcard" => ["vcf"],
-    "text/x-verilog" => ["v"], # Verilog source code
-    "text/x-vhdl" => ["vhd", "vhdl"], # VHDL source code
-    "text/x-web-markdown" => ["md", "mdtext", "mkd", "markdown"], # Markdown source code
-    "text/x-yacc" => ["y"], # Yacc/Bison source code
-    "text/x-yaml" => ["yaml"], # YAML source code
+    # Verilog source code
+    "text/x-verilog" => ["v"],
+    # VHDL source code
+    "text/x-vhdl" => ["vhd", "vhdl"],
+    # Markdown source code
+    "text/x-web-markdown" => ["md", "mdtext", "mkd", "markdown"],
+    # Yacc/Bison source code
+    "text/x-yacc" => ["y"],
+    # YAML source code
+    "text/x-yaml" => ["yaml", "yml"],
     "video/3gpp" => ["3gp"],
     "video/3gpp2" => ["3g2"],
     "video/h261" => ["h261"],
@@ -2114,17 +2671,22 @@ defmodule ExMarcel.Tables do
     "video/h264" => ["h264"],
     "video/iso.segment" => ["m4s"],
     "video/jpeg" => ["jpgv"],
-    "video/mj2" => ["mj2", "mjp2"], # JPEG 2000 Part 3 (Motion JPEG, MJ2)
+    # JPEG 2000 Part 3 (Motion JPEG, MJ2)
+    "video/mj2" => ["mj2", "mjp2"],
     "video/mp4" => ["mp4", "mp4v", "mpg4"],
-    "video/mpeg" => ["mpeg", "mpg", "mpe", "m1v", "m2v"], # MPEG Movie Clip
-    "video/ogg" => ["ogv"], # Ogg Vorbis Video
-    "video/quicktime" => ["qt", "mov"], # QuickTime Video
+    # MPEG Movie Clip
+    "video/mpeg" => ["mpeg", "mpg", "mpe", "m1v", "m2v"],
+    # Ogg Vorbis Video
+    "video/ogg" => ["ogv"],
+    # QuickTime Video
+    "video/quicktime" => ["qt", "mov"],
     "video/vnd.fvt" => ["fvt"],
     "video/vnd.mpegurl" => ["mxu", "m4u"],
     "video/vnd.ms-playready.media.pyv" => ["pyv"],
     "video/vnd.vivo" => ["viv"],
     "video/webm" => ["webm"],
-    "video/x-dirac" => ["drc"], # Ogg Packaged Dirac Video
+    # Ogg Packaged Dirac Video
+    "video/x-dirac" => ["drc"],
     "video/x-f4v" => ["f4v"],
     "video/x-flc" => ["flc"],
     "video/x-fli" => ["fli"],
@@ -2138,10 +2700,13 @@ defmodule ExMarcel.Tables do
     "video/x-ms-wmv" => ["wmv"],
     "video/x-ms-wmx" => ["wmx"],
     "video/x-ms-wvx" => ["wvx"],
-    "video/x-msvideo" => ["avi"], # Audio Video Interleave File
-    "video/x-ogm" => ["ogm"], # Ogg Packaged OGM Video
+    # Audio Video Interleave File
+    "video/x-msvideo" => ["avi"],
+    # Ogg Packaged OGM Video
+    "video/x-ogm" => ["ogm"],
     "video/x-sgi-movie" => ["movie"],
-    "x-conference/x-cooltalk" => ["ice"], # Cooltalk Audio
+    # Cooltalk Audio
+    "x-conference/x-cooltalk" => ["ice"]
   }
   @type_parents %{
     "application/bizagi-modeler" => ["application/zip"],
@@ -2150,10 +2715,11 @@ defmodule ExMarcel.Tables do
     "application/dita+xml;format=map" => ["application/dita+xml"],
     "application/dita+xml;format=topic" => ["application/dita+xml"],
     "application/dita+xml;format=val" => ["application/dita+xml"],
-    "application/illustrator" => ["application/postscript"],
+    "application/hwp+zip" => ["application/zip"],
+    "application/illustrator" => ["application/pdf"],
     "application/java-archive" => ["application/zip"],
-    "application/javascript" => ["text/plain"],
-    "application/json" => ["application/javascript"],
+    "application/json" => ["text/javascript"],
+    "application/manifest+json" => ["application/json"],
     "application/mathematica" => ["text/plain"],
     "application/mbox" => ["text/x-tika-text-based-message"],
     "application/mp4" => ["application/quicktime"],
@@ -2166,6 +2732,8 @@ defmodule ExMarcel.Tables do
     "application/rtf" => ["text/plain"],
     "application/sldworks" => ["application/x-tika-msoffice"],
     "application/smil+xml" => ["application/xml"],
+    "application/ttml+xml" => ["application/xml"],
+    "application/vnd.adobe.indesign-idml-package" => ["application/zip"],
     "application/vnd.adobe.xdp+xml" => ["application/xml"],
     "application/vnd.adobe.xfdf" => ["application/xml"],
     "application/vnd.android.package-archive" => ["application/java-archive"],
@@ -2206,19 +2774,57 @@ defmodule ExMarcel.Tables do
     "application/vnd.ms-word.template.macroenabled.12" => ["application/x-tika-ooxml"],
     "application/vnd.ms-works" => ["application/x-tika-msoffice"],
     "application/vnd.ms-xpsdocument" => ["application/x-tika-ooxml"],
-    "application/vnd.oasis.opendocument.flat.presentation" => ["application/vnd.oasis.opendocument.tika.flat.document"],
-    "application/vnd.oasis.opendocument.flat.spreadsheet" => ["application/vnd.oasis.opendocument.tika.flat.document"],
-    "application/vnd.oasis.opendocument.flat.text" => ["application/vnd.oasis.opendocument.tika.flat.document"],
+    "application/vnd.oasis.opendocument.chart" => ["application/zip"],
+    "application/vnd.oasis.opendocument.chart-template" => ["application/zip"],
+    "application/vnd.oasis.opendocument.flat.presentation" => [
+      "application/vnd.oasis.opendocument.tika.flat.document"
+    ],
+    "application/vnd.oasis.opendocument.flat.spreadsheet" => [
+      "application/vnd.oasis.opendocument.tika.flat.document"
+    ],
+    "application/vnd.oasis.opendocument.flat.text" => [
+      "application/vnd.oasis.opendocument.tika.flat.document"
+    ],
     "application/vnd.oasis.opendocument.formula" => ["application/zip"],
+    "application/vnd.oasis.opendocument.formula-template" => ["application/zip"],
+    "application/vnd.oasis.opendocument.graphics" => ["application/zip"],
+    "application/vnd.oasis.opendocument.graphics-template" => ["application/zip"],
+    "application/vnd.oasis.opendocument.image" => ["application/zip"],
+    "application/vnd.oasis.opendocument.image-template" => ["application/zip"],
+    "application/vnd.oasis.opendocument.presentation" => ["application/zip"],
+    "application/vnd.oasis.opendocument.presentation-template" => ["application/zip"],
+    "application/vnd.oasis.opendocument.spreadsheet" => ["application/zip"],
+    "application/vnd.oasis.opendocument.spreadsheet-template" => ["application/zip"],
+    "application/vnd.oasis.opendocument.text" => ["application/zip"],
+    "application/vnd.oasis.opendocument.text-master" => ["application/zip"],
+    "application/vnd.oasis.opendocument.text-template" => ["application/zip"],
+    "application/vnd.oasis.opendocument.text-web" => ["application/zip"],
     "application/vnd.openofficeorg.autotext" => ["application/zip"],
-    "application/vnd.openxmlformats-officedocument.presentationml.presentation" => ["application/x-tika-ooxml"],
-    "application/vnd.openxmlformats-officedocument.presentationml.slide" => ["application/x-tika-ooxml"],
-    "application/vnd.openxmlformats-officedocument.presentationml.slideshow" => ["application/x-tika-ooxml"],
-    "application/vnd.openxmlformats-officedocument.presentationml.template" => ["application/x-tika-ooxml"],
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" => ["application/x-tika-ooxml"],
-    "application/vnd.openxmlformats-officedocument.spreadsheetml.template" => ["application/x-tika-ooxml"],
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document" => ["application/x-tika-ooxml"],
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.template" => ["application/x-tika-ooxml"],
+    "application/vnd.openofficeorg.extension" => ["application/zip"],
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation" => [
+      "application/x-tika-ooxml"
+    ],
+    "application/vnd.openxmlformats-officedocument.presentationml.slide" => [
+      "application/x-tika-ooxml"
+    ],
+    "application/vnd.openxmlformats-officedocument.presentationml.slideshow" => [
+      "application/x-tika-ooxml"
+    ],
+    "application/vnd.openxmlformats-officedocument.presentationml.template" => [
+      "application/x-tika-ooxml"
+    ],
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" => [
+      "application/x-tika-ooxml"
+    ],
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.template" => [
+      "application/x-tika-ooxml"
+    ],
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document" => [
+      "application/x-tika-ooxml"
+    ],
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.template" => [
+      "application/x-tika-ooxml"
+    ],
     "application/vnd.stardivision.calc" => ["application/x-tika-staroffice"],
     "application/vnd.stardivision.draw" => ["application/x-tika-staroffice"],
     "application/vnd.stardivision.impress" => ["application/x-tika-staroffice"],
@@ -2226,16 +2832,21 @@ defmodule ExMarcel.Tables do
     "application/vnd.visio" => ["application/x-tika-msoffice"],
     "application/vnd.wolfram.wl" => ["application/mathematica"],
     "application/x-adobe-indesign-interchange" => ["application/xml"],
+    "application/x-amf" => ["application/xml"],
     "application/x-bat" => ["text/plain"],
     "application/x-bibtex-text-file" => ["text/plain"],
     "application/x-bzip2" => ["application/x-bzip"],
     "application/x-corelpresentations" => ["application/x-tika-msoffice"],
     "application/x-debian-package" => ["application/x-archive"],
     "application/x-dosexec" => ["application/x-msdownload"],
+    "application/x-esri-layer" => ["application/x-tika-msoffice"],
     "application/x-fictionbook+xml" => ["application/xml"],
+    "application/x-geopackage" => ["application/x-sqlite3"],
+    "application/x-geopackage; version=1.1Or1.0" => ["application/x-sqlite3"],
     "application/x-gtar" => ["application/x-tar"],
     "application/x-ibooks+zip" => ["application/epub+zip"],
     "application/x-itunes-ipa" => ["application/zip"],
+    "application/x-java-jnilib" => ["application/x-mach-o-universal"],
     "application/x-latex" => ["application/x-tex"],
     "application/x-memgraph" => ["application/x-bplist"],
     "application/x-ms-asx" => ["application/xml"],
@@ -2244,6 +2855,7 @@ defmodule ExMarcel.Tables do
     "application/x-mspublisher" => ["application/x-tika-msoffice"],
     "application/x-mysql-misam-compressed-index" => ["application/x-mysql-db"],
     "application/x-mysql-misam-data" => ["application/x-mysql-db"],
+    "application/x-openscad" => ["text/plain"],
     "application/x-project" => ["text/plain"],
     "application/x-quattro-pro" => ["application/x-tika-msoffice"],
     "application/x-quattro-pro;version=1+5" => ["application/x-quattro-pro"],
@@ -2255,10 +2867,12 @@ defmodule ExMarcel.Tables do
     "application/x-sfdu" => ["text/plain"],
     "application/x-sh" => ["text/plain"],
     "application/x-staroffice-template" => ["application/x-tika-staroffice"],
+    "application/x-subrip" => ["text/plain"],
     "application/x-tex" => ["text/plain"],
     "application/x-tika-java-enterprise-archive" => ["application/java-archive"],
     "application/x-tika-java-web-archive" => ["application/java-archive"],
     "application/x-tika-msworks-spreadsheet" => ["application/vnd.ms-excel"],
+    "application/x-tmx" => ["application/xml"],
     "application/x-webarchive" => ["application/x-bplist"],
     "application/x-x509-cert;format=der" => ["application/x-x509-cert"],
     "application/x-x509-cert;format=pem" => ["application/x-x509-cert"],
@@ -2268,7 +2882,7 @@ defmodule ExMarcel.Tables do
     "application/xml" => ["text/plain"],
     "application/xml-dtd" => ["text/plain"],
     "application/xquery" => ["text/plain"],
-    "audio/mp4" => ["application/quicktime"],
+    "audio/mp4" => ["video/mp4"],
     "audio/ogg" => ["application/ogg"],
     "audio/opus" => ["audio/ogg"],
     "audio/speex" => ["audio/ogg"],
@@ -2280,7 +2894,10 @@ defmodule ExMarcel.Tables do
     "image/jpx" => ["image/x-jp2-container"],
     "image/svg+xml" => ["application/xml"],
     "image/vnd.adobe.premiere" => ["application/xml"],
+    "image/x-canon-cr2" => ["image/tiff"],
+    "image/x-canon-cr3" => ["video/quicktime"],
     "image/x-emf-compressed" => ["application/gzip"],
+    "image/x-portable-arbitrarymap" => ["image/x-portable-anymap"],
     "image/x-portable-bitmap" => ["image/x-portable-anymap"],
     "image/x-portable-graymap" => ["image/x-portable-anymap"],
     "image/x-portable-pixmap" => ["image/x-portable-anymap"],
@@ -2295,6 +2912,7 @@ defmodule ExMarcel.Tables do
     "text/css" => ["text/plain"],
     "text/csv" => ["text/plain"],
     "text/iso19139+xml" => ["application/xml"],
+    "text/javascript" => ["text/plain"],
     "text/vnd.graphviz" => ["text/plain"],
     "text/vtt" => ["text/plain"],
     "text/x-actionscript" => ["text/plain"],
@@ -2381,7 +2999,7 @@ defmodule ExMarcel.Tables do
     "video/x-m4v" => ["video/mp4"],
     "video/x-matroska" => ["application/x-matroska"],
     "video/x-ms-wmv" => ["video/x-ms-asf"],
-    "video/x-ogm" => ["video/ogg"],
+    "video/x-ogm" => ["video/ogg"]
   }
   # b = Hash.new { |h, k| h[k] = k.b.freeze }
   @magic [
@@ -2389,64 +3007,622 @@ defmodule ExMarcel.Tables do
     ["image/png", [[0, ["\x89PNG\r\n\u001A\n"]]]],
     ["image/gif", [[0, ["GIF87a"]], [0, ["GIF89a"]]]],
     ["image/tiff", [[0, ["MM\u0000*"]], [0, ["II*\u0000"]], [0, ["MM\u0000+"]]]],
-    ["image/bmp", [[0, ["BM"], [[26, ["\u0001\u0000"], [[28, ["\u0000\u0000"]], [28, ["\u0001\u0000"]], [28, ["\u0004\u0000"]], [28, ["\b\u0000"]], [28, ["\u0010\u0000"]], [28, ["\u0018\u0000"]], [28, [" \u0000"]]]]]]]],
+    [
+      "image/bmp",
+      [
+        [
+          0,
+          ["BM"],
+          [
+            [
+              26,
+              ["\u0001\u0000"],
+              [
+                [28, ["\u0000\u0000"]],
+                [28, ["\u0001\u0000"]],
+                [28, ["\u0004\u0000"]],
+                [28, ["\b\u0000"]],
+                [28, ["\u0010\u0000"]],
+                [28, ["\u0018\u0000"]],
+                [28, [" \u0000"]]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
     ["image/vnd.adobe.photoshop", [[0, ["8BPS\u0000\u0001"]], [0, ["8BPS\u0000\u0002"]]]],
     ["image/webp", [[0, ["RIFF"], [[8, ["WEBP"]]]]]],
     ["image/svg+xml", [[0..4096, ["<svg"]]]],
+    ["image/svg+xml", [[0, ["<svg"], [[5..256, ["http://www.w3.org/2000/svg"]]]]]],
     ["video/x-msvideo", [[0, ["RIFF"], [[8, ["AVI "]]]], [8, ["AVI "]]]],
-    ["video/x-ms-wmv", [[0..8192, ["Windows Media Video"]], [0..8192, ["VC-1 Advanced Profile"]], [0..8192, ["wmv2"]]]],
+    [
+      "video/x-ms-wmv",
+      [
+        [0..8192, ["Windows Media Video"]],
+        [0..8192, ["VC-1 Advanced Profile"]],
+        [0..8192, ["wmv2"]]
+      ]
+    ],
     ["video/mp4", [[4, ["ftypmp41"]], [4, ["ftypmp42"]]]],
     ["audio/mp4", [[4, ["ftypM4A "]], [4, ["ftypM4B "]], [4, ["ftypF4A "]], [4, ["ftypF4B "]]]],
-    ["video/quicktime", [[4, ["moov\u0000"]], [4, ["mdat\u0000"]], [4, ["free\u0000"]], [4, ["skip\u0000"]], [4, ["pnot\u0000"]], [4, ["ftyp"]], [0, ["\u0000\u0000\u0000\bwide"]]]],
+    [
+      "video/quicktime",
+      [
+        [4, ["moov\u0000"]],
+        [4, ["mdat\u0000"]],
+        [4, ["free\u0000"]],
+        [4, ["skip\u0000"]],
+        [4, ["pnot\u0000"]],
+        [4, ["ftyp"]],
+        [0, ["\u0000\u0000\u0000\bwide"]]
+      ]
+    ],
     ["video/mpeg", [[0, ["\u0000\u0000\u0001\xB3"]], [0, ["\u0000\u0000\u0001\xBA"]]]],
-    ["video/webm", [[0, ["\x1AE\xDF\xA3"], [[4..4096, ["B\x82"], [[4..4096, ["webm"], [[4..4096, ["V_VP8"]], [4..4096, ["V_VP9"]]]]]]]]]],
+    [
+      "video/webm",
+      [
+        [
+          0,
+          ["\x1AE\xDF\xA3"],
+          [
+            [
+              4..4096,
+              ["B\x82"],
+              [[4..4096, ["webm"], [[4..4096, ["V_VP8"]], [4..4096, ["V_VP9"]]]]]
+            ]
+          ]
+        ]
+      ]
+    ],
     ["video/x-matroska", [[0, ["\x1AE\xDF\xA3\x93B\x82\x88matroska"]]]],
     ["video/x-flv", [[0, ["FLV"]]]],
-    ["audio/mpeg", [[0, ["\xFF\xF2"]], [0, ["\xFF\xF3"]], [0, ["\xFF\xF4"]], [0, ["\xFF\xF5"]], [0, ["\xFF\xF6"]], [0, ["\xFF\xF7"]], [0, ["\xFF\xFA"]], [0, ["\xFF\xFB"]], [0, ["\xFF\xFC"]], [0, ["\xFF\xFD"]], [0, ["\xFF\xFF"]], [0, ["ID3"]]]],
-    ["application/pdf", [[0, ["%PDF-"]], [0, ["\uFEFF%PDF-"]]]],
-    ["application/msword", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[546, ["jbjb"]], [546, ["bjbj"]]]]]],
-    ["application/vnd.openxmlformats-officedocument.wordprocessingml.document", [[0, ["PK\u0003\u0004"], [[30..65536, ["[Content_Types].xml"], [[0..4096, ["word/"]]]], [30, ["_rels/.rels"], [[0..4096, ["word/"]]]]]]]],
-    ["application/vnd.ms-powerpoint", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[1152..4096, ["P\u0000o\u0000w\u0000e\u0000r\u0000P\u0000o\u0000i\u0000n\u0000t\u0000 D\u0000o\u0000c\u0000u\u0000m\u0000e\u0000n\u0000t"]]]]]],
-    ["application/vnd.openxmlformats-officedocument.presentationml.presentation", [[0, ["PK\u0003\u0004"], [[30..65536, ["[Content_Types].xml"], [[0..4096, ["ppt/"]]]], [30, ["_rels/.rels"], [[0..4096, ["ppt/"]]]]]]]],
-    ["application/vnd.ms-excel", [[2080, ["Microsoft Excel 5.0 Worksheet"]], [2080, ["Foglio di lavoro Microsoft Exce"]], [2114, ["Biff5"]], [2121, ["Biff5"]], [0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[1152..4096, ["W\u0000o\u0000r\u0000k\u0000b\u0000o\u0000o\u0000k"]]]]]],
-    ["application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", [[0, ["PK\u0003\u0004"], [[30..65536, ["[Content_Types].xml"], [[0..4096, ["xl/"]]]], [30, ["_rels/.rels"], [[0..4096, ["xl/"]]]]]]]],
-    ["application/x-dbf", [[0, ["(?s)^[\\\\x02\\\\x03\\\\x30\\\\x31\\\\x32\\\\x43\\\\x63\\\\x83\\\\x8B\\\\xCB\\\\xF5\\\\xE5\\\\xFB].[\\\\x01-\\\\x0C][\\\\x01-\\\\x1F].{4}(?:.[^\\\\x00]|[\\\\x41-\\\\xFF].)(?:[^\\\\x00\\\\x01].|.[^\\\\x00]).{31}(?<=[\\\\x00][^\\\\x00]{0,10})[A-Z@+]"]]]],
-    ["image/x-tga", [[1, ["\x01\x01\x00\x00"], [[8, [".*[\\\\x54\\\\x52\\\\x55\\\\x45\\\\x56\\\\x49\\\\x53\\\\x49\\\\x4F\\\\x4E\\\\x2D\\\\x58\\\\x46\\\\x49\\\\x4C\\\\x45\\\\x2E\\\\x00]"]]]], [1, ["\x00\x02\x00\x00"], [[8, [".*[\\\\x54\\\\x52\\\\x55\\\\x45\\\\x56\\\\x49\\\\x53\\\\x49\\\\x4F\\\\x4E\\\\x2D\\\\x58\\\\x46\\\\x49\\\\x4C\\\\x45\\\\x2E\\\\x00]"]]]], [1, ["\x00\x03\x00\x00"], [[8, [".*[\\\\x54\\\\x52\\\\x55\\\\x45\\\\x56\\\\x49\\\\x53\\\\x49\\\\x4F\\\\x4E\\\\x2D\\\\x58\\\\x46\\\\x49\\\\x4C\\\\x45\\\\x2E\\\\x00]"]]]]]],
-    ["application/x-endnote-refer", [[0..50, ["%A "], [[0..1000, ["\n%D "], [[0..1000, ["\n%T "]]]]]]]],
-    ["application/x-ms-owner", [[0, ["(?s)^([\\\\x05-\\\\x0F])[\\\\x00\\\\x20-\\\\x7E]{10}.{43}\\\\1\\x00"]]]],
-    ["application/mbox", [[0, ["From "], [[32..256, ["\nFrom: "]], [32..256, ["\nDate: "]], [32..256, ["\nSubject: "]], [32..256, ["\nDelivered-To: "]], [32..256, ["\nReceived: by "]], [32..256, ["\nReceived: via "]], [32..256, ["\nReceived: from "]], [32..256, ["\nMime-Version: "]], [32..256, ["\nX-"], [[32..8192, ["\nFrom: "]], [32..8192, ["\nDate: "]], [32..8192, ["\nSubject: "]], [32..8192, ["\nDelivered-To: "]], [32..8192, ["\nReceived: by "]], [32..8192, ["\nReceived: via "]], [32..8192, ["\nReceived: from "]], [32..8192, ["\nMime-Version: "]]]]]]]],
-    ["application/x-bplist", [[0, ["bplist\u0000\u0000"]], [0, ["bplist\u0000\u0001"]], [0, ["bplist@\u0000"]], [0, ["bplist00"]], [0, ["bplist01"]], [0, ["bplist10"]], [0, ["bplist15"]], [0, ["bplist16"]]]],
-    ["application/x-ms-nls", [[0, ["(?s)^\\\\x0D.{51}\\\\x0C\\\\x00\\\\x0D\\\\x00\\\\x0E"]], [0, ["(?s)^\\\\x44\\\\x43.\\\\x01"]]]],
-    ["message/x-emlx", [[2..9, ["\nRelay-Version:"]], [2..9, ["\n#! rnews"]], [2..9, ["\nN#! rnews"]], [2..9, ["\nForward to"]], [2..9, ["\nPipe to"]], [2..9, ["\nReturn-Path:"]], [2..9, ["\nFrom:"]], [2..9, ["\nReceived:"]], [2..9, ["\nMessage-ID:"]], [2..9, ["\nDate:"]]]],
+    [
+      "audio/mpeg",
+      [
+        [0, ["\xFF\xF2"]],
+        [0, ["\xFF\xF3"]],
+        [0, ["\xFF\xF4"]],
+        [0, ["\xFF\xF5"]],
+        [0, ["\xFF\xF6"]],
+        [0, ["\xFF\xF7"]],
+        [0, ["\xFF\xFA"]],
+        [0, ["\xFF\xFB"]],
+        [0, ["\xFF\xFC"]],
+        [0, ["\xFF\xFD"]],
+        [0, ["\xFF\xE3"]],
+        [0, ["\xFF\xFF"]],
+        [0, ["ID3"]],
+        [
+          0,
+          [
+            "(?:\\\\x0D\\\\x0A|\\\\x00{1,1024})(?:\\\\xff[\\\\xe3\\\\xf2\\\\xf3\\\\xf4\\\\xf5\\\\xf6\\\\xf7\\\\xf8\\\\xf9\\\\xfa\\\\xfb\\\\xfc\\\\xfd\\\\xfe\\\\xff]|ID3)"
+          ]
+        ]
+      ]
+    ],
+    ["application/pdf", [[0, ["%PDF-"]], [0, ["\xEF\xBB\xBF%PDF-"]]]],
+    [
+      "application/msword",
+      [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[546, ["jbjb"]], [546, ["bjbj"]]]]]
+    ],
+    [
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      [
+        [
+          0,
+          ["PK\u0003\u0004"],
+          [
+            [30..65536, ["[Content_Types].xml"], [[0..4096, ["word/"]]]],
+            [30, ["_rels/.rels"], [[0..4096, ["word/"]]]]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.ms-powerpoint",
+      [
+        [
+          0..8,
+          ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"],
+          [
+            [
+              1152..4096,
+              [
+                "P\u0000o\u0000w\u0000e\u0000r\u0000P\u0000o\u0000i\u0000n\u0000t\u0000 D\u0000o\u0000c\u0000u\u0000m\u0000e\u0000n\u0000t"
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      [
+        [
+          0,
+          ["PK\u0003\u0004"],
+          [
+            [30..65536, ["[Content_Types].xml"], [[0..4096, ["ppt/"]]]],
+            [30, ["_rels/.rels"], [[0..4096, ["ppt/"]]]]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.ms-excel",
+      [
+        [2080, ["Microsoft Excel 5.0 Worksheet"]],
+        [2080, ["Foglio di lavoro Microsoft Exce"]],
+        [2114, ["Biff5"]],
+        [2121, ["Biff5"]],
+        [
+          0..8,
+          ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"],
+          [[1152..4096, ["W\u0000o\u0000r\u0000k\u0000b\u0000o\u0000o\u0000k"]]]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      [
+        [
+          0,
+          ["PK\u0003\u0004"],
+          [
+            [30..65536, ["[Content_Types].xml"], [[0..4096, ["xl/"]]]],
+            [30, ["_rels/.rels"], [[0..4096, ["xl/"]]]]
+          ]
+        ]
+      ]
+    ],
+    [
+      "image/x-tga",
+      [
+        [
+          1,
+          ["\x01\x01\x00\x00"],
+          [
+            [
+              8,
+              [
+                ".*[\\\\x54\\\\x52\\\\x55\\\\x45\\\\x56\\\\x49\\\\x53\\\\x49\\\\x4F\\\\x4E\\\\x2D\\\\x58\\\\x46\\\\x49\\\\x4C\\\\x45\\\\x2E\\\\x00]"
+              ]
+            ]
+          ]
+        ],
+        [
+          1,
+          ["\x00\x02\x00\x00"],
+          [
+            [
+              8,
+              [
+                ".*[\\\\x54\\\\x52\\\\x55\\\\x45\\\\x56\\\\x49\\\\x53\\\\x49\\\\x4F\\\\x4E\\\\x2D\\\\x58\\\\x46\\\\x49\\\\x4C\\\\x45\\\\x2E\\\\x00]"
+              ]
+            ]
+          ]
+        ],
+        [
+          1,
+          ["\x00\x03\x00\x00"],
+          [
+            [
+              8,
+              [
+                ".*[\\\\x54\\\\x52\\\\x55\\\\x45\\\\x56\\\\x49\\\\x53\\\\x49\\\\x4F\\\\x4E\\\\x2D\\\\x58\\\\x46\\\\x49\\\\x4C\\\\x45\\\\x2E\\\\x00]"
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/x-endnote-refer",
+      [[0..50, ["%A "], [[0..1000, ["\n%D "], [[0..1000, ["\n%T "]]]]]]]
+    ],
+    [
+      "application/x-ms-owner",
+      [[0, ["(?s)^([\\\\x05-\\\\x0F])[\\\\x00\\\\x20-\\\\x7E]{10}.{43}\\\\1\\x00"]]]
+    ],
+    ["application/x-tmx", [[0..256, ["<tmx"]]]],
+    [
+      "application/mbox",
+      [
+        [
+          0,
+          ["From "],
+          [
+            [32..256, ["\nFrom: "]],
+            [32..256, ["\nDate: "]],
+            [32..256, ["\nSubject: "]],
+            [32..256, ["\nDelivered-To: "]],
+            [32..256, ["\nReceived: by "]],
+            [32..256, ["\nReceived: via "]],
+            [32..256, ["\nReceived: from "]],
+            [32..256, ["\nMime-Version: "]],
+            [
+              32..256,
+              ["\nX-"],
+              [
+                [32..8192, ["\nFrom: "]],
+                [32..8192, ["\nDate: "]],
+                [32..8192, ["\nSubject: "]],
+                [32..8192, ["\nDelivered-To: "]],
+                [32..8192, ["\nReceived: by "]],
+                [32..8192, ["\nReceived: via "]],
+                [32..8192, ["\nReceived: from "]],
+                [32..8192, ["\nMime-Version: "]]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/x-bplist",
+      [
+        [0, ["bplist\u0000\u0000"]],
+        [0, ["bplist\u0000\u0001"]],
+        [0, ["bplist@\u0000"]],
+        [0, ["bplist00"]],
+        [0, ["bplist01"]],
+        [0, ["bplist10"]],
+        [0, ["bplist15"]],
+        [0, ["bplist16"]]
+      ]
+    ],
+    ["application/x-dvd-ifo", [[0, ["DVDVIDEO-VTS"]], [0, ["DVDVIDEO-VMG"]]]],
+    ["application/x-ebu-stl", [[3, ["STL"], [[8, [".01"]]]]]],
+    [
+      "application/x-ms-nls",
+      [
+        [0, ["(?s)^\\\\x0D.{51}\\\\x0C\\\\x00\\\\x0D\\\\x00\\\\x0E"]],
+        [0, ["(?s)^\\\\x44\\\\x43.\\\\x01"]]
+      ]
+    ],
+    [
+      "message/x-emlx",
+      [
+        [2..9, ["\nRelay-Version:"]],
+        [2..9, ["\n#! rnews"]],
+        [2..9, ["\nN#! rnews"]],
+        [2..9, ["\nForward to"]],
+        [2..9, ["\nPipe to"]],
+        [2..9, ["\nReturn-Path:"]],
+        [2..9, ["\nFrom:"]],
+        [2..9, ["\nReceived:"]],
+        [2..9, ["\nMessage-ID:"]],
+        [2..9, ["\nDate:"]]
+      ]
+    ],
     ["application/cbor", [[0, ["\xD9\xD9\xF7"]]]],
-    ["application/coreldraw", [[0, ["RIFF"], [[8, ["CDR"]], [8, ["cdr"]], [8, ["DES"]], [8, ["des"]]]]]],
-    ["application/vnd.etsi.asic-e+zip", [[0, ["PK\u0003\u0004"], [[30, ["mimetypeapplication/vnd.etsi.asic-e+zip"]]]]]],
-    ["application/vnd.etsi.asic-s+zip", [[0, ["PK\u0003\u0004"], [[30, ["mimetypeapplication/vnd.etsi.asic-s+zip"]]]]]],
-    ["application/vnd.ms-excel.sheet.2", [[0, ["\t\u0000\u0004\u0000"], [[4, ["\u0000\u0000\u0010\u0000"]], [4, ["\u0000\u0000 \u0000"]], [4, ["\u0000\u0000@\u0000"]]]]]],
-    ["application/vnd.ms-excel.sheet.3", [[0, ["\t\u0002\u0006\u0000"], [[4, ["\u0000\u0000\u0010\u0000"]], [4, ["\u0000\u0000 \u0000"]], [4, ["\u0000\u0000@\u0000"]]]]]],
-    ["application/vnd.ms-excel.sheet.4", [[0, ["\t\u0004\u0006\u0000"], [[4, ["\u0000\u0000\u0010\u0000"]], [4, ["\u0000\u0000 \u0000"]], [4, ["\u0000\u0000@\u0000"]]]]]],
-    ["application/vnd.ms-excel.workspace.3", [[0, ["\t\u0002\u0006\u0000"], [[4, ["\u0000\u0000\u0000\u0001"]]]]]],
-    ["application/vnd.ms-excel.workspace.4", [[0, ["\t\u0004\u0006\u0000"], [[4, ["\u0000\u0000\u0000\u0001"]]]]]],
-    ["application/x-axcrypt", [[0, ["\xC0\xB9\a.O\x93\xF1F\xA0\x15y,\xA1\xD9\xE8!"], [[17, ["\x00\x00\x00\x02"]]]]]],
-    ["application/x-berkeley-db;format=btree;version=2", [[12, ["b1\x05\x00"], [[16, ["\x06\x00\x00\x00"]]]], [12, ["\x00\x051b"], [[16, ["\x00\x00\x00\x06"]]]], [12, ["b1\x05\x00"], [[16, ["\x06\x00\x00\x00"]]]]]],
-    ["application/x-berkeley-db;format=btree;version=3", [[12, ["b1\x05\x00"], [[16, ["\b\x00\x00\x00"]]]], [12, ["\x00\x051b"], [[16, ["\x00\x00\x00\b"]]]], [12, ["b1\x05\x00"], [[16, ["\b\x00\x00\x00"]]]]]],
-    ["application/x-berkeley-db;format=btree;version=4", [[12, ["b1\x05\x00"], [[16, ["\t\x00\x00\x00"]]]], [12, ["\x00\x051b"], [[16, ["\x00\x00\x00\t"]]]], [12, ["b1\x05\x00"], [[16, ["\t\x00\x00\x00"]]]]]],
-    ["application/x-berkeley-db;format=hash;version=2", [[12, ["a\x15\x06\x00"], [[16, ["\x05\x00\x00\x00"]]]], [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\x05"]]]], [12, ["a\x15\x06\x00"], [[16, ["\x05\x00\x00\x00"]]]]]],
-    ["application/x-berkeley-db;format=hash;version=3", [[12, ["a\x15\x06\x00"], [[16, ["\a\x00\x00\x00"]]]], [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\a"]]]], [12, ["a\x15\x06\x00"], [[16, ["\a\x00\x00\x00"]]]]]],
-    ["application/x-berkeley-db;format=hash;version=4", [[12, ["a\x15\x06\x00"], [[16, ["\b\x00\x00\x00"]]]], [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\b"]]]], [12, ["a\x15\x06\x00"], [[16, ["\b\x00\x00\x00"]]]]]],
-    ["application/x-berkeley-db;format=hash;version=5", [[12, ["a\x15\x06\x00"], [[16, ["\t\x00\x00\x00"]]]], [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\t"]]]], [12, ["a\x15\x06\x00"], [[16, ["\t\x00\x00\x00"]]]]]],
+    [
+      "application/coreldraw",
+      [[0, ["RIFF"], [[8, ["CDR"]], [8, ["cdr"]], [8, ["DES"]], [8, ["des"]]]]]
+    ],
+    ["application/illustrator+ps", [[0..8192, ["[\\r\\n]%AI5_FileFormat [1-4][\\r\\n]"]]]],
+    [
+      "application/vnd.etsi.asic-e+zip",
+      [[0, ["PK\u0003\u0004"], [[30, ["mimetypeapplication/vnd.etsi.asic-e+zip"]]]]]
+    ],
+    [
+      "application/vnd.etsi.asic-s+zip",
+      [[0, ["PK\u0003\u0004"], [[30, ["mimetypeapplication/vnd.etsi.asic-s+zip"]]]]]
+    ],
+    [
+      "application/vnd.ms-excel.sheet.2",
+      [
+        [
+          0,
+          ["\t\u0000\u0004\u0000"],
+          [
+            [4, ["\u0000\u0000\u0010\u0000"]],
+            [4, ["\u0000\u0000 \u0000"]],
+            [4, ["\u0000\u0000@\u0000"]]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.ms-excel.sheet.3",
+      [
+        [
+          0,
+          ["\t\u0002\u0006\u0000"],
+          [
+            [4, ["\u0000\u0000\u0010\u0000"]],
+            [4, ["\u0000\u0000 \u0000"]],
+            [4, ["\u0000\u0000@\u0000"]]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.ms-excel.sheet.4",
+      [
+        [
+          0,
+          ["\t\u0004\u0006\u0000"],
+          [
+            [4, ["\u0000\u0000\u0010\u0000"]],
+            [4, ["\u0000\u0000 \u0000"]],
+            [4, ["\u0000\u0000@\u0000"]]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.ms-excel.workspace.3",
+      [[0, ["\t\u0002\u0006\u0000"], [[4, ["\u0000\u0000\u0000\u0001"]]]]]
+    ],
+    [
+      "application/vnd.ms-excel.workspace.4",
+      [[0, ["\t\u0004\u0006\u0000"], [[4, ["\u0000\u0000\u0000\u0001"]]]]]
+    ],
+    ["application/vnd.tcpdump.pcap", [[0, ["\xA1\xB2\xC3\xD4"]], [0, ["\xD4\xC3\xB2\xA1"]]]],
+    [
+      "application/vnd.tcpdump.pcapng",
+      [[0, ["\n\r\r\n"], [[8, ["\xA1\xB2\xC3\xD4"]], [8, ["M<+\u001A"]]]]]
+    ],
+    ["application/warc", [[0, ["WARC/"]]]],
+    ["application/x-activemime", [[0, ["ActiveMime\u0000\u0000"]]]],
+    [
+      "application/x-axcrypt",
+      [[0, ["\xC0\xB9\a.O\x93\xF1F\xA0\x15y,\xA1\xD9\xE8!"], [[17, ["\x00\x00\x00\x02"]]]]]
+    ],
+    ["application/x-bentley-besqlite", [[0, ["SQLite format 3\u0000"], [[68, ["BeDb"]]]]]],
+    ["application/x-bentley-localization", [[0, ["SQLite format 3\u0000"], [[68, ["BeLn"]]]]]],
+    [
+      "application/x-berkeley-db;format=btree;version=2",
+      [
+        [12, ["b1\x05\x00"], [[16, ["\x06\x00\x00\x00"]]]],
+        [12, ["\x00\x051b"], [[16, ["\x00\x00\x00\x06"]]]],
+        [12, ["b1\x05\x00"], [[16, ["\x06\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=btree;version=3",
+      [
+        [12, ["b1\x05\x00"], [[16, ["\b\x00\x00\x00"]]]],
+        [12, ["\x00\x051b"], [[16, ["\x00\x00\x00\b"]]]],
+        [12, ["b1\x05\x00"], [[16, ["\b\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=btree;version=4",
+      [
+        [12, ["b1\x05\x00"], [[16, ["\t\x00\x00\x00"]]]],
+        [12, ["\x00\x051b"], [[16, ["\x00\x00\x00\t"]]]],
+        [12, ["b1\x05\x00"], [[16, ["\t\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=hash;version=2",
+      [
+        [12, ["a\x15\x06\x00"], [[16, ["\x05\x00\x00\x00"]]]],
+        [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\x05"]]]],
+        [12, ["a\x15\x06\x00"], [[16, ["\x05\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=hash;version=3",
+      [
+        [12, ["a\x15\x06\x00"], [[16, ["\a\x00\x00\x00"]]]],
+        [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\a"]]]],
+        [12, ["a\x15\x06\x00"], [[16, ["\a\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=hash;version=4",
+      [
+        [12, ["a\x15\x06\x00"], [[16, ["\b\x00\x00\x00"]]]],
+        [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\b"]]]],
+        [12, ["a\x15\x06\x00"], [[16, ["\b\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=hash;version=5",
+      [
+        [12, ["a\x15\x06\x00"], [[16, ["\t\x00\x00\x00"]]]],
+        [12, ["\x00\x06\x15a"], [[16, ["\x00\x00\x00\t"]]]],
+        [12, ["a\x15\x06\x00"], [[16, ["\t\x00\x00\x00"]]]]
+      ]
+    ],
     ["application/x-bplist", [[0, ["bplist"]]]],
-    ["application/x-debian-package", [[0, ["!<arch>\ndebian-binary"]], [0, ["!<arch>\ndebian-split"]]]],
-    ["application/x-font-type1", [[0, ["\x80\u0001"], [[4, ["\u0000\u0000%!PS-AdobeFont"]]]], [0, ["%!PS-AdobeFont-1.0"]]]],
+    [
+      "application/x-debian-package",
+      [[0, ["!<arch>\ndebian-binary"]], [0, ["!<arch>\ndebian-split"]]]
+    ],
+    [
+      "application/x-esri-spatially-enabled-db",
+      [[0, ["SQLite format 3\u0000"], [[68, ["Esri"]]]]]
+    ],
+    [
+      "application/x-font-type1",
+      [[0, ["\x80\u0001"], [[4, ["\u0000\u0000%!PS-AdobeFont"]]]], [0, ["%!PS-AdobeFont-1.0"]]]
+    ],
+    [
+      "application/x-fossil-checkout",
+      [[0, ["SQLite format 3\u0000"], [[68, ["\u000F\u0005Q\u0012"]]]]]
+    ],
+    [
+      "application/x-fossil-global-conf",
+      [[0, ["SQLite format 3\u0000"], [[68, ["\u000F\u0005Q\u0013"]]]]]
+    ],
+    [
+      "application/x-fossil-repository",
+      [[0, ["SQLite format 3\u0000"], [[68, ["\u000F\u0005Q\u0011"]]]]]
+    ],
+    ["application/x-geopackage", [[0, ["SQLite format 3\u0000"], [[68, ["GPKG"]]]]]],
+    [
+      "application/x-geopackage; version=1.1Or1.0",
+      [[0, ["SQLite format 3\u0000"], [[68, ["GP10"]]]]]
+    ],
+    [
+      "application/x-httpresponse",
+      [
+        [
+          0,
+          ["HTTP/"],
+          [
+            [0..1000, ["\nCache-Control:"]],
+            [0..1000, ["\nContent-Type:"]],
+            [0..1000, ["\nContent-Length:"]],
+            [0..1000, ["\nContent-Disposition:"]],
+            [0..1000, ["\nDate:"]],
+            [0..1000, ["\nServer:"]]
+          ]
+        ],
+        [0, nil]
+      ]
+    ],
     ["application/x-internet-archive", [[0, ["filedesc://"]]]],
     ["application/x-lz4", [[0, ["\x04\"M\x18"]], [0, ["\x02!L\x18"]]]],
+    [
+      "application/x-mach-o-universal",
+      [
+        [
+          0,
+          ["\xCA\xFE\xBA\xBE"],
+          [
+            [4, ["\x00\x00\x00\x01"]],
+            [4, ["\x00\x00\x00\x02"]],
+            [4, ["\x00\x00\x00\x03"]],
+            [4, ["\x00\x00\x00\x04"]],
+            [4, ["\x00\x00\x00\x05"]],
+            [4, ["\x00\x00\x00\x06"]],
+            [4, ["\x00\x00\x00\a"]],
+            [4, ["\x00\x00\x00\b"]],
+            [4, ["\x00\x00\x00\t"]],
+            [4, ["\x00\x00\x00\n"]],
+            [4, ["\x00\x00\x00\v"]],
+            [4, ["\x00\x00\x00\f"]],
+            [4, ["\x00\x00\x00\r"]],
+            [4, ["\x00\x00\x00\x0E"]],
+            [4, ["\x00\x00\x00\x0F"]],
+            [4, ["\x00\x00\x00\x10"]],
+            [4, ["\x00\x00\x00\x11"]],
+            [4, ["\x00\x00\x00\x12"]],
+            [4, ["\x00\x00\x00\x13"]]
+          ]
+        ],
+        [
+          0,
+          ["\xBE\xBA\xFE\xCA"],
+          [
+            [4, ["\x01\x00\x00\x00"]],
+            [4, ["\x02\x00\x00\x00"]],
+            [4, ["\x03\x00\x00\x00"]],
+            [4, ["\x04\x00\x00\x00"]],
+            [4, ["\x05\x00\x00\x00"]],
+            [4, ["\x06\x00\x00\x00"]],
+            [4, ["\a\x00\x00\x00"]],
+            [4, ["\b\x00\x00\x00"]],
+            [4, ["\t\x00\x00\x00"]],
+            [4, ["\n\x00\x00\x00"]],
+            [4, ["\v\x00\x00\x00"]],
+            [4, ["\f\x00\x00\x00"]],
+            [4, ["\r\x00\x00\x00"]],
+            [4, ["\x0E\x00\x00\x00"]],
+            [4, ["\x0F\x00\x00\x00"]],
+            [4, ["\x10\x00\x00\x00"]],
+            [4, ["\x11\x00\x00\x00"]],
+            [4, ["\x12\x00\x00\x00"]],
+            [4, ["\x13\x00\x00\x00"]]
+          ]
+        ],
+        [
+          0,
+          ["\xCA\xFE\xBA\xBF"],
+          [
+            [4, ["\x00\x00\x00\x01"]],
+            [4, ["\x00\x00\x00\x02"]],
+            [4, ["\x00\x00\x00\x03"]],
+            [4, ["\x00\x00\x00\x04"]],
+            [4, ["\x00\x00\x00\x05"]],
+            [4, ["\x00\x00\x00\x06"]],
+            [4, ["\x00\x00\x00\a"]],
+            [4, ["\x00\x00\x00\b"]],
+            [4, ["\x00\x00\x00\t"]],
+            [4, ["\x00\x00\x00\n"]],
+            [4, ["\x00\x00\x00\v"]],
+            [4, ["\x00\x00\x00\f"]],
+            [4, ["\x00\x00\x00\r"]],
+            [4, ["\x00\x00\x00\x0E"]],
+            [4, ["\x00\x00\x00\x0F"]],
+            [4, ["\x00\x00\x00\x10"]],
+            [4, ["\x00\x00\x00\x11"]],
+            [4, ["\x00\x00\x00\x12"]],
+            [4, ["\x00\x00\x00\x13"]]
+          ]
+        ],
+        [
+          0,
+          ["\xBF\xBA\xFE\xCA"],
+          [
+            [4, ["\x01\x00\x00\x00"]],
+            [4, ["\x02\x00\x00\x00"]],
+            [4, ["\x03\x00\x00\x00"]],
+            [4, ["\x04\x00\x00\x00"]],
+            [4, ["\x05\x00\x00\x00"]],
+            [4, ["\x06\x00\x00\x00"]],
+            [4, ["\a\x00\x00\x00"]],
+            [4, ["\b\x00\x00\x00"]],
+            [4, ["\t\x00\x00\x00"]],
+            [4, ["\n\x00\x00\x00"]],
+            [4, ["\v\x00\x00\x00"]],
+            [4, ["\f\x00\x00\x00"]],
+            [4, ["\r\x00\x00\x00"]],
+            [4, ["\x0E\x00\x00\x00"]],
+            [4, ["\x0F\x00\x00\x00"]],
+            [4, ["\x10\x00\x00\x00"]],
+            [4, ["\x11\x00\x00\x00"]],
+            [4, ["\x12\x00\x00\x00"]],
+            [4, ["\x13\x00\x00\x00"]]
+          ]
+        ]
+      ]
+    ],
+    ["application/x-mbtiles", [[0, ["SQLite format 3\u0000"], [[68, ["MPBX"]]]]]],
     ["application/x-mobipocket-ebook", [[0..60, ["BOOKMOBI"]]]],
+    ["application/x-monotone-source-repo", [[0, ["SQLite format 3\u0000"], [[68, ["_MTN"]]]]]],
     ["application/x-msaccess", [[0, ["\u0000\u0001\u0000\u0000Stan"]]]],
-    ["application/x-msdownload;format=pe-arm7", [[128, ["pe\u0000\u0000"], [[132, ["\xC4\x01"]]]], [240, ["pe\u0000\u0000"], [[244, ["\xC4\x01"]]]]]],
-    ["application/x-msdownload;format=pe-armLE", [[128, ["pe\u0000\u0000"], [[132, ["\xC0\x01"]]]], [240, ["pe\u0000\u0000"], [[244, ["\xC0\x01"]]]]]],
-    ["application/x-msdownload;format=pe-itanium", [[128, ["PE\u0000\u0000"], [[132, ["\x00\x02"]]]], [240, ["PE\u0000\u0000"], [[244, ["\x00\x02"]]]]]],
-    ["application/x-msdownload;format=pe32", [[128, ["PE\u0000\u0000"], [[132, ["L\x01"]]]], [240, ["PE\u0000\u0000"], [[244, ["L\x01"]]]]]],
-    ["application/x-msdownload;format=pe64", [[128, ["PE\u0000\u0000"], [[132, ["d\x86"]]]], [240, ["PE\u0000\u0000"], [[244, ["d\x86"]]]]]],
+    [
+      "application/x-msdownload;format=pe-arm7",
+      [
+        [128, ["pe\u0000\u0000"], [[132, ["\xC4\x01"]]]],
+        [240, ["pe\u0000\u0000"], [[244, ["\xC4\x01"]]]]
+      ]
+    ],
+    [
+      "application/x-msdownload;format=pe-armLE",
+      [
+        [128, ["pe\u0000\u0000"], [[132, ["\xC0\x01"]]]],
+        [240, ["pe\u0000\u0000"], [[244, ["\xC0\x01"]]]]
+      ]
+    ],
+    [
+      "application/x-msdownload;format=pe-itanium",
+      [
+        [128, ["PE\u0000\u0000"], [[132, ["\x00\x02"]]]],
+        [240, ["PE\u0000\u0000"], [[244, ["\x00\x02"]]]]
+      ]
+    ],
+    [
+      "application/x-msdownload;format=pe32",
+      [
+        [128, ["PE\u0000\u0000"], [[132, ["L\x01"]]]],
+        [240, ["PE\u0000\u0000"], [[244, ["L\x01"]]]]
+      ]
+    ],
+    [
+      "application/x-msdownload;format=pe64",
+      [
+        [128, ["PE\u0000\u0000"], [[132, ["d\x86"]]]],
+        [240, ["PE\u0000\u0000"], [[244, ["d\x86"]]]]
+      ]
+    ],
     ["application/x-msmoney", [[0, ["\u0000\u0001\u0000\u0000MSISAM Database"]]]],
     ["application/x-rar-compressed;version=4", [[0, ["Rar!\u001A\a\u0000"]]]],
     ["application/x-rar-compressed;version=5", [[0, ["Rar!\u001A\a\u0001\u0000"]]]],
@@ -2456,11 +3632,37 @@ defmodule ExMarcel.Tables do
     ["application/x-stata-dta;version=13", [[0, ["<stata_dta><header><release>117</release>"]]]],
     ["application/x-stata-dta;version=14", [[0, ["<stata_dta><header><release>118</release>"]]]],
     ["application/x-stata-dta;version=8", [[0, ["<stata_dta><header><release>113</release>"]]]],
-    ["application/x-tika-msworks-spreadsheet", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[1152..4096, ["W\u0000k\u0000s\u0000S\u0000S\u0000W\u0000o\u0000r\u0000k\u0000B\u0000o\u0000o\u0000k"]]]]]],
+    ["application/x-texnicard", [[0, ["SQLite format 3\u0000"], [[68, ["j\u0003WD"]]]]]],
+    [
+      "application/x-tika-msworks-spreadsheet",
+      [
+        [
+          0..8,
+          ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"],
+          [
+            [
+              1152..4096,
+              [
+                "W\u0000k\u0000s\u0000S\u0000S\u0000W\u0000o\u0000r\u0000k\u0000B\u0000o\u0000o\u0000k"
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
     ["audio/opus", [[0, ["OggS"], [[29, ["pusHead"]]]]]],
     ["audio/speex", [[0, ["OggS"], [[29, ["peex   "]]]]]],
     ["audio/vorbis", [[0, ["OggS"], [[29, ["vorbis"]]]]]],
-    ["audio/x-caf", [[0, ["caff\u0000\u0000"]], [0, ["caff\u0000\u0001"]], [0, ["caff\u0000\u0002"]], [0, ["caff@\u0000"]], [0, ["caff\x80\u0000"]]]],
+    [
+      "audio/x-caf",
+      [
+        [0, ["caff\u0000\u0000"]],
+        [0, ["caff\u0000\u0001"]],
+        [0, ["caff\u0000\u0002"]],
+        [0, ["caff@\u0000"]],
+        [0, ["caff\x80\u0000"]]
+      ]
+    ],
     ["audio/x-oggflac", [[0, ["OggS"], [[29, ["LAC"]]]]]],
     ["audio/x-oggpcm", [[0, ["OggS"], [[29, ["CM     "]]]]]],
     ["image/avif", [[4, ["ftypavif"]]]],
@@ -2468,12 +3670,45 @@ defmodule ExMarcel.Tables do
     ["image/heic-sequence", [[4, ["ftyphevc"]], [4, ["ftyphevx"]]]],
     ["image/heif", [[4, ["ftypmif1"]]]],
     ["image/heif-sequence", [[4, ["ftypmsf1"]]]],
+    [
+      "image/x-canon-cr2",
+      [
+        [0, ["MM\u0000*"], [[8, ["CR"]]]],
+        [0, ["II*\u0000"], [[8, ["CR"]]]],
+        [0, ["MM\u0000+"], [[8, ["CR"]]]]
+      ]
+    ],
+    ["image/x-canon-cr3", [[4, ["ftypcrx "]]]],
     ["message/news", [[0, ["Path:"]], [0, ["Xref:"]]]],
+    ["model/e57", [[0, ["ASTM-E57"]]]],
     ["model/vnd.dwf;version=2", [[0, ["(DWF V00.22)"]]]],
     ["model/vnd.dwf;version=5", [[0, ["(DWF V00.55)"]]]],
     ["model/vnd.dwf;version=6", [[0, ["(DWF V06."], [[11, [")PK"]]]]]],
-    ["multipart/related", [[0, ["From: <Saved by Windows Internet Explorer 8>"]], [0, ["From: \"Saved by Internet Explorer 11\""]], [0, ["MIME-Version: 1.0"], [[16..512, ["\nContent-Type: multipart/related"]]]]]],
-    ["video/3gpp", [[4, ["ftyp3ge6"]], [4, ["ftyp3ge7"]], [4, ["ftyp3gg6"]], [4, ["ftyp3gp1"]], [4, ["ftyp3gp2"]], [4, ["ftyp3gp3"]], [4, ["ftyp3gp4"]], [4, ["ftyp3gp5"]], [4, ["ftyp3gp6"]], [4, ["ftyp3gs7"]]]],
+    ["model/x.stl-ascii", [[0, ["solid "], [[7..256, ["facet "]]]]]],
+    [
+      "multipart/related",
+      [
+        [0, ["From: <Saved by Windows Internet Explorer 8>"]],
+        [0, ["From: \"Saved by Internet Explorer 11\""]],
+        [0, ["MIME-Version: 1.0"], [[16..512, ["\nContent-Type: multipart/related"]]]]
+      ]
+    ],
+    ["text/html", [[0, ["(?i)<(html|head|body|title|div)[ >]"]], [0, ["(?i)<h[123][ >]"]]]],
+    [
+      "video/3gpp",
+      [
+        [4, ["ftyp3ge6"]],
+        [4, ["ftyp3ge7"]],
+        [4, ["ftyp3gg6"]],
+        [4, ["ftyp3gp1"]],
+        [4, ["ftyp3gp2"]],
+        [4, ["ftyp3gp3"]],
+        [4, ["ftyp3gp4"]],
+        [4, ["ftyp3gp5"]],
+        [4, ["ftyp3gp6"]],
+        [4, ["ftyp3gs7"]]
+      ]
+    ],
     ["video/3gpp2", [[4, ["ftyp3g2a"]], [4, ["ftyp3g2b"]], [4, ["ftyp3g2c"]]]],
     ["video/daala", [[0, ["OggS"], [[29, ["daala"]]]]]],
     ["video/theora", [[0, ["OggS"], [[29, ["theora"]]]]]],
@@ -2483,24 +3718,238 @@ defmodule ExMarcel.Tables do
     ["video/x-ogguvs", [[0, ["OggS"], [[29, ["VS "]]]]]],
     ["video/x-oggyuv", [[0, ["OggS"], [[29, ["YUV"]]]]]],
     ["video/x-ogm", [[0, ["OggS"], [[29, ["ideo"]]]]]],
-    ["application/x-msdownload;format=pe", [[0, ["MZ"], [[128, ["PE\u0000\u0000"]], [176, ["PE\u0000\u0000"]], [208, ["PE\u0000\u0000"]], [240, ["PE\u0000\u0000"]]]]]],
+    [
+      "application/x-mach-o-bundle",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\b"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\b\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\b"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\b\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-core",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\x04"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\x04\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\x04"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\x04\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-dsym",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\n"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\n\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\n"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\n\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-dylib",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\x06"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\x06\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\x06"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\x06\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-dylib-stub",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\t"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\t\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\t"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\t\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-dylinker",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\a"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\a\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\a"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\a\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-executable",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\x02"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\x02\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\x02"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\x02\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-fvmlib",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\x03"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\x03\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\x03"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\x03\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-kext-bundle",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\v"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\v\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\v"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\v\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-object",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\x01"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\x01\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\x01"]]]],
+        [0, ["0xCFFAEDFE"], [[12, ["\x01\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-mach-o-preload",
+      [
+        [0, ["\xFE\xED\xFA\xCE"], [[12, ["\x00\x00\x00\x05"]]]],
+        [0, ["\xCE\xFA\xED\xFE"], [[12, ["\x05\x00\x00\x00"]]]],
+        [0, ["\xFE\xED\xFA\xCF"], [[12, ["\x00\x00\x00\x05"]]]],
+        [0, ["\xCF\xFA\xED\xFE"], [[12, ["\x05\x00\x00\x00"]]]]
+      ]
+    ],
+    [
+      "application/x-msdownload;format=pe",
+      [
+        [
+          0,
+          ["MZ"],
+          [
+            [128, ["PE\u0000\u0000"]],
+            [176, ["PE\u0000\u0000"]],
+            [208, ["PE\u0000\u0000"]],
+            [240, ["PE\u0000\u0000"]]
+          ]
+        ]
+      ]
+    ],
+    [
+      "text/x-robots",
+      [
+        [
+          0,
+          nil,
+          [
+            [0, ["user-agent:"]],
+            [0, ["allow:"]],
+            [0, ["disallow:"]],
+            [0, ["sitemap:"]],
+            [0..1000, ["\nuser-agent:"]],
+            [0..1000, ["\nallow:"]],
+            [0..1000, ["\ndisallow:"]],
+            [0..1000, ["\nsitemap:"]]
+          ]
+        ]
+      ]
+    ],
     ["application/applefile", [[0, ["\u0000\u0005\u0016\u0000"]]]],
     ["application/dash+xml", [[0, ["<MPD"]]]],
     ["application/dicom", [[128, ["DICM"]]]],
     ["application/epub+zip", [[0, ["PK\u0003\u0004"], [[30, ["mimetypeapplication/epub+zip"]]]]]],
-    ["application/fits", [[0, ["SIMPLE  =                    T"]], [0, ["SIMPLE  =                T"]]]],
-    ["application/javascript", [[0, ["/* jQuery "]], [0, ["/*! jQuery "]], [0, ["/*!"], [[4..8, ["* jQuery "]]]], [0, ["(function(e,undefined){"]], [0, ["!function(window,undefined){"]], [0, ["/*  Prototype JavaScript "]], [0, ["var Prototype={"]], [0, ["function $w(t){"]], [0, ["/** @license React"]], [0, ["/**"], [[4..8, ["* React "]]]]]],
+    [
+      "application/fits",
+      [[0, ["SIMPLE  =                    T"]], [0, ["SIMPLE  =                T"]]]
+    ],
+    ["application/java-vm", [[0, ["\xCA\xFE\xBA\xBE"]]]],
     ["application/mac-binhex40", [[11, ["must be converted with BinHex"]]]],
+    [
+      "application/marc",
+      [
+        [
+          0,
+          ["[0-9]{5,5}"],
+          [
+            [
+              20,
+              ["45"],
+              [
+                [5, ["[acdnp][acdefgijkmoprt][abcdims]"]],
+                [5, ["[acdnosx]z"]],
+                [5, ["[cdn][uvxy]"]],
+                [5, ["[acdn]w"]],
+                [5, ["[cdn]q"]]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
     ["application/mathematica", [[0, ["(**"]], [0, ["(* "]]]],
-    ["application/msword", [[2080, ["Microsoft Word 6.0 Document"]], [2080, ["Documento Microsoft Word 6"]], [2112, ["MSWordDoc"]], [0, ["1\xBE\x00\x00"]], [0, ["PO^Q`"]], [0, ["\xFE7\u0000#"]], [0, ["\u06E5-\u0000\u0000\u0000"]], [0, ["\x94\xA6."]], [0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[1152..4096, ["W\u0000o\u0000r\u0000d\u0000D\u0000o\u0000c\u0000u\u0000m\u0000e\u0000n\u0000t"]]]]]],
+    [
+      "application/msword",
+      [
+        [2080, ["Microsoft Word 6.0 Document"]],
+        [2080, ["Documento Microsoft Word 6"]],
+        [2112, ["MSWordDoc"]],
+        [0, ["1\xBE\x00\x00"]],
+        [0, ["PO^Q`"]],
+        [0, ["\xFE7\u0000#"]],
+        [0, ["\xDB\xA5-\u0000\u0000\u0000"]],
+        [0, ["\x94\xA6."]],
+        [
+          0..8,
+          ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"],
+          [
+            [
+              0..10_485_760,
+              ["W\u0000o\u0000r\u0000d\u0000D\u0000o\u0000c\u0000u\u0000m\u0000e\u0000n\u0000t"]
+            ]
+          ]
+        ]
+      ]
+    ],
     ["application/msword2", [[0, ["\x9B\xA5"]], [0, ["\xDB\xA5"]]]],
     ["application/msword5", [[0, ["\xFE7"]]]],
-    ["application/octet-stream", [[10, ["# This is a shell archive"]], [0, ["\u001F\u001E"]], [0, ["\x1F\x1F"]], [0, ["\xFF\x1F"]], [0, ["\xFF\u001F"]], [0, ["\x05\xCB"]]]],
+    [
+      "application/octet-stream",
+      [
+        [10, ["# This is a shell archive"]],
+        [0, ["\u001F\u001E"]],
+        [0, ["\x1F\x1F"]],
+        [0, ["\xFF\x1F"]],
+        [0, ["\xFF\u001F"]],
+        [0, ["\x05\xCB"]]
+      ]
+    ],
     ["application/ogg", [[0, ["OggS"]]]],
-    ["application/onenote;format=one", [[0, ["\xE4R\\{"], [[4, ["\x8C\xD8"], [[6, ["\xA7M"], [[8, ["0xAEB15378D02996D3"]]]]]]]]]],
-    ["application/onenote;format=onetoc2", [[0, ["\xA1/\xFFC"], [[4, ["\xD9\xEF"], [[6, ["vL"], [[8, ["0x9EE210EA5722765F"]]]]]]]]]],
-    ["application/pkcs7-signature", [[0, ["-----BEGIN PKCS7"]], [0, ["0x3080"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]], [0, ["0x3081"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]], [0, ["0x3082"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]], [0, ["0x3083"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]], [0, ["0x3084"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]]]],
-    ["application/postscript", [[0, ["%!"]], [0, ["\u0004%!"]], [0, ["\xC5\xD0\xD3\xC6"]], [0, ["%!PS-Adobe-3.0 EPSF-3.0"]]]],
+    [
+      "application/onenote;format=one",
+      [[0, ["\xE4R\\{"], [[4, ["\x8C\xD8"], [[6, ["\xA7M"], [[8, ["0xAEB15378D02996D3"]]]]]]]]]
+    ],
+    [
+      "application/onenote;format=onetoc2",
+      [[0, ["\xA1/\xFFC"], [[4, ["\xD9\xEF"], [[6, ["vL"], [[8, ["0x9EE210EA5722765F"]]]]]]]]]
+    ],
+    ["application/pgp-encrypted", [[0, ["\x85"], [[3, ["\u0003"]]]]]],
+    [
+      "application/pkcs7-signature",
+      [
+        [0, ["-----BEGIN PKCS7"]],
+        [0, ["0x3080"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]],
+        [0, ["0x3081"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]],
+        [0, ["0x3082"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]],
+        [0, ["0x3083"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]],
+        [0, ["0x3084"], [[0, ["\x06\t*\x86H\x86\xF7\r\x01\a"], [[11, ["\xA0"]]]]]]
+      ]
+    ],
+    [
+      "application/postscript",
+      [
+        [0, ["%!"]],
+        [0, ["\u0004%!"]],
+        [0, ["\xC5\xD0\xD3\xC6"]],
+        [0, ["%!PS-Adobe-3.0 EPSF-3.0"]]
+      ]
+    ],
     ["application/rtf", [[0, ["{\\rtf"]]]],
     ["application/sereal;version=1", [[0, ["=srl"]]]],
     ["application/sereal;version=2", [[0, ["=srl"]]]],
@@ -2509,45 +3958,142 @@ defmodule ExMarcel.Tables do
     ["application/vnd.apple.mpegurl", [[0, ["#EXTM3U"]]]],
     ["application/vnd.digilite.prolights", [[0, ["\u007F\fD+"]]]],
     ["application/vnd.fdf", [[0, ["%FDF-"]]]],
+    ["application/vnd.iccprofile", [[36, ["acsp"]]]],
+    ["application/vnd.isac.fcs", [[0, ["FCS[1-3]\\\\.[0-9]    "]]]],
     ["application/vnd.java.hprof ", [[0, ["JAVA PROFILE \\\\d\\\\.\\\\d\\\\.\\\\d\\\\u0000"]]]],
     ["application/vnd.java.hprof.text", [[0, ["JAVA PROFILE \\\\d\\\\.\\\\d\\\\.\\\\d,"]]]],
     ["application/vnd.lotus-1-2-3;version=1", [[0, ["\u0000\u0000\u0002\u0000\u0004\u0004"]]]],
-    ["application/vnd.lotus-1-2-3;version=2", [[0, ["\u0000\u0000\u0002\u0000\u0006\u0004\u0006\u0000\b\u0000"]]]],
-    ["application/vnd.lotus-1-2-3;version=3", [[0, ["\u0000\u0000\u001A\u0000\u0000\u0010\u0004\u0000"]]]],
-    ["application/vnd.lotus-1-2-3;version=4", [[0, ["\u0000\u0000\u001A\u0000\u0002\u0010\u0004\u0000"]]]],
-    ["application/vnd.lotus-1-2-3;version=97+9.x", [[0, ["\u0000\u0000\u001A\u0000\u0003\u0010\u0004\u0000"]]]],
+    [
+      "application/vnd.lotus-1-2-3;version=2",
+      [[0, ["\u0000\u0000\u0002\u0000\u0006\u0004\u0006\u0000\b\u0000"]]]
+    ],
+    [
+      "application/vnd.lotus-1-2-3;version=3",
+      [[0, ["\u0000\u0000\u001A\u0000\u0000\u0010\u0004\u0000"]]]
+    ],
+    [
+      "application/vnd.lotus-1-2-3;version=4",
+      [[0, ["\u0000\u0000\u001A\u0000\u0002\u0010\u0004\u0000"]]]
+    ],
+    [
+      "application/vnd.lotus-1-2-3;version=97+9.x",
+      [[0, ["\u0000\u0000\u001A\u0000\u0003\u0010\u0004\u0000"]]]
+    ],
     ["application/vnd.lotus-wordpro", [[0, ["WordPro\u0000"]], [0, ["WordPro\r\xFB"]]]],
-    ["application/vnd.mif", [[0, ["<MakerFile"]], [0, ["<MIFFile"]], [0, ["<MakerDictionary"]], [0, ["<MakerScreenFont"]], [0, ["<MML"]], [0, ["<Book"]], [0, ["<Maker"]]]],
-    ["application/vnd.ms-cab-compressed", [[0, ["MSCF\u0000\u0000\u0000\u0000"]]]],
+    [
+      "application/vnd.mif",
+      [
+        [0, ["<MakerFile"]],
+        [0, ["<MIFFile"]],
+        [0, ["<MakerDictionary"]],
+        [0, ["<MakerScreenFont"]],
+        [0, ["<MML"]],
+        [0, ["<Book"]],
+        [0, ["<Maker"]]
+      ]
+    ],
     ["application/vnd.ms-cab-compressed", [[0, ["MSCF"]]]],
+    ["application/vnd.ms-cab-compressed", [[0, ["MSCF\u0000\u0000\u0000\u0000"]]]],
+    ["application/vnd.ms-fontobject", [[8, ["\u0002\u0000\u0002\u0000"], [[34, ["LP"]]]]]],
     ["application/vnd.ms-htmlhelp", [[0, ["ITSF"]]]],
     ["application/vnd.ms-outlook-pst", [[0, ["!BDN"], [[8, ["SM"]]]]]],
     ["application/vnd.ms-tnef", [[0, ["x\x9F>\""]]]],
-    ["application/vnd.ms-works", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[1152..4096, ["M\u0000a\u0000t\u0000O\u0000S\u0000T"]]]]]],
-    ["application/vnd.oasis.opendocument.chart", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.chart"]]]]]],
-    ["application/vnd.oasis.opendocument.chart-template", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.chart-template"]]]]]],
-    ["application/vnd.oasis.opendocument.formula", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.formula"]]]]]],
-    ["application/vnd.oasis.opendocument.formula-template", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.formula-template"]]]]]],
-    ["application/vnd.oasis.opendocument.graphics", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.graphics"]]]]]],
-    ["application/vnd.oasis.opendocument.graphics-template", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.graphics-template"]]]]]],
-    ["application/vnd.oasis.opendocument.image", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.image"]]]]]],
-    ["application/vnd.oasis.opendocument.image-template", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.image-template"]]]]]],
-    ["application/vnd.oasis.opendocument.presentation", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.presentation"]]]]]],
-    ["application/vnd.oasis.opendocument.presentation-template", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.presentation-template"]]]]]],
-    ["application/vnd.oasis.opendocument.spreadsheet", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.spreadsheet"]]]]]],
-    ["application/vnd.oasis.opendocument.spreadsheet-template", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.spreadsheet-template"]]]]]],
-    ["application/vnd.oasis.opendocument.text", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text"]]]]]],
-    ["application/vnd.oasis.opendocument.text-master", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text-master"]]]]]],
-    ["application/vnd.oasis.opendocument.text-template", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text-template"]]]]]],
-    ["application/vnd.oasis.opendocument.text-web", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text-web"]]]]]],
+    [
+      "application/vnd.ms-works",
+      [
+        [
+          0..8,
+          ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"],
+          [[1152..4096, ["M\u0000a\u0000t\u0000O\u0000S\u0000T"]]]
+        ]
+      ]
+    ],
+    [
+      "application/vnd.oasis.opendocument.chart",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.chart"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.chart-template",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.chart-template"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.formula",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.formula"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.formula-template",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.formula-template"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.graphics",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.graphics"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.graphics-template",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.graphics-template"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.image",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.image"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.image-template",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.image-template"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.presentation",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.presentation"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.presentation-template",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.presentation-template"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.spreadsheet",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.spreadsheet"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.spreadsheet-template",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.spreadsheet-template"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.text",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.text-master",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text-master"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.text-template",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text-template"]]]]]
+    ],
+    [
+      "application/vnd.oasis.opendocument.text-web",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.oasis.opendocument.text-web"]]]]]
+    ],
     ["application/vnd.rn-realmedia", [[0, [".RMF"]]]],
-    ["application/vnd.stardivision.calc", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarCalc"]]]]]],
-    ["application/vnd.stardivision.draw", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarDraw"]]]]]],
-    ["application/vnd.stardivision.impress", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarImpress"]]]]]],
-    ["application/vnd.stardivision.writer", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarWriter"]]]]]],
-    ["application/vnd.sun.xml.writer", [[0, ["PK"], [[30, ["mimetypeapplication/vnd.sun.xml.writer"]]]]]],
+    [
+      "application/vnd.stardivision.calc",
+      [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarCalc"]]]]]
+    ],
+    [
+      "application/vnd.stardivision.draw",
+      [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarDraw"]]]]]
+    ],
+    [
+      "application/vnd.stardivision.impress",
+      [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarImpress"]]]]]
+    ],
+    [
+      "application/vnd.stardivision.writer",
+      [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"], [[2048..2207, ["StarWriter"]]]]]
+    ],
+    [
+      "application/vnd.sun.xml.writer",
+      [[0, ["PK"], [[30, ["mimetypeapplication/vnd.sun.xml.writer"]]]]]
+    ],
     ["application/vnd.symbian.install", [[8, ["\x19\x04\x00\x10"]]]],
-    ["application/vnd.tcpdump.pcap", [[0, ["\xA1\xB2\xC3\xD4"]], [0, ["\xD4\xC3\xB2\xA1"]]]],
     ["application/vnd.wolfram.wl", [[0, ["#!/usr/bin/env wolframscript"]]]],
     ["application/vnd.wordperfect", [[0, ["application/vnd.wordperfect;"]]]],
     ["application/vnd.wordperfect;version=4.2", [[0, ["\xCB\n\x01"], [[5, ["\xCB"]]]]]],
@@ -2555,55 +4101,202 @@ defmodule ExMarcel.Tables do
     ["application/vnd.wordperfect;version=5.1", [[0, ["\xFFWPC"], [[10, ["\x00\x01"]]]]]],
     ["application/vnd.wordperfect;version=6.x", [[0, ["\xFFWPC"], [[10, ["\x02\x01"]]]]]],
     ["application/vnd.xara", [[0, ["xar!"]]]],
-    ["application/warc", [[0, ["WARC/"]]]],
     ["application/wasm", [[0, ["\x00asm"]], [0, ["msa\x00"]]]],
     ["application/x-7z-compressed", [[0..1, ["7z"], [[2..5, ["\xBC\xAF'\x1C"]]]]]],
-    ["application/x-adobe-indesign", [[0, ["\x06\x06\xED\xF5\xD8\x1DF\xE5\xBD1\xEF\xE7\xFEt\xB7\x1D"]]]],
+    [
+      "application/x-adobe-indesign",
+      [[0, ["\x06\x06\xED\xF5\xD8\x1DF\xE5\xBD1\xEF\xE7\xFEt\xB7\x1D"]]]
+    ],
     ["application/x-adobe-indesign-interchange", [[0..100, ["<?aid"]]]],
+    [
+      "application/x-amiga-disk-format",
+      [
+        [
+          0,
+          ["DOS"],
+          [
+            [4, ["\u0000"]],
+            [4, ["\u0001"]],
+            [4, ["\u0002"]],
+            [4, ["\u0003"]],
+            [4, ["\u0004"]],
+            [4, ["\u0005"]],
+            [4, ["\u0006"]],
+            [4, ["\a"]]
+          ]
+        ]
+      ]
+    ],
     ["application/x-archive", [[0, ["=<ar>"]], [0, ["!<arch>\n"]]]],
     ["application/x-arj", [[0, ["`\xEA"]]]],
+    ["application/x-asprs", [[0, ["LASF"], [[24, ["\u0001\u0001"]], [24, ["\u0001\u0002"]]]]]],
+    [
+      "application/x-atari-floppy-disk-image",
+      [
+        [
+          0,
+          ["0x9602"],
+          [[4, ["0x8000"], [[11, ["0x00000000"]]]], [4, ["0x0001"], [[11, ["0x00000000"]]]]]
+        ]
+      ]
+    ],
     ["application/x-bat", [[0, ["@echo off"]], [0, ["rem "]]]],
-    ["application/x-berkeley-db;format=btree", [[0, ["b1\x05\x00"]], [0, ["\x00\x051b"]], [0, ["b1\x05\x00"]], [12, ["b1\x05\x00"]], [12, ["\x00\x051b"]], [12, ["b1\x05\x00"]]]],
-    ["application/x-berkeley-db;format=hash", [[0, ["a\x15\x06\x00"]], [0, ["\x00\x06\x15a"]], [0, ["a\x15\x06\x00"]], [12, ["a\x15\x06\x00"]], [12, ["\x00\x06\x15a"]], [12, ["a\x15\x06\x00"]]]],
-    ["application/x-berkeley-db;format=log", [[12, ["\x88\t\x04\x00"]], [12, ["\x88\t\x04\x00"]], [12, ["\x00\x04\t\x88"]]]],
-    ["application/x-berkeley-db;format=queue", [[12, ["S\"\x04\x00"]], [12, ["\x00\x04\"S"]], [12, ["S\"\x04\x00"]]]],
-    ["application/x-bibtex-text-file", [[0, ["% BibTeX `"]], [73, ["%%%  "]], [0, ["% BibTeX standard bibliography "]], [73, ["%%%  @BibTeX-style-file{"]], [0, ["@article{"]], [0, ["@book{"]], [0, ["@inbook{"]], [0, ["@incollection{"]], [0, ["@inproceedings{"]], [0, ["@manual{"]], [0, ["@misc{"]], [0, ["@preamble{"]], [0, ["@phdthesis{"]], [0, ["@string{"]], [0, ["@techreport{"]], [0, ["@unpublished{"]]]],
+    [
+      "application/x-berkeley-db;format=btree",
+      [
+        [0, ["b1\x05\x00"]],
+        [0, ["\x00\x051b"]],
+        [0, ["b1\x05\x00"]],
+        [12, ["b1\x05\x00"]],
+        [12, ["\x00\x051b"]],
+        [12, ["b1\x05\x00"]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=hash",
+      [
+        [0, ["a\x15\x06\x00"]],
+        [0, ["\x00\x06\x15a"]],
+        [0, ["a\x15\x06\x00"]],
+        [12, ["a\x15\x06\x00"]],
+        [12, ["\x00\x06\x15a"]],
+        [12, ["a\x15\x06\x00"]]
+      ]
+    ],
+    [
+      "application/x-berkeley-db;format=log",
+      [[12, ["\x88\t\x04\x00"]], [12, ["\x88\t\x04\x00"]], [12, ["\x00\x04\t\x88"]]]
+    ],
+    [
+      "application/x-berkeley-db;format=queue",
+      [[12, ["S\"\x04\x00"]], [12, ["\x00\x04\"S"]], [12, ["S\"\x04\x00"]]]
+    ],
+    [
+      "application/x-bibtex-text-file",
+      [
+        [0, ["% BibTeX `"]],
+        [73, ["%%%  "]],
+        [0, ["% BibTeX standard bibliography "]],
+        [73, ["%%%  @BibTeX-style-file{"]],
+        [0, ["@article{"]],
+        [0, ["@book{"]],
+        [0, ["@inbook{"]],
+        [0, ["@incollection{"]],
+        [0, ["@inproceedings{"]],
+        [0, ["@manual{"]],
+        [0, ["@misc{"]],
+        [0, ["@preamble{"]],
+        [0, ["@phdthesis{"]],
+        [0, ["@string{"]],
+        [0, ["@techreport{"]],
+        [0, ["@unpublished{"]]
+      ]
+    ],
     ["application/x-bittorrent", [[0, ["d8:announce"]]]],
+    ["application/x-cdf", [[0, ["RIFF$\u0000\u0000\u0000CDDAfmt \u0018"]], [0, nil]]],
     ["application/x-chrome-package", [[0, ["Cr24"]]]],
     ["application/x-compress", [[0, ["\u001F\x9D"]]]],
-    ["application/x-coredump", [[0, ["\u007FELF"], [[16, ["\u0004\u0000"]], [16, ["\u0000\u0004"]]]]]],
-    ["application/x-cpio", [[0, ["\xC7q"]], [0, ["q\xC7"]], [0, ["070707"]], [0, ["070701"]], [0, ["070702"]]]],
+    [
+      "application/x-coredump",
+      [[0, ["\u007FELF"], [[16, ["\u0004\u0000"]], [16, ["\u0000\u0004"]]]]]
+    ],
+    [
+      "application/x-cpio",
+      [[0, ["\xC7q"]], [0, ["q\xC7"]], [0, ["070707"]], [0, ["070701"]], [0, ["070702"]]]
+    ],
     ["application/x-dex", [[0, ["dex\n"], [[7, ["\u0000"]]]]]],
     ["application/x-dvi", [[0, ["\xF7\u0002"]], [0, ["\xF7\x02"]], [14, ["\e TeX output "]]]],
     ["application/x-elc", [[0, ["\n("]], [0, [";ELC\u0013\u0000\u0000\u0000"]]]],
     ["application/x-elf", [[0, ["\u007FELF"]]]],
+    [
+      "application/x-endnote-style",
+      [[0, ["\u0000\b"], [[4, ["\u0000\u0000"], [[8, ["RSFTSTYL"]], [8, ["ENDNENFT"]]]]]]]
+    ],
     ["application/x-erdas-hfa", [[0, ["EHFA_HEADER_TAG"]]]],
-    ["application/x-executable", [[0, ["\u007FELF"], [[16, ["\u0002\u0000"]], [16, ["\u0000\u0002"]]]]]],
-    ["application/x-filemaker", [[14, ["\xC0HBAM7"], [[525, ["HBAM2101OCT99\xC1\x02H\aPro 7.0\xC0\xC0"]]]]]],
-    ["application/x-foxmail", [[0, ["\u0010\u0010\u0010\u0010\u0010\u0010\u0010\u0011\u0011\u0011\u0011\u0011\u0011S"]]]],
+    [
+      "application/x-executable",
+      [[0, ["\u007FELF"], [[16, ["\u0002\u0000"]], [16, ["\u0000\u0002"]]]]]
+    ],
+    [
+      "application/x-fat-diskimage",
+      [
+        [
+          0,
+          ["\\xEB"],
+          [[2, ["\\x90"], [[14, ["(\\x01|\\x02|\\x04|\\x08|\\x10|\\x20\\x40|x80)"]]]]]
+        ]
+      ]
+    ],
+    [
+      "application/x-filemaker",
+      [[14, ["\xC0HBAM7"], [[525, ["HBAM2101OCT99\xC1\x02H\aPro 7.0\xC0\xC0"]]]]]
+    ],
+    [
+      "application/x-foxmail",
+      [[0, ["\u0010\u0010\u0010\u0010\u0010\u0010\u0010\u0011\u0011\u0011\u0011\u0011\u0011S"]]]
+    ],
     ["application/x-gnumeric", [[39, ["=<gmr:Workbook"]]]],
     ["application/x-grib", [[0, ["GRIB"]]]],
     ["application/x-gtar", [[257, ["ustar  \u0000"]]]],
+    ["application/x-guitar-pro", [[1, ["FICHIER GUITARE PRO "]], [1, ["FICHIER GUITAR PRO "]]]],
     ["application/x-hdf", [[0, ["\x0E\x03\x13\x01"]], [0, ["\x89HDF\r\n\u001A"]]]],
     ["application/x-hwp", [[0, ["HWP Document File V"]]]],
-    ["application/x-ibooks+zip", [[0, ["PK\u0003\u0004"], [[30, ["mimetypeapplication/x-ibooks+zip"]]]]]],
+    [
+      "application/x-ibooks+zip",
+      [[0, ["PK\u0003\u0004"], [[30, ["mimetypeapplication/x-ibooks+zip"]]]]]
+    ],
+    [
+      "application/x-idl-save-file",
+      [[0, ["SR\u0000\u0004\u0000\u0000\u0000\n\u0000\u0000\u0004"]]]
+    ],
     ["application/x-isatab", [[1, ["Source Name"]]]],
     ["application/x-isatab-assay", [[1, ["Sample Name"]]]],
     ["application/x-isatab-investigation", [[0, ["ONTOLOGY SOURCE REFERENCE"]]]],
     ["application/x-iso9660-image", [[32769, ["CD001"]], [34817, ["CD001"]], [36865, ["CD001"]]]],
-    ["application/x-java-jnilib", [[0, ["\xCA\xFE\xBA\xBE"], [[4096, ["\xFE\xED\xFA\xCE"]], [4096, ["\xFE\xED\xFA\xCF"]], [4096, ["\xCE\xFA\xED\xFE"]], [4096, ["\xCF\xFA\xED\xFE"]]]]]],
+    ["application/x-java-keystore", [[0..4, ["\xFE\xED\xFE\xED"]]]],
+    ["application/x-jeol-jdf", [[0, ["JEOL.NMR"]], [0, ["RMN.LOEJ"]]]],
+    ["application/x-jigdo", [[0, ["JigsawDownload template"]]]],
     ["application/x-kdelnk", [[0, ["[KDE Desktop Entry]"]], [0, ["# KDE Config File"]]]],
     ["application/x-latex", [[0, ["% -*-latex-*-"]]]],
-    ["application/x-lha", [[2, ["-lzs-"]], [2, ["-lh -"]], [2, ["-lhd-"]], [2, ["-lh2-"]], [2, ["-lh3-"]], [2, ["-lh4-"]], [2, ["-lh5-"]], [2, ["-lh6-"]], [2, ["-lh7-"]]]],
+    [
+      "application/x-lha",
+      [
+        [2, ["-lzs-"]],
+        [2, ["-lh -"]],
+        [2, ["-lhd-"]],
+        [2, ["-lh2-"]],
+        [2, ["-lh3-"]],
+        [2, ["-lh4-"]],
+        [2, ["-lh5-"]],
+        [2, ["-lh6-"]],
+        [2, ["-lh7-"]]
+      ]
+    ],
     ["application/x-lharc", [[2, ["-lh0-"]], [2, ["-lh1-"]], [2, ["-lz4-"]], [2, ["-lz5-"]]]],
     ["application/x-lzip", [[0, ["LZIP"]]]],
+    [
+      "application/x-mach-o",
+      [
+        [0, ["\xFE\xED\xFA\xCE"]],
+        [0, ["\xCE\xFA\xED\xFE"]],
+        [0, ["\xFE\xED\xFA\xCF"]],
+        [0, ["\xCF\xFA\xED\xFE"]]
+      ]
+    ],
     ["application/x-matlab-data", [[0, ["MATLAB"]]]],
+    ["application/x-mmm-digisonde", [[0, ["\t<\u0000"], [[24, ["\u0000\u0000"]]]]]],
+    ["application/x-ms-compress-szdd", [[0, ["0x535A444488F0273341"]]]],
     ["application/x-msdownload", [[0, ["MZ"]]]],
     ["application/x-mswrite", [[0, ["1\xBE\x00\x00"]], [0, ["2\xBE\x00\x00"]]]],
+    ["application/x-nesrom", [[0, ["NES\u001A"]]]],
     ["application/x-netcdf", [[0, ["CDF\u0001"]], [0, ["CDF\u0002"]], [0, ["CDF\u0001"]]]],
-    ["application/x-object", [[0, ["\u007FELF"], [[16, ["\u0001\u0000"]], [16, ["\u0000\u0001"]]]]]],
+    [
+      "application/x-object",
+      [[0, ["\u007FELF"], [[16, ["\u0001\u0000"]], [16, ["\u0000\u0001"]]]]]
+    ],
     ["application/x-ole-storage", [[0..8, ["\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1"]]]],
     ["application/x-parquet", [[0, ["PAR1"]]]],
+    ["application/x-pds", [[0, ["PDS_VERSION_ID"]]]],
     ["application/x-project", [[0, ["MPX,Microsoft Project for Windows,"]]]],
     ["application/x-prt", [[8, ["0M3C"]]]],
     ["application/x-quattro-pro;version=1+5", [[0, ["\u0000\u0000\u0002\u0000\u0001\u0010"]]]],
@@ -2614,41 +4307,159 @@ defmodule ExMarcel.Tables do
     ["application/x-rpm", [[0, ["\xED\xAB\xEE\xDB"]]]],
     ["application/x-sc", [[38, ["Spreadsheet"]]]],
     ["application/x-sh", [[0, ["#!/"]], [0, ["#! /"]], [0, ["#!\t/"]], [0, ["eval \"exec"]]]],
-    ["application/x-sharedlib", [[0, ["\u007FELF"], [[16, ["\u0003\u0000"]], [16, ["\u0000\u0003"]]]]]],
+    [
+      "application/x-sharedlib",
+      [[0, ["\u007FELF"], [[16, ["\u0003\u0000"]], [16, ["\u0000\u0003"]]]]]
+    ],
     ["application/x-shockwave-flash", [[0, ["FWS"]], [0, ["CWS"]]]],
+    ["application/x-sibelius", [[0, ["\u000FSIBELIUS"]]]],
     ["application/x-snappy-framed", [[0, ["sNaPpY"]]]],
+    ["application/x-spectrum-tzx", [[0, ["ZXTape!\u001A"]]]],
+    ["application/x-spss-sav", [[0, ["$FL2@(#)"]]]],
     ["application/x-sqlite3", [[0, ["SQLite format 3\u0000"]]]],
     ["application/x-stata-dta", [[0, ["<stata_dta><header><release>"]]]],
     ["application/x-stuffit", [[0, ["StuffIt"]]]],
-    ["application/x-tex", [[0, ["\\input"]], [0, ["\\section"]], [0, ["\\setlength"]], [0, ["\\documentstyle"]], [0, ["\\chapter"]], [0, ["\\documentclass"]], [0, ["\\relax"]], [0, ["\\contentsline"]]]],
+    [
+      "application/x-subrip",
+      [
+        [0, ["1\n00"]],
+        [0, ["1\r00"]],
+        [0, ["1\r\n\u0013\u0003\u0000"]],
+        [0, ["\xEF\xBB\xBF1\n00"]],
+        [0, ["\xEF\xBB\xBF1\r00"]],
+        [0, ["\xEF\xBB\xBF1\r\n\x13\x03\x00"]]
+      ]
+    ],
+    [
+      "application/x-tex",
+      [
+        [0, ["\\input"]],
+        [0, ["\\section"]],
+        [0, ["\\setlength"]],
+        [0, ["\\documentstyle"]],
+        [0, ["\\chapter"]],
+        [0, ["\\documentclass"]],
+        [0, ["\\relax"]],
+        [0, ["\\contentsline"]]
+      ]
+    ],
+    [
+      "application/x-tex-virtual-font",
+      [[0, ["\xF7\xCA"], [[11, ["\xF3\x00"], [[17, ["\u0000\u0010"]]]]]]]
+    ],
     ["application/x-texinfo", [[0, ["\\input texinfo"]]]],
-    ["application/x-tika-ooxml", [[0, ["PK\u0003\u0004"], [[30, ["[Content_Types].xml"]], [30, ["_rels/.rels"]]]]]],
+    [
+      "application/x-tika-ooxml",
+      [[0, ["PK\u0003\u0004"], [[30, ["[Content_Types].xml"]], [30, ["_rels/.rels"]]]]]
+    ],
+    [
+      "application/x-touhou",
+      [[0, ["t1"], [[3, ["[\\x72|\\x33|\\x36|\\x35]"], [[5, ["0x00000000000000"]]]]]]]
+    ],
     ["application/x-uc2-compressed", [[0, ["UC2\u001A"]]]],
     ["application/x-vhd", [[0, ["conectix"]]]],
     ["application/x-x509-cert;format=der", []],
     ["application/x-x509-cert;format=pem", [[0, ["-----BEGIN CERTIFICATE-----"]]]],
     ["application/x-x509-dsa-parameters", [[0, ["-----BEGIN DSA PARAMETERS-----"]]]],
     ["application/x-x509-ec-parameters", [[0, ["-----BEGIN EC PARAMETERS-----"]]]],
-    ["application/x-x509-key;format=pem", [[0, ["-----BEGIN PRIVATE KEY-----"]], [0, ["-----BEGIN PUBLIC KEY-----"]], [0, ["-----BEGIN KEY-----"]], [0, ["-----BEGIN RSA KEY-----"]], [0, ["-----BEGIN RSA PRIVATE KEY-----"]], [0, ["-----BEGIN DSA KEY-----"]], [0, ["-----BEGIN DSA PRIVATE KEY-----"]]]],
+    [
+      "application/x-x509-key;format=pem",
+      [
+        [0, ["-----BEGIN PRIVATE KEY-----"]],
+        [0, ["-----BEGIN PUBLIC KEY-----"]],
+        [0, ["-----BEGIN KEY-----"]],
+        [0, ["-----BEGIN RSA KEY-----"]],
+        [0, ["-----BEGIN RSA PRIVATE KEY-----"]],
+        [0, ["-----BEGIN DSA KEY-----"]],
+        [0, ["-----BEGIN DSA PRIVATE KEY-----"]]
+      ]
+    ],
     ["application/x-xz", [[0, ["\xFD7zXZ\u0000"]]]],
+    ["application/x-zim", [[0, ["0x5A494D04"]]]],
     ["application/x-zoo", [[20, ["\xDC\xA7\xC4\xFD"]]]],
-    ["application/xml", [[0, ["<?xml"]], [0, ["<?XML"]], [0, ["\xEF\xBB\xBF<?xml"]], [0, ["\xFF\xFE<\x00?\x00x\x00m\x00l\x00"]], [0, ["\xFE\xFF\x00<\x00?\x00x\x00m\x00l"]]]],
+    [
+      "application/xml",
+      [
+        [0, ["<?xml"]],
+        [0, ["<?XML"]],
+        [0, ["\xEF\xBB\xBF<?xml"]],
+        [0, ["\xFF\xFE<\x00?\x00x\x00m\x00l\x00"]],
+        [0, ["\xFE\xFF\x00<\x00?\x00x\x00m\x00l"]]
+      ]
+    ],
     ["application/zip", [[0, ["PK\u0003\u0004"]], [0, ["PK\u0005\u0006"]], [0, ["PK\a\b"]]]],
     ["application/zstd", [[0, ["(\xB5/\xFD"]]]],
     ["audio/ac3", [[0, ["\vw"]]]],
     ["audio/amr-wb", [[0, ["#!AMR-WB\n"]]]],
     ["audio/eac3", [[0, ["\vw"]]]],
     ["audio/prs.sid", [[0, ["PSID"]]]],
-    ["audio/webm", [[0, ["\x1AE\xDF\xA3"], [[4..4096, ["B\x82"], [[4..4096, ["webm"], [[4..4096, ["A_VORBIS"]], [4..4096, ["A_OPUS"]]]]]]]]]],
+    [
+      "audio/webm",
+      [
+        [
+          0,
+          ["\x1AE\xDF\xA3"],
+          [
+            [
+              4..4096,
+              ["B\x82"],
+              [[4..4096, ["webm"], [[4..4096, ["A_VORBIS"]], [4..4096, ["A_OPUS"]]]]]
+            ]
+          ]
+        ]
+      ]
+    ],
     ["audio/x-flac", [[0, ["fLaC"]]]],
-    ["audio/x-mod", [[0, ["Extended Module:"]], [21, ["BMOD2STM"]], [1080, ["M.K."]], [1080, ["M!K!"]], [1080, ["FLT4"]], [1080, ["FLT8"]], [1080, ["4CHN"]], [1080, ["6CHN"]], [1080, ["8CHN"]], [1080, ["CD81"]], [1080, ["OKTA"]], [1080, ["16CN"]], [1080, ["32CN"]], [0, ["IMPM"]]]],
+    [
+      "audio/x-mod",
+      [
+        [0, ["Extended Module:"]],
+        [21, ["BMOD2STM"]],
+        [1080, ["M.K."]],
+        [1080, ["M!K!"]],
+        [1080, ["FLT4"]],
+        [1080, ["FLT8"]],
+        [1080, ["4CHN"]],
+        [1080, ["6CHN"]],
+        [1080, ["8CHN"]],
+        [1080, ["CD81"]],
+        [1080, ["OKTA"]],
+        [1080, ["16CN"]],
+        [1080, ["32CN"]],
+        [0, ["IMPM"]]
+      ]
+    ],
     ["audio/x-mpegurl", [[0, ["#EXTM3U\r\n"]]]],
     ["audio/x-ms-wma", [[0..8192, ["Windows Media Audio"]]]],
     ["audio/x-pn-realaudio", [[0, [".ra\xFD"]]]],
+    [
+      "audio/x-psf",
+      [
+        [
+          0,
+          ["PSF"],
+          [
+            [3, ["\u0001"]],
+            [3, ["\u0002"]],
+            [3, ["\u0011"]],
+            [3, ["\u0012"]],
+            [3, ["\u0013"]],
+            [3, ["!"]],
+            [3, ["\""]],
+            [3, ["#"]],
+            [3, ["A"]]
+          ]
+        ]
+      ]
+    ],
+    ["audio/x-sap", [[0, ["SAP\r\n"]]]],
     ["chemical/x-cdx", [[0, ["VjCD0100"]]]],
     ["font/woff", [[0, ["wOFF"]]]],
     ["font/woff2", [[0, ["wOF2"]]]],
-    ["image/aces", [[0, ["v/1\u0001\u0002\u0000\u0000\u0000"]], [0, ["v/1\u0001\u0002\u0004\u0000\u0000"]]]],
+    [
+      "image/aces",
+      [[0, ["v/1\u0001\u0002\u0000\u0000\u0000"]], [0, ["v/1\u0001\u0002\u0004\u0000\u0000"]]]
+    ],
     ["image/cgm", [[0, ["BEGMF"]]]],
     ["image/emf", [[0, ["\u0001\u0000\u0000\u0000"], [[40, [" EMF"]]]]]],
     ["image/fits", [[0, ["SIMPLE  =  "]]]],
@@ -2660,67 +4471,356 @@ defmodule ExMarcel.Tables do
     ["image/jp2", [[0, ["\x00\x00\x00\fjP  \r\n\x87\n"], [[20, ["jp2 "]]]]]],
     ["image/jpm", [[0, ["\x00\x00\x00\fjP  \r\n\x87\n"], [[20, ["jpm "]]]]]],
     ["image/jpx", [[0, ["\x00\x00\x00\fjP  \r\n\x87\n"], [[20, ["jpx "]]]]]],
+    ["image/jxl", [[0, ["\xFF\n"]], [0, ["\x00\x00\x00\fJXL \r\n\x87\n"]]]],
     ["image/nitf", [[0, ["NITF01.10"]], [0, ["NITF02.000"]], [0, ["NITF02.100"]]]],
+    ["image/vnd.dgn;version=7", []],
     ["image/vnd.djvu", [[0, ["AT&TFORM"]]]],
-    ["image/vnd.dwg", [[0, ["MC0.0"]], [0, ["AC1.2"]], [0, ["AC1.40"]], [0, ["AC1.50"]], [0, ["AC2.10"]], [0, ["AC2.21"]], [0, ["AC2.22"]]]],
+    [
+      "image/vnd.dwg",
+      [
+        [0, ["MC0.0"]],
+        [0, ["AC1.2"]],
+        [0, ["AC1.40"]],
+        [0, ["AC1.50"]],
+        [0, ["AC2.10"]],
+        [0, ["AC2.21"]],
+        [0, ["AC2.22"]]
+      ]
+    ],
     ["image/vnd.dxb", [[0, ["AutoCAD DXB 1.0\r\n0x1A00"]]]],
-    ["image/vnd.dxf;format=ascii", [[0..3, ["0\\r\\nSECTION\\r\\n"], [[12..18, ["2\\r\\nHEADER\\r\\n"]]]]]],
+    [
+      "image/vnd.dxf;format=ascii",
+      [
+        [
+          0..32,
+          ["(999\\r?\\n[^\\r\\n]{0,64}\\\\s+)?0\\r?\\nSECTION\\r?\\n"],
+          [[12..60, ["2\\r?\\n(?:HEADER|ENTITIES)\\r?\\n"]]]
+        ]
+      ]
+    ],
     ["image/vnd.dxf;format=binary", [[0, ["AutoCAD Binary DXF\r\n0x1A00"]]]],
-    ["image/vnd.microsoft.icon", [[0, ["BA(\u0000\u0000\u0000.\u0000\u0000\u0000\u0000\u0000\u0000\u0000"]], [0, ["\u0000\u0000\u0001\u0000"]]]],
+    [
+      "image/vnd.microsoft.icon",
+      [
+        [0, ["BA(\u0000\u0000\u0000.\u0000\u0000\u0000\u0000\u0000\u0000\u0000"]],
+        [0, ["\u0000\u0000\u0001\u0000"]]
+      ]
+    ],
     ["image/vnd.ms-modi", [[0, ["EP*\u0000"]]]],
     ["image/vnd.zbrush.dcx", [[0, ["\xB1h\xDE:"]]]],
     ["image/wmf", [[0, ["\xD7\xCD\xC6\x9A\x00\x00"]], [0, ["\u0001\u0000\t\u0000\u0000\u0003"]]]],
+    ["image/x-3ds", [[0, ["MM"], [[6, ["\u0002\u0000\n\u0000\u0000\u0000"], [[16, ["=="]]]]]]]],
     ["image/x-bpg", [[0, ["BPG\xFB"]]]],
     ["image/x-dpx", [[0, ["SDPX"]], [0, ["XPDS"]]]],
-    ["image/x-freehand", [[0, ["AGD2"]], [0, ["AGD3"]], [0, ["AGD4"]], [0..24, ["FreeHand10"]], [0..24, ["FreeHand11"]], [0..24, ["FreeHand12"]]]],
+    [
+      "image/x-freehand",
+      [
+        [0, ["AGD2"]],
+        [0, ["AGD3"]],
+        [0, ["AGD4"]],
+        [0..24, ["FreeHand10"]],
+        [0..24, ["FreeHand11"]],
+        [0..24, ["FreeHand12"]]
+      ]
+    ],
     ["image/x-jbig2", [[0, ["\x97JB2\r\n\x1A\n"]]]],
     ["image/x-jp2-container", [[0, ["\x00\x00\x00\fjP  \r\n\x87\n"]]]],
     ["image/x-niff", [[0, ["IIN1"]]]],
+    [
+      "image/x-os2-graphics; charset=binary",
+      [[0, ["BA"], [[14, ["BM"]], [14, ["CI"]], [14, ["IC"]], [14, ["CP"]], [14, ["PT"]]]]]
+    ],
     ["image/x-pict", [[522, ["\x00\x11\x02\xFF\f\x00"]]]],
-    ["image/x-portable-bitmap", [[0, ["P1"]], [0, ["P4"]]]],
-    ["image/x-portable-graymap", [[0, ["P2"]], [0, ["P5"]], [0, ["P5\n"]]]],
-    ["image/x-portable-pixmap", [[0, ["P3"]], [0, ["P6"]], [0, ["P7"]], [0, ["P4\n"]]]],
+    ["image/x-portable-arbitrarymap", [[0, ["P7"], [[2, ["\n"]], [2, ["\r"]], [2, [" "]]]]]],
+    [
+      "image/x-portable-bitmap",
+      [
+        [0, ["P1"], [[2, ["\n"]], [2, ["\r"]], [2, [" "]]]],
+        [0, ["P4"], [[2, ["\n"]], [2, ["\r"]], [2, [" "]]]]
+      ]
+    ],
+    [
+      "image/x-portable-graymap",
+      [
+        [0, ["P2"], [[2, ["\n"]], [2, ["\r"]], [2, [" "]]]],
+        [0, ["P5"], [[2, ["\n"]], [2, ["\r"]], [2, [" "]]]]
+      ]
+    ],
+    [
+      "image/x-portable-pixmap",
+      [
+        [0, ["P3"], [[2, ["\n"]], [2, ["\r"]], [2, [" "]]]],
+        [0, ["P6"], [[2, ["\n"]], [2, ["\r"]], [2, [" "]]]]
+      ]
+    ],
+    ["image/x-raw-canon", [[0, ["II\u001A\u0000\u0000\u0000HEAPCCDR"]]]],
     ["image/x-raw-olympus", [[0, ["IIRO"]]]],
     ["image/x-rgb", [[0, ["\u0001\xDA\u0001\u0001\u0000\u0003"]]]],
     ["image/x-xbitmap", [[0, ["/* XPM"]]]],
     ["image/x-xcf", [[0, ["gimp xcf "]]]],
     ["message/news", [[0, ["Article"]]]],
-    ["message/rfc822", [[0, ["Relay-Version:"]], [0, ["#! rnews"]], [0, ["N#! rnews"]], [0, ["Forward to"]], [0, ["Pipe to"]], [0, ["Return-Path:"]], [0, ["Message-ID:"]], [0, ["X-Mailer:"]], [0, ["X-Notes-Item:"], [[0..8192, ["Message-ID:"]]]], [0, nil, [[0, ["Date:"]], [0, ["Delivered-To:"]], [0, ["From:"]], [0, ["Message-ID:"]], [0, ["MIME-Version:"]], [0, ["Received:"]], [0, ["Relay-Version:"]], [0, ["Return-Path:"]], [0, ["Sent:"]], [0, ["Status:"]], [0, ["User-Agent:"]], [0, ["X-Mailer:"]], [0, ["X-Originating-IP:"]], [0..1024, ["\nDate:"]], [0..1024, ["\nDelivered-To:"]], [0..1024, ["\nFrom:"]], [0..1024, ["\nMIME-Version:"]], [0..1024, ["\nReceived:"]], [0..1024, ["\nRelay-Version:"]], [0..1024, ["\nReturn-Path:"]], [0..1024, ["\nSent:"]], [0..1024, ["\nStatus:"]], [0..1024, ["\nSubject:"]], [0..1024, ["\nTo:"]], [0..1024, ["\nUser-Agent:"]], [0..1024, ["\nX-Mailer:"]], [0..1024, ["\nX-Originating-IP:"]]]], [0, ["(X|DKIM|ARC)-"], [[0..8192, ["\nDate:"]], [0..8192, ["\nDelivered-To:"]], [0..8192, ["\nFrom:"]], [0..8192, ["\nMessage-ID:"]], [0..8192, ["\nMIME-Version:"]], [0..8192, ["\nReceived:"]], [0..8192, ["\nRelay-Version:"]], [0..8192, ["\nReturn-Path:"]], [0..8192, ["\nStatus:"]], [0..8192, ["\nUser-Agent:"]], [0..8192, ["\nX-Mailer:"]], [0..8192, ["\nX-Originating-IP:"]]]]]],
+    [
+      "message/rfc822",
+      [
+        [0, ["Relay-Version:"]],
+        [0, ["#! rnews"]],
+        [0, ["N#! rnews"]],
+        [0, ["Forward to"]],
+        [0, ["Pipe to"]],
+        [0, ["Return-Path:"]],
+        [0, ["Message-ID:"]],
+        [0, ["X-Mailer:"]],
+        [0, ["X-Notes-Item:"], [[0..8192, ["Message-ID:"]]]],
+        [
+          0,
+          ["(X|DKIM|ARC)-"],
+          [
+            [0..8192, ["\nDate:"]],
+            [0..8192, ["\nDelivered-To:"]],
+            [0..8192, ["\nFrom:"]],
+            [0..8192, ["\nMessage-ID:"]],
+            [0..8192, ["\nMIME-Version:"]],
+            [0..8192, ["\nReceived:"]],
+            [0..8192, ["\nRelay-Version:"]],
+            [0..8192, ["\nReturn-Path:"]],
+            [0..8192, ["\nStatus:"]],
+            [0..8192, ["\nUser-Agent:"]],
+            [0..8192, ["\nX-Mailer:"]],
+            [0..8192, ["\nX-Originating-IP:"]]
+          ]
+        ]
+      ]
+    ],
     ["model/vnd.dwf", [[0, ["(DWF V"], [[8, ["."], [[11, [")"]]]]]]]],
     ["multipart/appledouble", [[0, ["\u0000\u0005\u0016\a"]]]],
-    ["text/calendar", [[0, ["BEGIN:VCALENDAR"], [[15..30, ["VERSION:2.0"]]]]]],
-    ["text/troff", [[0, [".\\\""]], [0, ["'\\\""]], [0, ["'.\\\""]], [0, ["\\\""]], [0, ["'''"]]]],
-    ["text/vnd.graphviz", [[0, ["(?s)^\\\\s*(?:strict\\\\s+)?(?:di)?graph\\\\b"]], [0, ["(?s)^(?:\\\\s*//[^\\\\n]*\\n){1,10}\\\\s*(?:strict\\\\s+)?(?:di)?graph\\\\b"]], [0, ["(?s)^\\\\s*/\\\\*.{0,1024}?\\\\*/\\\\s*(?:strict\\\\s+)?(?:di)?graph\\\\b"]]]],
+    ["text/calendar", [[0, ["BEGIN:VCALENDAR"], [[15..360, ["\nVERSION:2.0"]]]]]],
+    [
+      "text/javascript",
+      [
+        [0, ["/* jQuery "]],
+        [0, ["/*! jQuery "]],
+        [0, ["/*!"], [[4..8, ["* jQuery "]]]],
+        [0, ["(function(e,undefined){"]],
+        [0, ["!function(window,undefined){"]],
+        [0, ["/*  Prototype JavaScript "]],
+        [0, ["var Prototype={"]],
+        [0, ["function $w(t){"]],
+        [0, ["/** @license React"]],
+        [0, ["/**"], [[4..8, ["* React "]]]]
+      ]
+    ],
+    [
+      "text/troff",
+      [[0, [".\\\""]], [0, ["'\\\""]], [0, ["'.\\\""]], [0, ["\\\""]], [0, ["'''"]]]
+    ],
+    [
+      "text/vnd.graphviz",
+      [
+        [0, ["(?s)^\\\\s*(?:strict\\\\s+)?(?:di)?graph\\\\b"]],
+        [0, ["(?s)^(?:\\\\s*//[^\\\\n]*\\n){1,10}\\\\s*(?:strict\\\\s+)?(?:di)?graph\\\\b"]],
+        [0, ["(?s)^\\\\s*/\\\\*.{0,1024}?\\\\*/\\\\s*(?:strict\\\\s+)?(?:di)?graph\\\\b"]]
+      ]
+    ],
     ["text/vnd.iptc.anpa", [[0, ["\u0016\u0016\u0001"]]]],
-    ["text/x-awk", [[0, ["#!/bin/gawk"]], [0, ["#! /bin/gawk"]], [0, ["#!/usr/bin/gawk"]], [0, ["#! /usr/bin/gawk"]], [0, ["#!/usr/local/bin/gawk"]], [0, ["#! /usr/local/bin/gawk"]], [0, ["#!/bin/awk"]], [0, ["#! /bin/awk"]], [0, ["#!/usr/bin/awk"]], [0, ["#! /usr/bin/awk"]]]],
-    ["text/x-diff", [[0, ["diff "]], [0, ["*** "]], [0, ["Only in "]], [0, ["Common subdirectories: "]], [0, ["Index:"]]]],
+    [
+      "text/x-awk",
+      [
+        [0, ["#!/bin/gawk"]],
+        [0, ["#! /bin/gawk"]],
+        [0, ["#!/usr/bin/gawk"]],
+        [0, ["#! /usr/bin/gawk"]],
+        [0, ["#!/usr/local/bin/gawk"]],
+        [0, ["#! /usr/local/bin/gawk"]],
+        [0, ["#!/bin/awk"]],
+        [0, ["#! /bin/awk"]],
+        [0, ["#!/usr/bin/awk"]],
+        [0, ["#! /usr/bin/awk"]]
+      ]
+    ],
+    [
+      "text/x-diff",
+      [
+        [0, ["diff "]],
+        [0, ["*** "]],
+        [0, ["Only in "]],
+        [0, ["Common subdirectories: "]],
+        [0, ["Index:"]]
+      ]
+    ],
     ["text/x-jsp", [[0, ["<%@"]], [0, ["<%--"]]]],
     ["text/x-matlab", [[0, ["function ["]]]],
-    ["text/x-perl", [[0, ["eval \"exec /usr/local/bin/perl"]], [0, ["#!/bin/perl"]], [0, ["#!/bin/env perl"]], [0, ["#!/usr/bin/perl"]], [0, ["#!/usr/local/bin/perl"]]]],
+    [
+      "text/x-perl",
+      [
+        [0, ["eval \"exec /usr/local/bin/perl"]],
+        [0, ["#!/bin/perl"]],
+        [0, ["#!/bin/env perl"]],
+        [0, ["#!/usr/bin/perl"]],
+        [0, ["#!/usr/local/bin/perl"]]
+      ]
+    ],
     ["text/x-php", [[0, ["<?php"]]]],
-    ["text/x-python", [[0, ["#!/bin/python"]], [0, ["#! /bin/python"]], [0, ["eval \"exec /bin/python"]], [0, ["#!/usr/bin/python"]], [0, ["#! /usr/bin/python"]], [0, ["eval \"exec /usr/bin/python"]], [0, ["#!/usr/local/bin/python"]], [0, ["#! /usr/local/bin/python"]], [0, ["eval \"exec /usr/local/bin/python"]], [1, ["/bin/env python"]]]],
+    [
+      "text/x-python",
+      [
+        [0, ["#!/bin/python"]],
+        [0, ["#! /bin/python"]],
+        [0, ["eval \"exec /bin/python"]],
+        [0, ["#!/usr/bin/python"]],
+        [0, ["#! /usr/bin/python"]],
+        [0, ["eval \"exec /usr/bin/python"]],
+        [0, ["#!/usr/local/bin/python"]],
+        [0, ["#! /usr/local/bin/python"]],
+        [0, ["eval \"exec /usr/local/bin/python"]],
+        [1, ["/bin/env python"]]
+      ]
+    ],
     ["text/x-vcalendar", [[0, ["BEGIN:VCALENDAR"], [[15..30, ["VERSION:1.0"]]]]]],
     ["text/x-vcard", [[0, ["BEGIN:VCARD"]]]],
     ["video/mj2", [[0, ["\x00\x00\x00\fjP  \r\n\x87\n"], [[20, ["mjp2"]]]]]],
     ["video/x-jng", [[0, ["\x8BJNG"]]]],
     ["video/x-mng", [[0, ["\x8AMNG"]]]],
     ["video/x-ms-asf", [[0, ["0&\xB2u"]]]],
-    ["video/x-sgi-movie", [[0, ["MOVI\u0000"]], [0, ["MOVI\u0001"]], [0, ["MOVI\u0002"]], [0, ["MOVI\xFE"]], [0, ["MOVI\xFF"]]]],
+    [
+      "video/x-sgi-movie",
+      [
+        [0, ["MOVI\u0000"]],
+        [0, ["MOVI\u0001"]],
+        [0, ["MOVI\u0002"]],
+        [0, ["MOVI\xFE"]],
+        [0, ["MOVI\xFF"]]
+      ]
+    ],
     ["application/gzip", [[0, ["\u001F\x8B"]], [0, ["\u001F\x8B"]]]],
     ["application/zlib", [[0, ["x\u0001"]], [0, ["x^"]], [0, ["x\x9C"]], [0, ["x\xDA"]]]],
-    ["application/java-vm", [[0, ["\xCA\xFE\xBA\xBE"]]]],
+    [
+      "message/rfc822",
+      [
+        [
+          0,
+          nil,
+          [
+            [
+              0,
+              nil,
+              [
+                [0, ["Content-ID:"]],
+                [0, ["Content-Location:"]],
+                [0, ["Content-Transfer-Encoding:"]],
+                [0, ["Content-Type:"]],
+                [0, ["Date:"]],
+                [0, ["Delivered-To:"]],
+                [0, ["From:"]],
+                [0, ["Message-ID:"]],
+                [0, ["MIME-Version:"]],
+                [0, ["Received:"]],
+                [0, ["Relay-Version:"]],
+                [0, ["Return-Path:"]],
+                [0, ["Sent:"]],
+                [0, ["Status:"]],
+                [0, ["Subject:"]],
+                [0, ["To:"]],
+                [0, ["User-Agent:"]],
+                [0, ["X-Mailer:"]],
+                [0, ["X-Originating-IP:"]],
+                [
+                  0,
+                  ["\xEF\xBB\xBF"],
+                  [
+                    [3, ["Content-ID:"]],
+                    [3, ["Content-Location:"]],
+                    [3, ["Content-Transfer-Encoding:"]],
+                    [3, ["Content-Type:"]],
+                    [3, ["Date:"]],
+                    [3, ["Delivered-To:"]],
+                    [3, ["From:"]],
+                    [3, ["Message-ID:"]],
+                    [3, ["MIME-Version:"]],
+                    [3, ["Received:"]],
+                    [3, ["Relay-Version:"]],
+                    [3, ["Return-Path:"]],
+                    [3, ["Sent:"]],
+                    [3, ["Status:"]],
+                    [3, ["Subject:"]],
+                    [3, ["To:"]],
+                    [3, ["User-Agent:"]],
+                    [3, ["X-Mailer:"]],
+                    [3, ["X-Originating-IP:"]]
+                  ]
+                ]
+              ]
+            ],
+            [
+              0,
+              nil,
+              [
+                [0..1024, ["\nContent-ID:"]],
+                [0..1024, ["\nContent-Location:"]],
+                [0..1024, ["\nContent-Transfer-Encoding:"]],
+                [0..1024, ["\nContent-Type:"]],
+                [0..1024, ["\nDate:"]],
+                [0..1024, ["\nDelivered-To:"]],
+                [0..1024, ["\nFrom:"]],
+                [0..1024, ["\nMIME-Version:"]],
+                [0..1024, ["\nReceived:"]],
+                [0..1024, ["\nRelay-Version:"]],
+                [0..1024, ["\nReturn-Path:"]],
+                [0..1024, ["\nSent:"]],
+                [0..1024, ["\nStatus:"]],
+                [0..1024, ["\nSubject:"]],
+                [0..1024, ["\nTo:"]],
+                [0..1024, ["\nUser-Agent:"]],
+                [0..1024, ["\nX-Mailer:"]],
+                [0..1024, ["\nX-Originating-IP:"]],
+                [0..1024, ["\nDKIM-"]],
+                [0..1024, ["\nARC-"]]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    [
+      "application/pdf",
+      [[0..128, ["%%"], [[1..512, ["%PDF-1."]]]], [0..128, ["%%"], [[1..512, ["%PDF-2."]]]]]
+    ],
     ["application/vnd.wordperfect", [[0, ["\xFFWPC"]]]],
-    ["application/x-bzip", [[0, ["BZh"]]]],
-    ["application/x-bzip2", [[0, ["BZh91"]]]],
+    ["application/x-bzip", [[0, ["BZ0"]]]],
+    ["application/x-bzip2", [[0, ["BZh[1-9]"]]]],
+    [
+      "application/x-dbf",
+      [
+        [
+          0,
+          [
+            "(?s)^[\\\\x02\\\\x03\\\\x30\\\\x31\\\\x32\\\\x43\\\\x63\\\\x83\\\\x8B\\\\xCB\\\\xF5\\\\xE5\\\\xFB].[\\\\x01-\\\\x0C][\\\\x01-\\\\x1F].{4}(?:.[^\\\\x00]|[\\\\x41-\\\\xFF].)(?:[^\\\\x00\\\\x01].|.[^\\\\x00]).{31}(?<=[\\\\x00][^\\\\x00]{0,10})[A-Z@+]"
+          ]
+        ]
+      ]
+    ],
     ["application/x-font-adobe-metric", [[0, ["StartFontMetrics"]]]],
+    ["application/x-font-otf", [[0, ["OTTO\u0000"]]]],
     ["application/x-font-printer-metric", [[0, ["\x00\x01"], [[4, ["\x00\x00Copyr"]]]]]],
     ["application/x-font-ttf", [[0, ["\u0000\u0001\u0000\u0000"]]]],
     ["application/x-matroska", [[0, ["\x1AE\xDF\xA3"]]]],
     ["application/x-mysql-misam-compressed-index", [[0, ["\xFE\xFE\x06"]], [0, ["\xFE\xFE\a"]]]],
     ["application/x-mysql-misam-index", [[0, ["\xFE\xFE\x03"]], [0, ["\xFE\xFE\x05"]]]],
-    ["application/x-mysql-table-definition", [[0, ["\xFE\x01\a"]], [0, ["\xFE\x01\b"]], [0, ["\xFE\x01\t"]], [0, ["\xFE\x01\n"]], [0, ["\xFE\x01\v"]], [0, ["\xFE\x01\f"]]]],
+    [
+      "application/x-mysql-table-definition",
+      [
+        [0, ["\xFE\x01\a"]],
+        [0, ["\xFE\x01\b"]],
+        [0, ["\xFE\x01\t"]],
+        [0, ["\xFE\x01\n"]],
+        [0, ["\xFE\x01\v"]],
+        [0, ["\xFE\x01\f"]]
+      ]
+    ],
     ["application/x-sas-data", [[84, ["SAS FILE"]]]],
-    ["application/x-sas-data-v6", [[0, ["SAS     6."]], [0, ["SAS     7."]], [0, ["SAS     8.0"]], [0, ["SAS     9.0"]]]],
+    [
+      "application/x-sas-data-v6",
+      [[0, ["SAS     6."]], [0, ["SAS     7."]], [0, ["SAS     8.0"]], [0, ["SAS     9.0"]]]
+    ],
     ["application/x-sas-xport", [[0, ["HEADER RECORD*******LIBRARY HEADER RECORD!!!!!!!"]]]],
     ["application/x-stata-dta", [[0, ["<stata_dta>"]]]],
     ["application/x-tar", [[257, ["ustar\u0000"]]]],
@@ -2729,31 +4829,190 @@ defmodule ExMarcel.Tables do
     ["application/xhtml+xml", [[0..8192, ["<html xmlns="]]]],
     ["audio/ac3", [[0, ["\vw"]]]],
     ["audio/amr", [[0, ["#!AMR\n"]], [0, ["#!AMR"]]]],
-    ["image/vnd.zbrush.pcx", [[0, ["\n"], [[1, ["\u0000"]], [1, ["\u0002"]], [1, ["\u0003"]], [1, ["\u0004"]], [1, ["\u0005"]]]]]],
+    [
+      "audio/x-aac",
+      [
+        [
+          0,
+          ["ID3"],
+          [
+            [
+              512..2048,
+              [
+                "\\\\xFF(\\\\xF0|\\\\xF1|\\\\xF8|\\\\xF9)(\\\\x40|\\\\x41|\\\\x44|\\\\x45|\\\\x48|\\\\x49|\\\\x4C|\\\\x4D|\\\\x50|\\\\x51|\\\\x54|\\\\x55|\\\\x58|\\\\x59|\\\\x5C|\\\\x5D|\\\\x60|\\\\x61|\\\\x64|\\\\x65|\\\\x68|\\\\x69|\\\\x6C|\\\\x6D|\\\\x70|\\\\x71|\\\\x80|\\\\x81|\\\\x84|\\\\x85|\\\\x88|\\\\x89|\\\\x8C|\\\\x8D|\\\\x90|\\\\x91|\\\\x94|\\\\x95|\\\\x98|\\\\x99|\\\\x9C|\\\\x9D|\\\\xA0|\\\\xA1|\\\\xA4|\\\\xA5|\\\\xA8|\\\\xA9|\\\\xAC|\\\\xAD|\\\\xB0|\\\\xB1)(\\\\x00|\\\\x01|\\\\x20|\\\\x40|\\\\x41|\\\\x60|\\\\x80|\\\\x81|\\\\x60|\\\\xA0|\\\\xC0|\\\\xC1|\\\\xE0)"
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    [
+      "image/vnd.zbrush.pcx",
+      [
+        [
+          0,
+          ["\n"],
+          [[1, ["\u0000"]], [1, ["\u0002"]], [1, ["\u0003"]], [1, ["\u0004"]], [1, ["\u0005"]]]
+        ]
+      ]
+    ],
     ["message/rfc822", [[0..1000, ["\nMessage-ID:"]]]],
-    ["text/html", [[0..64, ["<!DOCTYPE HTML"]], [0..64, ["<!DOCTYPE html"]], [0..64, ["<!doctype HTML"]], [0..64, ["<!doctype html"]], [0..64, ["<HEAD"]], [0..64, ["<head"]], [0..64, ["<TITLE"]], [0..64, ["<title"]], [0..64, ["<HTML"]], [0, ["<BODY"]], [0, ["<body"]], [0, ["<DIV"]], [0, ["<div"]], [0, ["<TITLE"]], [0, ["<title"]], [0, ["<h1"]], [0, ["<H1"]], [0..128, ["<html"]]]],
-    ["text/vtt", [[0, ["WEBVTT\r"]], [0, ["WEBVTT\n"]], [0, ["0xfeff"], [[2, ["WEBVTT\r"]]]], [0, ["0xfeff"], [[2, ["WEBVTT\n"]]]], [0, ["WEBVTT FILE\r"]], [0, ["WEBVTT FILE\n"]]]],
-    ["text/x-matlab", [[0, ["function [a-zA-Z][A-Za-z0-9_]{0,62}[\\\\r\\\\n]"]]]],
+    [
+      "text/html",
+      [
+        [0..64, ["<!DOCTYPE HTML"]],
+        [0..64, ["<!DOCTYPE html"]],
+        [0..64, ["<!doctype HTML"]],
+        [0..64, ["<!doctype html"]],
+        [0..64, ["<HEAD"]],
+        [0..64, ["<head"]],
+        [0..64, ["<TITLE"]],
+        [0..64, ["<title"]],
+        [0..64, ["<HTML"]],
+        [0..128, ["<html"]]
+      ]
+    ],
+    [
+      "text/vtt",
+      [
+        [0, ["WEBVTT\r"]],
+        [0, ["WEBVTT\n"]],
+        [0, ["0xfeff"], [[2, ["WEBVTT\r"]], [2, ["WEBVTT\n"]]]],
+        [0, ["0xfeff"], [[2, ["WEBVTT\r"]], [2, ["WEBVTT\n"]]]],
+        [0, ["0xefbbbf"], [[3, ["WEBVTT\r"]], [3, ["WEBVTT\n"]]]],
+        [0, ["WEBVTT FILE\r"]],
+        [0, ["WEBVTT FILE\n"]]
+      ]
+    ],
     ["text/x-matlab", [[0, ["function [a-zA-Z][A-Za-z0-9_]{0,62}\\\\s*="]]]],
+    ["text/x-matlab", [[0, ["function [a-zA-Z][A-Za-z0-9_]{0,62}[\\\\r\\\\n]"]]]],
     ["application/inf", [[0, ["[version]"]], [0, ["[strings]"]]]],
-    ["application/x-bibtex-text-file", [[0, ["%"], [[2..128, ["\n@article{"]], [2..128, ["\n@book{"]], [2..128, ["\n@inbook{"]], [2..128, ["\n@incollection{"]], [2..128, ["\n@inproceedings{"]], [2..128, ["\n@manual{"]], [2..128, ["\n@misc{"]], [2..128, ["\n@preamble{"]], [2..128, ["\n@phdthesis{"]], [2..128, ["\n@string{"]], [2..128, ["\n@techreport{"]], [2..128, ["\n@unpublished{"]]]]]],
+    [
+      "application/x-bibtex-text-file",
+      [
+        [
+          0,
+          ["%"],
+          [
+            [2..128, ["\n@article{"]],
+            [2..128, ["\n@book{"]],
+            [2..128, ["\n@inbook{"]],
+            [2..128, ["\n@incollection{"]],
+            [2..128, ["\n@inproceedings{"]],
+            [2..128, ["\n@manual{"]],
+            [2..128, ["\n@misc{"]],
+            [2..128, ["\n@preamble{"]],
+            [2..128, ["\n@phdthesis{"]],
+            [2..128, ["\n@string{"]],
+            [2..128, ["\n@techreport{"]],
+            [2..128, ["\n@unpublished{"]]
+          ]
+        ]
+      ]
+    ],
     ["application/xml", [[0, ["<!--"]]]],
-    ["text/vtt", [[0, ["WEBVTT "], [[10..50, ["\n\n"]]]], [0, ["WEBVTT "], [[10..50, ["\r\r"]]]], [0, ["WEBVTT "], [[10..50, ["\r\n\r\n"]]]]]],
+    [
+      "audio/x-aac",
+      [
+        [
+          0,
+          [
+            "\\\\xFF(\\\\xF0|\\\\xF1|\\\\xF8|\\\\xF9)(\\\\x40|\\\\x41|\\\\x44|\\\\x45|\\\\x48|\\\\x49|\\\\x4C|\\\\x4D|\\\\x50|\\\\x51|\\\\x54|\\\\x55|\\\\x58|\\\\x59|\\\\x5C|\\\\x5D|\\\\x60|\\\\x61|\\\\x64|\\\\x65|\\\\x68|\\\\x69|\\\\x6C|\\\\x6D|\\\\x70|\\\\x71|\\\\x80|\\\\x81|\\\\x84|\\\\x85|\\\\x88|\\\\x89|\\\\x8C|\\\\x8D|\\\\x90|\\\\x91|\\\\x94|\\\\x95|\\\\x98|\\\\x99|\\\\x9C|\\\\x9D|\\\\xA0|\\\\xA1|\\\\xA4|\\\\xA5|\\\\xA8|\\\\xA9|\\\\xAC|\\\\xAD|\\\\xB0|\\\\xB1)(\\\\x00|\\\\x01|\\\\x20|\\\\x40|\\\\x41|\\\\x60|\\\\x80|\\\\x81|\\\\x60|\\\\xA0|\\\\xC0|\\\\xC1|\\\\xE0)"
+          ]
+        ]
+      ]
+    ],
+    [
+      "text/vtt",
+      [
+        [0, ["WEBVTT "], [[10..50, ["\n\n"]]]],
+        [0, ["WEBVTT "], [[10..50, ["\r\r"]]]],
+        [0, ["WEBVTT "], [[10..50, ["\r\n\r\n"]]]]
+      ]
+    ],
     ["text/x-chdr", [[0, ["#ifndef "]]]],
     ["text/x-csrc", [[0, ["#include "]]]],
     ["image/x-jp2-codestream", [[0, ["\xFFO\xFFQ"]]]],
-    ["text/x-matlab", [[0, ["%"], [[2..120, ["\n%"]]]], [0, ["%"], [[2..120, ["\r%"]]]], [0, ["%%"]]]],
+    [
+      "text/x-matlab",
+      [[0, ["%"], [[2..120, ["\n%"]]]], [0, ["%"], [[2..120, ["\r%"]]]], [0, ["%%"]]]
+    ],
     ["application/pdf", [[1..512, ["%PDF-1."]], [1..512, ["%PDF-2."]]]],
-    ["audio/basic", [[0, [".snd"], [[12, ["\x00\x00\x00\x01"]], [12, ["\x00\x00\x00\x02"]], [12, ["\x00\x00\x00\x03"]], [12, ["\x00\x00\x00\x04"]], [12, ["\x00\x00\x00\x05"]], [12, ["\x00\x00\x00\x06"]], [12, ["\x00\x00\x00\a"]]]], [0, [".snd\u0000\u0000\u0000"]]]],
+    ["application/vnd.msa-disk-image", [[0, ["\u000E\u000F"]]]],
+    [
+      "audio/basic",
+      [
+        [
+          0,
+          [".snd"],
+          [
+            [12, ["\x00\x00\x00\x01"]],
+            [12, ["\x00\x00\x00\x02"]],
+            [12, ["\x00\x00\x00\x03"]],
+            [12, ["\x00\x00\x00\x04"]],
+            [12, ["\x00\x00\x00\x05"]],
+            [12, ["\x00\x00\x00\x06"]],
+            [12, ["\x00\x00\x00\a"]]
+          ]
+        ],
+        [0, [".snd\u0000\u0000\u0000"]]
+      ]
+    ],
     ["audio/midi", [[0, ["MThd"]]]],
     ["audio/vnd.wave", [[0, ["RIFF"], [[8, ["WAVE"]]]]]],
     ["audio/x-adpcm", [[0, [".snd"], [[12, ["\x00\x00\x00\x17"]]]]]],
-    ["audio/x-aiff", [[0, ["FORM"], [[8, ["AIFF"]]]], [0, ["FORM"], [[8, ["AIFC"]]]], [0, ["FORM"], [[8, ["8SVX"]]]], [0, ["FORM\u0000"]]]],
+    [
+      "audio/x-aiff",
+      [
+        [0, ["FORM"], [[8, ["AIFF"]]]],
+        [0, ["FORM"], [[8, ["AIFC"]]]],
+        [0, ["FORM"], [[8, ["8SVX"]]]],
+        [0, ["FORM\u0000"]]
+      ]
+    ],
     ["audio/x-dec-adpcm", [[0, ["\x00ds."], [[12, ["\x00\x00\x00\x17"]]]]]],
-    ["audio/x-dec-basic", [[0, ["\x00ds."], [[12, ["\x00\x00\x00\x01"]], [12, ["\x00\x00\x00\x02"]], [12, ["\x00\x00\x00\x03"]], [12, ["\x00\x00\x00\x04"]], [12, ["\x00\x00\x00\x05"]], [12, ["\x00\x00\x00\x06"]], [12, ["\x00\x00\x00\a"]]]]]],
+    [
+      "audio/x-dec-basic",
+      [
+        [
+          0,
+          ["\x00ds."],
+          [
+            [12, ["\x00\x00\x00\x01"]],
+            [12, ["\x00\x00\x00\x02"]],
+            [12, ["\x00\x00\x00\x03"]],
+            [12, ["\x00\x00\x00\x04"]],
+            [12, ["\x00\x00\x00\x05"]],
+            [12, ["\x00\x00\x00\x06"]],
+            [12, ["\x00\x00\x00\a"]]
+          ]
+        ]
+      ]
+    ],
     ["text/html", [[128..8192, ["<html"]]]],
-    ["text/plain", [[0, ["This is TeX,"]], [0, ["This is METAFONT,"]], [0, ["/*"]], [0, ["//"]], [0, [";;"]], [0, ["\xFE\xFF"]], [0, ["\xFF\xFE"]], [0, ["\xEF\xBB\xBF"]]]],
-    ["text/x-makefile", [[0, ["# Makefile.in generated by"]], [0, ["#!make"]], [0, ["#!/usr/bin/make"]], [0, ["#!/usr/local/bin/make"]], [0, ["#!/usr/bin/env make"]]]],
+    [
+      "text/plain",
+      [
+        [0, ["This is TeX,"]],
+        [0, ["This is METAFONT,"]],
+        [0, ["/*"]],
+        [0, ["//"]],
+        [0, [";;"]],
+        [0, ["\xFE\xFF"]],
+        [0, ["\xFF\xFE"]],
+        [0, ["\xEF\xBB\xBF"]]
+      ]
+    ],
+    [
+      "text/x-makefile",
+      [
+        [0, ["# Makefile.in generated by"]],
+        [0, ["#!make"]],
+        [0, ["#!/usr/bin/make"]],
+        [0, ["#!/usr/local/bin/make"]],
+        [0, ["#!/usr/bin/env make"]]
+      ]
+    ]
   ]
   def extensions, do: @extensions
   def type_exts, do: @type_exts

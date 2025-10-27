@@ -1,7 +1,7 @@
 defmodule DeclaredTypeTest do
   use ExUnit.Case, async: true
   # doctest ExMarcel
-  alias ExMarcel.{MimeType}
+  alias ExMarcel.MimeType
 
   test "returns declared type as last resort" do
     assert "text/html" ==

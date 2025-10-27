@@ -1,7 +1,9 @@
 defmodule MagicTest do
   use ExUnit.Case, async: true
+
+  alias ExMarcel.MimeType
+
   doctest ExMarcel
-  alias ExMarcel.{MimeType}
 
   test "gets type for content_type by using only magic bytes name" do
     # These fixtures should be recognisable given only their contents. Where a generic type

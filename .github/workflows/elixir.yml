@@ -1,0 +1,77 @@
+name: Elixir CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Test (Elixir ${{matrix.elixir}} | OTP ${{matrix.otp}})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Earliest supported version
+          - elixir: "1.14.0"
+            otp: "25.0"
+          # Latest 1.15 series
+          - elixir: "1.15.7"
+            otp: "26.0"
+          # Latest 1.16 series
+          - elixir: "1.16.3"
+            otp: "26.2"
+          # Latest 1.17 series
+          - elixir: "1.17.3"
+            otp: "27.1"
+          # Latest 1.18 series with OTP 28
+          - elixir: "1.18.4"
+            otp: "28.0"
+          # Latest 1.19 series with OTP 28
+          - elixir: "1.19.0"
+            otp: "28.1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Elixir
+        uses: erlef/setup-beam@v1
+        with:
+          elixir-version: ${{ matrix.elixir }}
+          otp-version: ${{ matrix.otp }}
+
+      - name: Restore dependencies cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            deps
+            _build
+          key: ${{ runner.os }}-mix-${{ matrix.otp }}-${{ matrix.elixir }}-${{ hashFiles('**/mix.lock') }}-${{ hashFiles('**/mix.exs') }}
+          restore-keys: |
+            ${{ runner.os }}-mix-${{ matrix.otp }}-${{ matrix.elixir }}-${{ hashFiles('**/mix.lock') }}-
+            ${{ runner.os }}-mix-${{ matrix.otp }}-${{ matrix.elixir }}-
+
+      - name: Install dependencies
+        run: mix deps.get
+
+      - name: Compile with warnings as errors
+        run: MIX_ENV=test mix compile --warnings-as-errors
+
+      - name: Check formatting
+        if: ${{ matrix.elixir == '1.19.0' && matrix.otp == '28.1' }}
+        run: mix format --check-formatted
+
+      - name: Run tests
+        run: mix test --trace
+
+      - name: Run Credo
+        if: ${{ matrix.elixir == '1.19.0' && matrix.otp == '28.1' }}
+        run: mix credo
+
+      - name: Run Dialyzer
+        if: ${{ matrix.elixir == '1.19.0' && matrix.otp == '28.1' }}
+        run: mix dialyzer --format github

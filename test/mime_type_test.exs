@@ -1,7 +1,9 @@
 defmodule MimeTypeTest do
   use ExUnit.Case, async: true
+
+  alias ExMarcel.MimeType
+
   doctest ExMarcel
-  alias ExMarcel.{MimeType}
 
   setup do
     # @path = files("image.gif").to_s
